@@ -2,14 +2,17 @@
 # This file is distributed under the same license as the WordPress - 4.8.x package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-08-04 07:53:05+0000\n"
+"PO-Revision-Date: 2017-10-14 21:44+0800\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: GlotPress/2.4.0-alpha\n"
+"X-Generator: Poedit 2.0.4\n"
 "Language: zh_CN\n"
 "Project-Id-Version: WordPress - 4.8.x\n"
+"POT-Creation-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
 
 #. translators: Translate this to the correct language tag for your locale, see
 #. https://www.w3.org/International/articles/language-tags/ for reference. Do
@@ -233,7 +236,7 @@ msgstr "媒体URL"
 
 #: wp-includes/widgets/class-wp-widget-media.php:138
 msgid "Attachment post ID"
-msgstr "附件文章ID"
+msgstr "附件新闻ID"
 
 #. translators: placeholder is video extension
 #: wp-includes/widgets/class-wp-widget-media-video.php:93
@@ -419,7 +422,7 @@ msgstr "通过设置一个或多个别名来查询指定标签。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-types-controller.php:252
 msgid "All features, supported by the post type."
-msgstr "文章类型支持的所有功能。"
+msgstr "新闻类型支持的所有功能。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:163
 msgid "You need to define an include parameter to order by include."
@@ -488,7 +491,7 @@ msgstr "特色图片"
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:79
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:101
 msgid "The password for the parent post of the comment (if the post is password protected)."
-msgstr "评论所属文章的密码（如果该文章被密码保护）。"
+msgstr "评论所属新闻的密码（如果该新闻被密码保护）。"
 
 #. translators: 1: $sanitize_callback, 2: register_setting()
 #: wp-includes/option.php:1989
@@ -530,7 +533,7 @@ msgstr "对不在白名单内的提供者是否进行oEmbed发现请求。"
 
 #: wp-includes/comment.php:3010
 msgid "Sorry, comments are not allowed for this item."
-msgstr "抱歉，这篇文章不能评论。"
+msgstr "抱歉，这篇新闻不能评论。"
 
 #: wp-includes/class-wp-oembed-controller.php:141
 msgid "Sorry, you are not allowed to make proxied oEmbed requests."
@@ -662,28 +665,28 @@ msgstr "项目的唯一标识符。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-types-controller.php:216
 msgid "All capabilities used by the post type."
-msgstr "文章类型使用的所有权限。"
+msgstr "新闻类型使用的所有权限。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-types-controller.php:222
 msgid "A human-readable description of the post type."
-msgstr "文章类型的人类可读描述。"
+msgstr "新闻类型的人类可读描述。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-types-controller.php:228
 msgid "Whether or not the post type should have children."
-msgstr "该文章类型是否拥有子类型。"
+msgstr "该新闻类型是否拥有子类型。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-types-controller.php:234
 msgid "Human-readable labels for the post type for various contexts."
-msgstr "文章类别不同上下文中的人类可读标签。"
+msgstr "新闻类别不同上下文中的人类可读标签。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-types-controller.php:53
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-types-controller.php:246
 msgid "An alphanumeric identifier for the post type."
-msgstr "文章类别的英数字标识符。"
+msgstr "新闻类别的英数字标识符。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-types-controller.php:267
 msgid "REST base route for the post type."
-msgstr "与文章类型关联的REST base路由。"
+msgstr "与新闻类型关联的REST base路由。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:116
 msgid "Required to be true, as revisions do not support trashing."
@@ -799,11 +802,11 @@ msgstr "关联到此分类法的类别。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-types-controller.php:240
 msgid "The title for the post type."
-msgstr "文章类别的标题。"
+msgstr "新闻类别的标题。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-types-controller.php:132
 msgid "Cannot view post type."
-msgstr "不能预览文章类型。"
+msgstr "不能预览新闻类型。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-statuses-controller.php:134
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-statuses-controller.php:186
@@ -840,7 +843,7 @@ msgstr "附件说明。"
 
 #: wp-includes/option.php:1820
 msgid "Default post category."
-msgstr "默认文章类别。"
+msgstr "默认新闻类别。"
 
 #: wp-includes/option.php:1746
 msgid "Site tagline."
@@ -916,7 +919,7 @@ msgstr "存档"
 #: wp-includes/theme.php:2088
 msgctxt "Theme starter content"
 msgid "This is an example of a homepage section. Homepage sections can be any page other than the homepage itself, including the page that shows your latest blog posts."
-msgstr "这是首页章节的范例。首页章节可以是除了首页本身以外的任何其他页面，包括显示最新博客文章的页面。"
+msgstr "这是首页章节的范例。首页章节可以是除了首页本身以外的任何其他页面，包括显示最新博客新闻的页面。"
 
 #: wp-includes/theme.php:2069
 msgctxt "Theme starter content"
@@ -941,7 +944,7 @@ msgstr "最近评论"
 #: wp-includes/theme.php:1981
 msgctxt "Theme starter content"
 msgid "Recent Posts"
-msgstr "最近文章"
+msgstr "最近新闻"
 
 #: wp-includes/theme.php:2064
 msgctxt "Theme starter content"
@@ -979,7 +982,7 @@ msgstr "抱歉，您不能将此角色给予用户。"
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:364
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:469
 msgid "Sorry, you are not allowed to read the post for this comment."
-msgstr "抱歉，您不能阅读此评论对应的文章。"
+msgstr "抱歉，您不能阅读此评论对应的新闻。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:360
 msgid "Sorry, you are not allowed to read this comment."
@@ -995,12 +998,12 @@ msgstr "抱歉，您不能编辑评论的“%s”。"
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:452
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:457
 msgid "Sorry, you are not allowed to create this comment without a post."
-msgstr "抱歉，您不能创建没有对应文章的评论。"
+msgstr "抱歉，您不能创建没有对应新闻的评论。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:461
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:465
 msgid "Sorry, you are not allowed to create a comment on this post."
-msgstr "抱歉，您不能在此文章上创建评论。"
+msgstr "抱歉，您不能在此新闻上创建评论。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:782
 msgid "Sorry, you are not allowed to delete this comment."
@@ -1008,7 +1011,7 @@ msgstr "抱歉，您不能删除此评论。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:164
 msgid "Sorry, you are not allowed to view revisions of this post."
-msgstr "抱歉，您不能查阅此文章的修订版本。"
+msgstr "抱歉，您不能查阅此新闻的修订版本。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:381
 msgid "Sorry, you are not allowed to create new terms."
@@ -1016,7 +1019,7 @@ msgstr "抱歉，您不能创建新项目。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:128
 msgid "Sorry, you are not allowed to read comments without a post."
-msgstr "抱歉，您不能阅读没有对应文章的评论。"
+msgstr "抱歉，您不能阅读没有对应新闻的评论。"
 
 #: wp-includes/theme.php:2028
 msgctxt "Theme starter content"
@@ -1047,7 +1050,7 @@ msgstr "YouTube"
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:505
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:649
 msgid "Sorry, you are not allowed to make posts sticky."
-msgstr "抱歉，您不能将文章置顶。"
+msgstr "抱歉，您不能将新闻置顶。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:513
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:653
@@ -1074,7 +1077,7 @@ msgstr "这里也许是个介绍您自己的好地方，也能介绍您的网站
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:100
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:135
 msgid "Reassign the deleted user's posts and links to this user ID."
-msgstr "将被删除用户的文章和链接重新指定到此用户ID。"
+msgstr "将被删除用户的新闻和链接重新指定到此用户ID。"
 
 #: wp-includes/class-wp-customize-manager.php:3939
 msgid "This theme doesn't support video headers on this page. Navigate to the front page or another page that supports video headers."
@@ -1276,7 +1279,7 @@ msgstr "此评论不能被移动到回收站，设置force=true来删除。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:823
 msgid "The post does not support trashing. Set force=true to delete."
-msgstr "此文章不能被移动到回收站，设置force=true来删除。"
+msgstr "此新闻不能被移动到回收站，设置force=true来删除。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:747
 msgid "Users do not support trashing. Set force=true to delete."
@@ -1314,7 +1317,7 @@ msgstr "评论字段超过了允许的最大尺寸。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2181
 msgid "Limit result set to posts assigned one or more statuses."
-msgstr "限制结果集为有一个或多个状态的文章。"
+msgstr "限制结果集为有一个或多个状态的新闻。"
 
 #: wp-includes/customize/class-wp-customize-nav-menu-control.php:67
 msgid "Display Location"
@@ -1322,11 +1325,11 @@ msgstr "显示位置"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-types-controller.php:258
 msgid "Taxonomies associated with post type."
-msgstr "与文章类别关联的分类法。"
+msgstr "与新闻类别关联的分类法。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2171
 msgid "Limit result set to posts with one or more specific slugs."
-msgstr "限制结果集为有一个或多个特定别名的文章。"
+msgstr "限制结果集为有一个或多个特定别名的新闻。"
 
 #: wp-includes/class-wp-xmlrpc-server.php:3580
 msgid "Comment is required."
@@ -1342,7 +1345,7 @@ msgstr "状态被禁止"
 
 #: wp-trackback.php:125
 msgid "We already have a ping from that URL for this post."
-msgstr "我们已经收到了来自该URL对此文章的ping。"
+msgstr "我们已经收到了来自该URL对此新闻的ping。"
 
 #: wp-trackback.php:85
 msgid "I really need an ID for this to work."
@@ -1490,7 +1493,7 @@ msgstr "按项目属性排序集合。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:961
 msgid "Whether to hide terms not assigned to any posts."
-msgstr "是否隐藏未被指定到任何文章的项目。"
+msgstr "是否隐藏未被指定到任何新闻的项目。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:968
 msgid "Limit result set to terms assigned to a specific parent."
@@ -1498,7 +1501,7 @@ msgstr "限制结果集为指定给特定父项目的项目。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:974
 msgid "Limit result set to terms assigned to a specific post."
-msgstr "限制结果集为指定给特定文章的项目。"
+msgstr "限制结果集为指定给特定新闻的项目。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:70
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:1149
@@ -1507,7 +1510,7 @@ msgstr "用户的唯一标识符。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:837
 msgid "Number of published posts for the term."
-msgstr "项目中已发布文章的数量。"
+msgstr "项目中已发布新闻的数量。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:843
 msgid "HTML description of the term."
@@ -1535,7 +1538,7 @@ msgstr "项目云是否应该被显示。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-taxonomies-controller.php:317
 msgid "Limit results to taxonomies associated with a specific post type."
-msgstr "限制结果为关联到特定文章类型的分类法。"
+msgstr "限制结果为关联到特定新闻类型的分类法。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:96
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:131
@@ -1556,19 +1559,19 @@ msgstr "此对象在%s分类法中指定的项目。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2068
 msgid "Limit result set to posts assigned to specific authors."
-msgstr "限制结果集为指定给特定作者的文章。"
+msgstr "限制结果集为指定给特定作者的新闻。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2076
 msgid "Ensure result set excludes posts assigned to specific authors."
-msgstr "确保结果集排除指定给特定作者的文章。"
+msgstr "确保结果集排除指定给特定作者的新闻。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2111
 msgid "Limit result set to posts with a specific menu_order value."
-msgstr "限制结果集为有特定menu_order的文章。"
+msgstr "限制结果集为有特定menu_order的新闻。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2161
 msgid "Limit result set to all items except those of a particular parent ID."
-msgstr "限制结果集为没有特定父ID的文章。"
+msgstr "限制结果集为没有特定父ID的新闻。"
 
 #. translators: %s: taxonomy name
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2197
@@ -1630,7 +1633,7 @@ msgstr "对象的命名状态。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1798
 msgid "Type of Post for the object."
-msgstr "对象的文章类别。"
+msgstr "对象的新闻类别。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1875
 msgid "The title for the object."
@@ -1675,16 +1678,16 @@ msgstr "对象的发布时间，GMT。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1051
 msgid "A sticky post can not be password protected."
-msgstr "置顶文章不能被密码保护。"
+msgstr "置顶新闻不能被密码保护。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1058
 msgid "A password protected post can not be set to sticky."
-msgstr "受密码保护的文章不能被设为置顶。"
+msgstr "受密码保护的新闻不能被设为置顶。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1069
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:134
 msgid "Invalid post parent ID."
-msgstr "无效的文章父ID。"
+msgstr "无效的新闻父ID。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1160
 msgid "Invalid featured media ID."
@@ -1721,15 +1724,15 @@ msgstr "抱歉，您不能编辑评论。"
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:495
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:530
 msgid "Cannot create existing post."
-msgstr "无法创建已存在的文章。"
+msgstr "无法创建已存在的新闻。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:828
 msgid "The post has already been deleted."
-msgstr "文章已经被删除。"
+msgstr "新闻已经被删除。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1047
 msgid "A post can not be sticky and have a password."
-msgstr "文章不能既被置顶又受密码保护。"
+msgstr "新闻不能既被置顶又受密码保护。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:443
 msgid "Sorry, you are not allowed to create new users."
@@ -1738,11 +1741,11 @@ msgstr "抱歉，您不能创建新用户。"
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1452
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:86
 msgid "The password for the post if it is password protected."
-msgstr "该文章的密码，如文章受密码保护。"
+msgstr "该新闻的密码，如新闻受密码保护。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:410
 msgid "Incorrect post password."
-msgstr "错误的文章密码。"
+msgstr "错误的新闻密码。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:158
 msgid "You need to define a search term to order by relevance."
@@ -1750,15 +1753,15 @@ msgstr "您需要定义搜索条件来按相关性排序。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-statuses-controller.php:269
 msgid "Whether posts with this status should be protected."
-msgstr "有此状态的文章是否应为受保护的。"
+msgstr "有此状态的新闻是否应为受保护的。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-statuses-controller.php:275
 msgid "Whether posts of this status should be shown in the front end of the site."
-msgstr "此状态的文章是否应于前端显示。"
+msgstr "此状态的新闻是否应于前端显示。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-statuses-controller.php:281
 msgid "Whether posts with this status should be publicly-queryable."
-msgstr "有此状态的文章是否可被公开查询。"
+msgstr "有此状态的新闻是否可被公开查询。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:1227
 msgid "An alphanumeric identifier for the user."
@@ -1766,7 +1769,7 @@ msgstr "用户的英数字标识符。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-statuses-controller.php:287
 msgid "Whether to include posts in the edit listing for their post type."
-msgstr "是否在编辑文章类型时包含文章列表。"
+msgstr "是否在编辑新闻类型时包含新闻列表。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-taxonomies-controller.php:244
 msgid "All capabilities used by the taxonomy."
@@ -1817,7 +1820,7 @@ msgstr "请求提出的范围，用于决定回应包含的字段。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-statuses-controller.php:263
 msgid "Whether posts with this status should be private."
-msgstr "有此状态的文章是否应为私人的。"
+msgstr "有此状态的新闻是否应为私人的。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1384
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2122
@@ -1842,7 +1845,7 @@ msgstr "确保结果集排除指定父ID的评论。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1428
 msgid "Limit result set to comments assigned to specific post IDs."
-msgstr "将结果集限制为关联到指定文章ID的评论。"
+msgstr "将结果集限制为关联到指定新闻ID的评论。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1437
 msgid "Limit result set to comments assigned a specific status. Requires authorization."
@@ -1898,11 +1901,11 @@ msgstr "将结果集限制到指定ID。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2061
 msgid "Limit response to posts published after a given ISO8601 compliant date."
-msgstr "将回应限制在一个给定的ISO8601兼容日期之后发布的文章。"
+msgstr "将回应限制在一个给定的ISO8601兼容日期之后发布的新闻。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2086
 msgid "Limit response to posts published before a given ISO8601 compliant date."
-msgstr "将回应限制在一个给定的ISO8601兼容日期之前发布的文章。"
+msgstr "将回应限制在一个给定的ISO8601兼容日期之前发布的新闻。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1216
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1899
@@ -1934,7 +1937,7 @@ msgstr "对象的父对象ID。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1262
 msgid "The ID of the associated post object."
-msgstr "关联文章对象的ID。"
+msgstr "关联新闻对象的ID。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1268
 msgid "State of the object."
@@ -2017,7 +2020,7 @@ msgstr "不允许的查询参数：%s"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php:462
 msgid "The ID for the associated post of the attachment."
-msgstr "附件所属文章的ID。"
+msgstr "附件所属新闻的ID。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php:492
 #: wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php:692
@@ -2068,7 +2071,7 @@ msgstr "抱歉，您不能在此站点上传媒体。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php:84
 msgid "Sorry, you are not allowed to upload media to this post."
-msgstr "抱歉，您不能给这篇文章上传媒体。"
+msgstr "抱歉，您不能给这篇新闻上传媒体。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php:103
 #: wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php:210
@@ -2121,7 +2124,7 @@ msgstr "垃圾箱中没有变更集。"
 
 #: wp-includes/post.php:1377
 msgid "View Posts"
-msgstr "查看文章"
+msgstr "查看新闻"
 
 #: wp-includes/post.php:1377
 msgid "View Pages"
@@ -2172,7 +2175,7 @@ msgstr "%1$s %2$s，%3$s前（%4$s）"
 
 #: wp-includes/option.php:1853
 msgid "Allow people to post comments on new articles."
-msgstr "允许他人在新文章上发表评论。"
+msgstr "允许他人在新新闻上发表评论。"
 
 #. translators: %s: misc
 #. translators: %s: privacy
@@ -2205,7 +2208,7 @@ msgstr "将表情符号如:-)和:-P转换为图片显示。"
 
 #: wp-includes/option.php:1826
 msgid "Default post format."
-msgstr "默认文章格式。"
+msgstr "默认新闻格式。"
 
 #: wp-includes/option.php:1832
 msgid "Blog pages show at most."
@@ -2213,7 +2216,7 @@ msgstr "最多显示的博客页面数量。"
 
 #: wp-includes/option.php:1843
 msgid "Allow link notifications from other blogs (pingbacks and trackbacks) on new articles."
-msgstr "允许其他博客发送链接通知（pingback和trackback）到新文章。"
+msgstr "允许其他博客发送链接通知（pingback和trackback）到新新闻。"
 
 #: wp-includes/option.php:1780
 msgid "A city in the same timezone as you."
@@ -2309,7 +2312,7 @@ msgstr "抱歉，此评论不能被编辑。"
 
 #: wp-includes/class-wp-customize-nav-menus.php:878
 msgid "Post"
-msgstr "文章"
+msgstr "新闻"
 
 #. translators: %1$s is the post type name and %2$s is the error message.
 #: wp-includes/class-wp-customize-nav-menus.php:883
@@ -2694,7 +2697,7 @@ msgstr "季节性"
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:763
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:808
 msgid "Sorry, you are not allowed to delete this post."
-msgstr "抱歉，您不能删除此文章。"
+msgstr "抱歉，您不能删除此新闻。"
 
 #: wp-includes/class-wp-xmlrpc-server.php:2691
 #: wp-includes/class-wp-xmlrpc-server.php:2888
@@ -2981,7 +2984,7 @@ msgstr "回收站"
 
 #: wp-includes/post.php:1167
 msgid "Unregistering a built-in post type is not allowed"
-msgstr "不允许反注册内建文章类型"
+msgstr "不允许反注册内建新闻类型"
 
 #: wp-includes/rest-api.php:42
 msgid "Routes must be namespaced with plugin or theme name and version."
@@ -3382,7 +3385,7 @@ msgstr "继续阅读%s"
 
 #: wp-mail.php:233
 msgid "Posted title:"
-msgstr "文章标题："
+msgstr "新闻标题："
 
 #. translators: %s: the message ID
 #: wp-mail.php:246
@@ -3568,7 +3571,7 @@ msgstr "页面列表导航"
 
 #: wp-includes/post.php:1393
 msgid "Posts list"
-msgstr "文章列表"
+msgstr "新闻列表"
 
 #: wp-includes/post.php:1393
 msgid "Pages list"
@@ -3576,7 +3579,7 @@ msgstr "页面列表"
 
 #: wp-includes/post.php:1383
 msgid "Post Archives"
-msgstr "文章存档"
+msgstr "新闻存档"
 
 #: wp-includes/post.php:1383
 msgid "Page Archives"
@@ -3584,7 +3587,7 @@ msgstr "页面存档"
 
 #: wp-includes/post.php:1391
 msgid "Filter posts list"
-msgstr "过滤文章列表"
+msgstr "过滤新闻列表"
 
 #: wp-includes/post.php:1391
 msgid "Filter pages list"
@@ -3592,13 +3595,13 @@ msgstr "过滤页面列表"
 
 #: wp-includes/post.php:1392
 msgid "Posts list navigation"
-msgstr "文章列表导航"
+msgstr "新闻列表导航"
 
 #: wp-includes/class-wp-customize-nav-menus.php:171
 #: wp-includes/customize/class-wp-customize-nav-menu-item-setting.php:335
 #: wp-includes/nav-menu.php:747
 msgid "Post Type Archive"
-msgstr "文章类型存档"
+msgstr "新闻类型存档"
 
 #: wp-includes/ms-functions.php:435 wp-includes/ms-functions.php:442
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:1101
@@ -3745,7 +3748,7 @@ msgstr "较早评论"
 #. translators: Post calendar label. 1: Date
 #: wp-includes/general-template.php:2077
 msgid "Posts published on %s"
-msgstr "于%s上发布的文章"
+msgstr "于%s上发布的新闻"
 
 #: wp-includes/embed.php:1014
 msgid "Copy and paste this code into your site to embed"
@@ -3822,7 +3825,7 @@ msgstr "请求的主题不存在。"
 #: wp-includes/capabilities.php:83 wp-includes/capabilities.php:144
 #: wp-includes/capabilities.php:203 wp-includes/capabilities.php:240
 msgid "The post type %1$s is not registered, so it may not be reliable to check the capability \"%2$s\" against a post of that type."
-msgstr "此文章类型%1$s未被注册，所以可能无法可靠地检查该类型文章的“%2$s”能力。"
+msgstr "此新闻类型%1$s未被注册，所以可能无法可靠地检查该类型新闻的“%2$s”能力。"
 
 #. translators: 1: "type => link", 2: "taxonomy => link_category"
 #. translators: 1: caller_get_posts, 2: ignore_sticky_posts
@@ -4279,7 +4282,7 @@ msgstr "Ctrl+字母："
 
 #: wp-includes/class-wp-xmlrpc-server.php:559
 msgid "Allow link notifications from other blogs (pingbacks and trackbacks) on new articles"
-msgstr "允许其他博客发送链接通知（pingback和trackback）到新文章"
+msgstr "允许其他博客发送链接通知（pingback和trackback）到新新闻"
 
 #: wp-includes/customize/class-wp-customize-nav-menu-auto-add-control.php:44
 #: wp-includes/customize/class-wp-customize-nav-menus-panel.php:88
@@ -4319,7 +4322,7 @@ msgstr "自定义 &#9656; %s"
 
 #: wp-includes/class-wp-customize-nav-menus.php:559
 msgid "This panel is used for managing navigation menus for content you have already published on your site. You can create menus and add items for existing content such as pages, posts, categories, tags, formats, or custom links."
-msgstr "这个面板被用来管理您的站点上已发布内容的导航菜单。您可以创建菜单及添加项目到已存在的内容，如页面、文章、分类、标签、格式及自定义链接。"
+msgstr "这个面板被用来管理您的站点上已发布内容的导航菜单。您可以创建菜单及添加项目到已存在的内容，如页面、新闻、分类、标签、格式及自定义链接。"
 
 #: wp-includes/class-wp-customize-nav-menus.php:589
 msgid "Menu Locations"
@@ -4630,7 +4633,7 @@ msgstr "安装成功完成。"
 
 #: wp-includes/post.php:1116 wp-includes/post.php:1117
 msgid "Post type names must be between 1 and 20 characters in length."
-msgstr "文章类型名的长度必须在1至20个字符间。"
+msgstr "新闻类型名的长度必须在1至20个字符间。"
 
 #. translators: 1: comment author, 2: author IP, 3: author domain
 #. translators: 1: Comment author name, 2: comment author's IP, 3: comment
@@ -4751,7 +4754,7 @@ msgstr "%1$s选项已被函数%2$s取代，请改用%3$s选项。"
 
 #: wp-includes/widgets/class-wp-widget-archives.php:91
 msgid "Select Post"
-msgstr "选择文章"
+msgstr "选择新闻"
 
 #: wp-includes/widgets/class-wp-widget-archives.php:88
 msgid "Select Week"
@@ -4877,16 +4880,16 @@ msgstr "可用"
 
 #: wp-includes/link-template.php:2480
 msgid "Older posts"
-msgstr "先前文章"
+msgstr "先前新闻"
 
 #: wp-includes/link-template.php:2481
 msgid "Newer posts"
-msgstr "较新文章"
+msgstr "较新新闻"
 
 #: wp-includes/link-template.php:2482 wp-includes/link-template.php:2536
 #: wp-includes/link-template.php:2580
 msgid "Posts navigation"
-msgstr "文章导航"
+msgstr "新闻导航"
 
 #: wp-includes/media-template.php:438 wp-includes/media-template.php:541
 msgctxt "verb"
@@ -4917,15 +4920,15 @@ msgstr "评论：%s"
 
 #: wp-includes/pluggable.php:1470
 msgid "You can see all trackbacks on this post here:"
-msgstr "您可在此看到该文章的所有trackback："
+msgstr "您可在此看到该新闻的所有trackback："
 
 #: wp-includes/pluggable.php:1481
 msgid "You can see all pingbacks on this post here:"
-msgstr "您可在此看到该文章的所有pingback："
+msgstr "您可在此看到该新闻的所有pingback："
 
 #: wp-includes/pluggable.php:1492
 msgid "You can see all comments on this post here:"
-msgstr "您可以在此看到该文章的所有评论："
+msgstr "您可以在此看到该新闻的所有评论："
 
 #: wp-includes/script-loader.php:991
 msgid "Previous"
@@ -5127,7 +5130,7 @@ msgstr "添加"
 #: wp-includes/post.php:23
 msgctxt "add new from admin bar"
 msgid "Post"
-msgstr "文章"
+msgstr "新闻"
 
 #: wp-includes/post.php:43
 msgctxt "add new from admin bar"
@@ -6237,7 +6240,7 @@ msgstr "提供的图片质量超出范围[1,100]。"
 
 #: wp-includes/widgets/class-wp-widget-pages.php:28
 msgid "A list of your site&#8217;s Pages."
-msgstr "您站点的文章列表。"
+msgstr "您站点的新闻列表。"
 
 #: wp-includes/widgets/class-wp-widget-search.php:28
 msgid "A search form for your site."
@@ -6245,7 +6248,7 @@ msgstr "您站点的搜索框。"
 
 #: wp-includes/widgets/class-wp-widget-archives.php:28
 msgid "A monthly archive of your site&#8217;s Posts."
-msgstr "您站点文章的月度存档。"
+msgstr "您站点新闻的月度存档。"
 
 #: wp-includes/widgets/class-wp-widget-meta.php:30
 msgid "Login, RSS, &amp; WordPress.org links."
@@ -6253,7 +6256,7 @@ msgstr "登录、RSS和WordPress.org的链接。"
 
 #: wp-includes/widgets/class-wp-widget-calendar.php:38
 msgid "A calendar of your site&#8217;s Posts."
-msgstr "您站点的文章日程表。"
+msgstr "您站点的新闻日程表。"
 
 #: wp-includes/widgets/class-wp-widget-categories.php:28
 msgid "A list or dropdown of categories."
@@ -6261,7 +6264,7 @@ msgstr "分类目录的列表或下拉菜单。"
 
 #: wp-includes/widgets/class-wp-widget-recent-posts.php:28
 msgid "Your site&#8217;s most recent Posts."
-msgstr "您站点近期的数篇文章。"
+msgstr "您站点近期的数篇新闻。"
 
 #: wp-includes/widgets/class-wp-widget-recent-comments.php:28
 msgid "Your site&#8217;s most recent comments."
@@ -6338,7 +6341,7 @@ msgstr "错误：这不是有效的feed模板。"
 
 #: wp-includes/post-template.php:1602
 msgid "This content is password protected. To view it please enter your password below:"
-msgstr "这是一篇受密码保护的文章，您需要提供访问密码："
+msgstr "这是一篇受密码保护的新闻，您需要提供访问密码："
 
 #. translators: This is a comma-separated list of very common words that should
 #. be excluded from a search, like a, an, and the. These are usually called
@@ -6671,7 +6674,7 @@ msgstr "所有多媒体项目"
 
 #: wp-includes/post.php:1386
 msgid "Uploaded to this post"
-msgstr "上传到本文章的"
+msgstr "上传到本新闻的"
 
 #: wp-includes/post.php:2288
 #: wp-includes/widgets/class-wp-widget-media-audio.php:26
@@ -6898,7 +6901,7 @@ msgstr "创建新相册"
 
 #: wp-includes/post.php:1385
 msgid "Insert into post"
-msgstr "插入至文章"
+msgstr "插入至新闻"
 
 #: wp-includes/media.php:3554
 msgid "Add to gallery"
@@ -6932,7 +6935,7 @@ msgstr "用户名或密码不正确。"
 
 #: wp-includes/class-wp-xmlrpc-server.php:1598
 msgid "There is a revision of this post that is more recent."
-msgstr "数据库中存在比文章当前状态还新的版本。"
+msgstr "数据库中存在比新闻当前状态还新的版本。"
 
 #: wp-includes/class-wp-xmlrpc-server.php:2655
 msgid "Sorry, the user cannot be updated."
@@ -6943,7 +6946,7 @@ msgstr "抱歉，不能更新此用户的信息。"
 #: wp-includes/class-wp-xmlrpc-server.php:4556
 #: wp-includes/class-wp-xmlrpc-server.php:5661
 msgid "Sorry, you are not allowed to edit posts."
-msgstr "抱歉，您没有编辑这篇文章的权限。"
+msgstr "抱歉，您没有编辑这篇新闻的权限。"
 
 #: wp-includes/class-wp-xmlrpc-server.php:4263
 #: wp-includes/class-wp-xmlrpc-server.php:4333
@@ -6952,7 +6955,7 @@ msgstr "抱歉，修订版本记录功能已关闭。"
 
 #: wp-includes/widgets/class-wp-widget-recent-posts.php:139
 msgid "Display post date?"
-msgstr "显示文章日期？"
+msgstr "显示新闻日期？"
 
 #: wp-includes/media-template.php:908
 #: wp-includes/widgets/class-wp-widget-media-image.php:92
@@ -6979,7 +6982,7 @@ msgstr "或"
 
 #: wp-includes/class-wp-xmlrpc-server.php:4957
 msgid "Sorry, you are not allowed to create pages as this user."
-msgstr "抱歉，您不能作为此用户创建文章。"
+msgstr "抱歉，您不能作为此用户创建新闻。"
 
 #: wp-includes/class-wp-admin-bar.php:418
 msgid "Skip to toolbar"
@@ -7027,7 +7030,7 @@ msgstr "该XML-RPC方法需要更多参数。"
 
 #: wp-includes/class-wp-xmlrpc-server.php:1270
 msgid "Sorry, you cannot stick a private post."
-msgstr "抱歉，您不能置顶私密的文章。"
+msgstr "抱歉，您不能置顶私密的新闻。"
 
 #: wp-includes/class-wp-xmlrpc-server.php:5405
 msgid "Sorry, you are not allowed to publish this page."
@@ -7040,7 +7043,7 @@ msgstr "顶部图像"
 
 #: wp-includes/class-wp-xmlrpc-server.php:472
 msgid "Post Thumbnail"
-msgstr "文章缩略图"
+msgstr "新闻缩略图"
 
 #: wp-includes/script-loader.php:97
 msgid "text direction"
@@ -7107,7 +7110,7 @@ msgstr "首页"
 
 #: wp-includes/class-wp-customize-manager.php:4203
 msgid "Posts page"
-msgstr "文章页"
+msgstr "新闻页"
 
 #: wp-includes/class-wp-customize-manager.php:3871
 #: wp-includes/class-wp-customize-widgets.php:786
@@ -7252,7 +7255,7 @@ msgstr "首页显示"
 
 #: wp-includes/class-wp-customize-manager.php:4180
 msgid "Your latest posts"
-msgstr "您的最新文章"
+msgstr "您的最新新闻"
 
 #: wp-includes/class-wp-customize-control.php:578
 #: wp-includes/class-wp-customize-nav-menus.php:595
@@ -7268,7 +7271,7 @@ msgstr "自定义：%s"
 #: wp-includes/class-wp-xmlrpc-server.php:1341
 #: wp-includes/class-wp-xmlrpc-server.php:5242
 msgid "The post type may not be changed."
-msgstr "不可修改文章类型。"
+msgstr "不可修改新闻类型。"
 
 #: wp-includes/class-wp-xmlrpc-server.php:447
 msgid "Image default link type"
@@ -7295,7 +7298,7 @@ msgstr "图像默认对齐方式"
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:404
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:641
 msgid "Sorry, you are not allowed to edit this post."
-msgstr "抱歉，您没有修改这篇文章的权限。"
+msgstr "抱歉，您没有修改这篇新闻的权限。"
 
 #: wp-includes/admin-bar.php:345
 msgid "Edit Site"
@@ -7310,7 +7313,7 @@ msgstr "、"
 #: wp-includes/class-wp-xmlrpc-server.php:1444
 #: wp-includes/class-wp-xmlrpc-server.php:1468
 msgid "Sorry, one of the given taxonomies is not supported by the post type."
-msgstr "抱歉，文章类型不支持您的分类法。"
+msgstr "抱歉，新闻类型不支持您的分类法。"
 
 #: wp-includes/class-wp-xmlrpc-server.php:1447
 #: wp-includes/class-wp-xmlrpc-server.php:1471
@@ -7326,7 +7329,7 @@ msgstr "抱歉，您无权向某些分类法添加项目。"
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:839
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:322
 msgid "The post cannot be deleted."
-msgstr "不能删除这篇文章。"
+msgstr "不能删除这篇新闻。"
 
 #: wp-includes/class-wp-xmlrpc-server.php:1377
 #: wp-includes/class-wp-xmlrpc-server.php:4964
@@ -7341,18 +7344,18 @@ msgstr "层级分类法项名不明确，请指定项目的ID。"
 #: wp-includes/class-wp-xmlrpc-server.php:1353
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1123
 msgid "Sorry, you are not allowed to create private posts in this post type."
-msgstr "抱歉，您不能在此文章类型中创建私人文章。"
+msgstr "抱歉，您不能在此新闻类型中创建私人新闻。"
 
 #: wp-includes/class-wp-xmlrpc-server.php:1367
 msgid "Sorry, you are not allowed to create password protected posts in this post type."
-msgstr "抱歉，您不能在此文章类型中创建密码保护的文章。"
+msgstr "抱歉，您不能在此新闻类型中创建密码保护的新闻。"
 
 #: wp-includes/class-wp-xmlrpc-server.php:1372
 #: wp-includes/class-wp-xmlrpc-server.php:4953
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:501
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:509
 msgid "Sorry, you are not allowed to create posts as this user."
-msgstr "抱歉，您不能作为此用户创建文章。"
+msgstr "抱歉，您不能作为此用户创建新闻。"
 
 #: wp-includes/class-wp-xmlrpc-server.php:1821
 #: wp-includes/class-wp-xmlrpc-server.php:4143
@@ -7361,7 +7364,7 @@ msgstr "抱歉，您不能作为此用户创建文章。"
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-types-controller.php:136
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:139
 msgid "Sorry, you are not allowed to edit posts in this post type."
-msgstr "抱歉，您不能在此文章类型中编辑文章。"
+msgstr "抱歉，您不能在此新闻类型中编辑新闻。"
 
 #: wp-includes/class-wp-xmlrpc-server.php:3160
 msgid "Sorry, you are not allowed to delete a category."
@@ -7665,7 +7668,7 @@ msgstr "所有页面"
 
 #: wp-includes/post.php:1382
 msgid "All Posts"
-msgstr "所有文章"
+msgstr "所有新闻"
 
 #: wp-includes/class-walker-comment.php:244
 msgid "Pingback:"
@@ -7673,7 +7676,7 @@ msgstr "Pingback："
 
 #: wp-includes/link-template.php:2414
 msgid "Post navigation"
-msgstr "文章导航"
+msgstr "新闻导航"
 
 #: wp-includes/link-template.php:2823 wp-includes/link-template.php:2871
 msgid "Comments navigation"
@@ -7771,7 +7774,7 @@ msgstr "音频"
 #: wp-includes/class-wp-xmlrpc-server.php:4924
 #: wp-includes/class-wp-xmlrpc-server.php:5248
 msgid "Invalid post format."
-msgstr "无效的文章格式。"
+msgstr "无效的新闻格式。"
 
 #: wp-includes/class-wp-editor.php:1721
 msgid "No search term specified. Showing recent items."
@@ -7783,7 +7786,7 @@ msgstr "卸载钩子只能注册静态类或静态函数。"
 
 #: wp-includes/post.php:2884
 msgid "Passing an integer number of posts is deprecated. Pass an array of arguments instead."
-msgstr "不再建议将文章数作为参数传入。请改传数组。"
+msgstr "不再建议将新闻数作为参数传入。请改传数组。"
 
 #: wp-includes/post-formats.php:93
 msgctxt "Post format"
@@ -7831,7 +7834,7 @@ msgstr "未找到页面。"
 
 #: wp-includes/post.php:1380
 msgid "No posts found in Trash."
-msgstr "回收站中没有文章。"
+msgstr "回收站中没有新闻。"
 
 #: wp-includes/post.php:1380
 msgid "No pages found in Trash."
@@ -7943,7 +7946,7 @@ msgstr "编辑我的个人资料"
 
 #: wp-includes/post-formats.php:68
 msgid "Invalid post."
-msgstr "无效文章。"
+msgstr "无效新闻。"
 
 #: wp-includes/class-wp-theme.php:806
 msgid "Blavatar"
@@ -7994,7 +7997,7 @@ msgstr "自定义菜单"
 
 #: wp-includes/theme-compat/comments.php:24
 msgid "This post is password protected. Enter the password to view comments."
-msgstr "本文章受密码保护。要查看评论，请输入密码。"
+msgstr "本新闻受密码保护。要查看评论，请输入密码。"
 
 #. translators: 1: blog name, 2: WordPress
 #: wp-includes/theme-compat/footer.php:26
@@ -8105,15 +8108,15 @@ msgstr "搜索页面"
 #: wp-includes/post.php:1370
 msgctxt "post type general name"
 msgid "Posts"
-msgstr "文章"
+msgstr "新闻"
 
 #: wp-includes/post.php:1373
 msgid "Add New Post"
-msgstr "撰写新文章"
+msgstr "撰写新新闻"
 
 #: wp-includes/post.php:1378
 msgid "Search Posts"
-msgstr "搜索文章"
+msgstr "搜索新闻"
 
 #: wp-includes/post.php:1381
 msgid "Parent Page:"
@@ -8126,7 +8129,7 @@ msgstr "创建页面"
 #: wp-includes/post.php:1371
 msgctxt "post type singular name"
 msgid "Post"
-msgstr "文章"
+msgstr "新闻"
 
 #: wp-includes/post.php:1371
 msgctxt "post type singular name"
@@ -8169,13 +8172,13 @@ msgstr "抱歉，您无权在本站点发布页面。"
 #: wp-includes/class-wp-xmlrpc-server.php:4911
 #: wp-includes/class-wp-xmlrpc-server.php:4916
 msgid "Sorry, you are not allowed to publish posts on this site."
-msgstr "抱歉，您无权在本站点发布文章。"
+msgstr "抱歉，您无权在本站点发布新闻。"
 
 #: wp-includes/class-wp-xmlrpc-server.php:3207
 #: wp-includes/class-wp-xmlrpc-server.php:5774
 #: wp-includes/class-wp-xmlrpc-server.php:5996
 msgid "Sorry, you must be able to edit posts on this site in order to view categories."
-msgstr "抱歉，您必须有在本站点编辑文章的权限，才能浏览分类目录。"
+msgstr "抱歉，您必须有在本站点编辑新闻的权限，才能浏览分类目录。"
 
 #: wp-includes/class-wp-xmlrpc-server.php:1344
 #: wp-includes/class-wp-xmlrpc-server.php:4650
@@ -8192,7 +8195,7 @@ msgstr "站点副标题"
 
 #: wp-includes/class-wp-xmlrpc-server.php:3031
 msgid "Sorry, you must be able to edit posts on this site in order to view tags."
-msgstr "抱歉，您必须有编辑本站点文章的权限，才能浏览标签。"
+msgstr "抱歉，您必须有编辑本站点新闻的权限，才能浏览标签。"
 
 #: wp-includes/ms-functions.php:596
 msgid "Sorry, you may not use that site name."
@@ -8488,16 +8491,16 @@ msgstr "如果您是本网络的管理员，请检查MySQL服务是否正常运�
 #. translators: 1: Post title
 #: wp-includes/pluggable.php:1465
 msgid "New trackback on your post \"%s\""
-msgstr "您的文章《%s》有新trackback回应"
+msgstr "您的新闻《%s》有新trackback回应"
 
 #. translators: 1: Post title
 #: wp-includes/pluggable.php:1476
 msgid "New pingback on your post \"%s\""
-msgstr "您的文章《%s》有新pingback回应"
+msgstr "您的新闻《%s》有新pingback回应"
 
 #: wp-includes/pluggable.php:1486
 msgid "New comment on your post \"%s\""
-msgstr "您的文章《%s》有新评论"
+msgstr "您的新闻《%s》有新评论"
 
 #. translators: 1: Post title
 #: wp-includes/pluggable.php:1625
@@ -8568,7 +8571,7 @@ msgstr "抱歉，新建分类目录失败。"
 #: wp-includes/class-wp-xmlrpc-server.php:5628
 #: wp-includes/class-wp-xmlrpc-server.php:6162
 msgid "Sorry, no such post."
-msgstr "抱歉，无此文章。"
+msgstr "抱歉，无此新闻。"
 
 #: wp-includes/class-wp-xmlrpc-server.php:2831
 msgid "Failed to delete the page."
@@ -8586,7 +8589,7 @@ msgstr "评论状态无效。"
 #: wp-includes/class-wp-xmlrpc-server.php:4564
 #: wp-includes/class-wp-xmlrpc-server.php:5946
 msgid "Either there are no posts, or something went wrong."
-msgstr "没有文章，或发生了其它异常。"
+msgstr "没有新闻，或发生了其它异常。"
 
 #: wp-includes/class-wp-xmlrpc-server.php:6274
 msgid "Is there no link to us?"
@@ -8616,7 +8619,7 @@ msgstr "是否没有我们的链接？"
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:375
 #: wp-includes/revision.php:292
 msgid "Invalid post ID."
-msgstr "文章ID无效。"
+msgstr "新闻ID无效。"
 
 #: wp-includes/class-wp-xmlrpc-server.php:3254
 #: wp-includes/class-wp-xmlrpc-server.php:3386
@@ -8683,12 +8686,12 @@ msgstr "查询%2$s时，WordPress数据库发生%1$s错误"
 #: wp-includes/class-wp-xmlrpc-server.php:5302 wp-includes/post.php:1160
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-types-controller.php:128
 msgid "Invalid post type."
-msgstr "无效的文章类型。"
+msgstr "无效的新闻类型。"
 
 #: wp-includes/class-wp-xmlrpc-server.php:1358
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1129
 msgid "Sorry, you are not allowed to publish posts in this post type."
-msgstr "抱歉，您不能在此文章类型中发布文章。"
+msgstr "抱歉，您不能在此新闻类型中发布新闻。"
 
 #: wp-includes/class-wp-xmlrpc-server.php:3554
 msgid "You must be registered to comment."
@@ -8704,7 +8707,7 @@ msgstr "需要有效的电子邮件地址。"
 
 #: wp-includes/class-wp-xmlrpc-server.php:3713
 msgid "Sorry, you are not allowed access to details of this post."
-msgstr "抱歉，您不能访问此文章的详情。"
+msgstr "抱歉，您不能访问此新闻的详情。"
 
 #: wp-includes/class-wp-xmlrpc-server.php:3911
 msgid "Sorry, you are not allowed to update options."
@@ -8714,11 +8717,11 @@ msgstr "抱歉，您不能更新选项。"
 #: wp-includes/class-wp-xmlrpc-server.php:5407
 #: wp-includes/class-wp-xmlrpc-server.php:6217
 msgid "Sorry, you are not allowed to publish this post."
-msgstr "抱歉，您不能发布此文章。"
+msgstr "抱歉，您不能发布此新闻。"
 
 #: wp-includes/class-wp-xmlrpc-server.php:5293
 msgid "Sorry, you are not allowed to change the post author as this user."
-msgstr "抱歉，您不能作为此用户修改文章作者。"
+msgstr "抱歉，您不能作为此用户修改新闻作者。"
 
 #: wp-includes/class-wp-xmlrpc-server.php:5298
 msgid "Sorry, you are not allowed to change the page author as this user."
@@ -8731,7 +8734,7 @@ msgstr "无法写入文件%1$s（%2$s）。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:645
 msgid "Sorry, you are not allowed to update posts as this user."
-msgstr "抱歉，您不能作为此用户更新文章。"
+msgstr "抱歉，您不能作为此用户更新新闻。"
 
 #: wp-includes/class-wp-editor.php:1083
 msgid "General"
@@ -9152,7 +9155,7 @@ msgstr "密码保护：%s"
 
 #: wp-includes/post-template.php:385
 msgid "There is no excerpt because this is a protected post."
-msgstr "无法提供摘要。这是一篇受保护的文章。"
+msgstr "无法提供摘要。这是一篇受保护的新闻。"
 
 #: wp-includes/comment.php:241
 msgid "Unapproved"
@@ -9228,7 +9231,7 @@ msgstr "内容，标题和摘要为空。"
 
 #: wp-includes/post.php:3303
 msgid "Could not update post in the database"
-msgstr "无法在数据库中更新文章"
+msgstr "无法在数据库中更新新闻"
 
 #: wp-includes/revision.php:295
 msgid "Cannot create a revision of a revision"
@@ -9236,11 +9239,11 @@ msgstr "无法从一个修订版本上创建新的修订"
 
 #: wp-includes/link-template.php:1779 wp-includes/link-template.php:2021
 msgid "Previous Post"
-msgstr "上一篇文章"
+msgstr "上一篇新闻"
 
 #: wp-includes/link-template.php:1779 wp-includes/link-template.php:2021
 msgid "Next Post"
-msgstr "下一篇文章"
+msgstr "下一篇新闻"
 
 #: wp-includes/link-template.php:2691
 msgid "Newer Comments &raquo;"
@@ -9420,12 +9423,12 @@ msgstr "没有发现新邮件。"
 #: wp-includes/widgets/class-wp-widget-recent-posts.php:31
 #: wp-includes/widgets/class-wp-widget-recent-posts.php:50
 msgid "Recent Posts"
-msgstr "近期文章"
+msgstr "近期新闻"
 
 #: wp-includes/widgets/class-wp-widget-archives.php:161
 #: wp-includes/widgets/class-wp-widget-categories.php:167
 msgid "Show post counts"
-msgstr "显示文章数目"
+msgstr "显示新闻数目"
 
 #. translators: %s: POP3 error
 #: wp-mail.php:238
@@ -9461,7 +9464,7 @@ msgstr "重定向过多。"
 
 #: wp-includes/widgets/class-wp-widget-recent-posts.php:135
 msgid "Number of posts to show:"
-msgstr "显示文章数："
+msgstr "显示新闻数："
 
 #: wp-includes/widgets.php:1267
 msgid "Untitled"
@@ -9474,7 +9477,7 @@ msgstr "《%s》的评论"
 
 #: wp-includes/post.php:3318
 msgid "Could not insert post into the database"
-msgstr "无法在数据库中插入文章"
+msgstr "无法在数据库中插入新闻"
 
 #: wp-includes/class-wp-theme.php:248
 msgid "Stylesheet is missing."
@@ -9618,7 +9621,7 @@ msgstr "保持长宽比"
 
 #: wp-includes/deprecated.php:2671
 msgid "Last Post"
-msgstr "最新文章"
+msgstr "最新新闻"
 
 #: wp-includes/link-template.php:2735
 msgid "&laquo; Older Comments"
@@ -9839,7 +9842,7 @@ msgstr "页面ID，多个ID请用英文逗号（,）或中文顿号（、）隔�
 
 #: wp-includes/widgets/class-wp-widget-meta.php:58
 msgid "Entries <abbr title=\"Really Simple Syndication\">RSS</abbr>"
-msgstr "文章<abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr "新闻<abbr title=\"Really Simple Syndication\">RSS</abbr>"
 
 #. translators: comments widget: 1: comment author, 2: post link
 #: wp-includes/widgets/class-wp-widget-recent-comments.php:116
@@ -9977,7 +9980,7 @@ msgstr "%1$s %2$s %3$s标签Feed"
 #. translators: 1: blog name, 2: separator(raquo), 3: author name
 #: wp-includes/general-template.php:2673
 msgid "%1$s %2$s Posts by %3$s Feed"
-msgstr "%1$s %2$s 由%3$s发表的文章Feed"
+msgstr "%1$s %2$s 由%3$s发表的新闻Feed"
 
 #. translators: 1: blog name, 2: separator(raquo), 3: search phrase
 #: wp-includes/general-template.php:2675
@@ -10413,11 +10416,11 @@ msgstr "强度评估"
 
 #: wp-includes/deprecated.php:2671
 msgid "First Post"
-msgstr "首篇文章"
+msgstr "首篇新闻"
 
 #: wp-includes/class-wp-xmlrpc-server.php:554
 msgid "Allow people to post comments on new articles"
-msgstr "允许他人在新文章上发表评论"
+msgstr "允许他人在新新闻上发表评论"
 
 #: wp-includes/comment-template.php:2202
 msgid "Website"
@@ -10425,7 +10428,7 @@ msgstr "站点"
 
 #: wp-includes/class-wp-xmlrpc-server.php:4748
 msgid "For some strange yet very annoying reason, this post could not be edited."
-msgstr "由于某个奇怪的原因，无法编辑这篇文章。"
+msgstr "由于某个奇怪的原因，无法编辑这篇新闻。"
 
 #: wp-includes/class-wp-xmlrpc-server.php:3576 wp-includes/comment.php:2983
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:473
@@ -10478,7 +10481,7 @@ msgstr "由%s发布"
 
 #: wp-includes/class-walker-category.php:137
 msgid "Feed for all posts filed under %s"
-msgstr "%s下所有文章的feed"
+msgstr "%s下所有新闻的feed"
 
 #: wp-includes/comment-template.php:1873 wp-includes/comment-template.php:2244
 msgid "Leave a Reply to %s"
@@ -10849,15 +10852,15 @@ msgstr "近期评论"
 #: wp-includes/post.php:1372
 msgctxt "post"
 msgid "Add New"
-msgstr "写文章"
+msgstr "写新闻"
 
 #: wp-includes/post.php:1374
 msgid "Edit Post"
-msgstr "编辑文章"
+msgstr "编辑新闻"
 
 #: wp-includes/admin-bar.php:541 wp-includes/post.php:1375
 msgid "New Post"
-msgstr "写文章"
+msgstr "写新闻"
 
 #: wp-includes/post.php:1375
 msgid "New Page"
@@ -10865,7 +10868,7 @@ msgstr "新建页面"
 
 #: wp-includes/post.php:1376
 msgid "View Post"
-msgstr "查看文章"
+msgstr "查看新闻"
 
 #: wp-includes/class-wp-editor.php:1043
 msgid "Undo"
@@ -10972,7 +10975,7 @@ msgstr "不再显示"
 #: wp-includes/widgets/class-wp-widget-archives.php:31
 #: wp-includes/widgets/class-wp-widget-archives.php:49
 msgid "Archives"
-msgstr "文章归档"
+msgstr "新闻归档"
 
 #: wp-includes/widgets/class-wp-widget-rss.php:74
 msgid "Unknown Feed"
@@ -11035,7 +11038,7 @@ msgstr "等待复审"
 
 #: wp-includes/post.php:1379
 msgid "No posts found."
-msgstr "未找到文章。"
+msgstr "未找到新闻。"
 
 #: wp-includes/admin-bar.php:286 wp-includes/class-wp-admin-bar.php:426
 msgid "Log Out"
