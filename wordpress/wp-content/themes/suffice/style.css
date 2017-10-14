@@ -7297,3 +7297,68 @@ body.admin-bar {
 .updated:not(.published) {
 	display: none;
 }
+
+/** video reset start **/
+.intro-video {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 1001;
+}
+
+.intro-video .mejs-container {
+	width: 100% !important;
+	height: 100% !important;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 1000;
+	background: #000;
+}
+
+.logo-video {
+	display: inline-block;
+	position: fixed;
+	top: 30px;
+	left: 30px;
+	z-index: 1001;
+	width: 100px;
+	height: 100px;
+	background-image: url('assets/img/extra/logo.png');
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	border-top-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+.home-btn-video {
+	display: inline-block;
+	position: fixed;
+	bottom: 80px;
+	right: 100px;
+	z-index: 1001;
+	width: 160px;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	background-color: rgba(220,144,13,0.8);
+	border-radius: 45px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+}
+.home-btn-video:hover {
+	background-color: rgba(220,144,13,1);
+}
+
+.header-top {
+	display: none;
+}
+/** video reset end **/

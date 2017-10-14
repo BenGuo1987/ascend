@@ -63,10 +63,10 @@ function suffice_add_breadcrumb() {
 		// hide on bbpress.
 		if ( function_exists( 'is_bbpress' ) ) {
 			if ( ! is_bbpress() ) {
-				suffice_breadcrumbs();
+				// suffice_breadcrumbs();
 			}
 		} else {
-			suffice_breadcrumbs();
+			// suffice_breadcrumbs();
 		}
 	}
 }
