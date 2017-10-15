@@ -56,21 +56,6 @@
 <div class="suffice-body-dimmer">
 </div>
 
-<?php
-/* If woocomemrce is active and show cart icon is active place mini cart */
-if ( true == suffice_get_option( 'suffice_show_cart', true ) && suffice_is_woocommerce_active() ) :
-	get_template_part( 'template-parts/woocommerce/mini', 'cart' );
-endif;
-
-/* If show preloader is active, show preloader */
-if ( true == suffice_get_option( 'suffice_show_preloader', false ) ) :
-	get_template_part( 'template-parts/preloader/preloader', 'main' );
-endif;
-
-// Show mobile menu.
-get_template_part( 'template-parts/footer/navigation', 'mobile' );
-?>
-
 <?php wp_footer(); ?>
 
 </body>

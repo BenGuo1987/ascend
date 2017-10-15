@@ -7362,3 +7362,99 @@ body.admin-bar {
 	display: none;
 }
 /** video reset end **/
+
+/** header **/
+.site-header {
+	margin-bottom: 0!important;
+}
+.header-sticky-desktop.headroom--not-top .header-inner-wrapper .header-bottom{
+	background: rgba(0,0,0,0.2);
+}
+
+.header-inner-wrapper .header-bottom {
+	background-color: transparent;
+}
+.header-inner-wrapper .container {
+	width: 100%!important;
+}
+
+.site-identity-container .logo-container {
+	width: 200px;
+	height: 100px;
+	border-top-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	background-color: rgba(30,30,30,0.8);
+}
+.logo-container .logo-img {
+	float: left;
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	margin-left: -1px;
+	background-image: url('assets/img/extra/logo.png');
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	border-top-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+
+.site-identity-container {
+	padding-top: 15px;
+	padding-left: 30px;
+}
+.site-identity-container .lang-container {
+	float: left;
+	width: 100px;
+	height: 100px;
+	text-align: right;
+	padding-right:10px;
+}
+.site-identity-container .lang-container p{
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 0;
+	color: #999;
+	text-transform: uppercase;
+	margin-top: 25px;
+	margin-bottom: 15px;
+}
+.site-identity-container .lang-container a{
+	display: block;
+	font-size: 12px;
+	color: #999;
+	margin-bottom: 5px;
+}
+
+.menu-primary {
+	margin-top: 45px;
+}
+
+.navigation-default .menu-primary ul li:hover > a,
+.navigation-default .menu-primary > ul > li > a {
+	padding: 0;
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+
+}
+
+.navigation-default .menu-primary > ul > li.current_page_item > a{
+	color: #333;
+	width: 100px;
+	height: 40px;
+	background: #fff;
+	border-radius: 40px;
+}
+.navigation-default .menu-primary ul li:hover > a:before,
+.navigation-default .menu-primary > ul > li > a::before,
+.navigation-default .menu-primary > ul > li.current_page_item > a:before {
+	background: transparent;
+	height: 0;
+}
+/** header **/
