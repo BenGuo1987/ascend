@@ -25,11 +25,69 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="footer-top">
 			<div class="container">
-				<?php
-				if ( true == suffice_get_option( 'suffice_show_footer_widget', true ) ) {
-					get_sidebar( 'footer' );
-				}
-				?>
+
+				<div class="useful-tools clearfix">
+					<div class="icon-box icon-box-center icon-box-hexagon">
+						<div class="icon-box-icon" >
+							<div class="icon-box-icon-container">
+								<div class="icon-box-inner-icon">
+									<i class="fa fa-code"></i>
+								</div>
+							</div>
+						</div>
+						<div class="icon-box-description">
+							<h5 class="icon-box-title"><?php echo(__('Exchange Rate', 'default')) ?></h5>
+						</div>
+					</div>
+					<div class="icon-box icon-box-center icon-box-hexagon">
+						<div class="icon-box-icon" >
+							<div class="icon-box-icon-container">
+								<div class="icon-box-inner-icon">
+									<i class="fa fa-code"></i>
+								</div>
+							</div>
+						</div>
+						<div class="icon-box-description">
+							<h5 class="icon-box-title"><?php echo(__('Stamp Duty', 'default')) ?></h5>
+						</div>
+					</div>
+					<div class="icon-box icon-box-center icon-box-hexagon">
+						<div class="icon-box-icon" >
+							<div class="icon-box-icon-container">
+								<div class="icon-box-inner-icon">
+									<i class="fa fa-code"></i>
+								</div>
+							</div>
+						</div>
+						<div class="icon-box-description">
+							<h5 class="icon-box-title"><?php echo(__('Home Loan', 'default')) ?></h5>
+						</div>
+					</div>
+					<div class="icon-box icon-box-center icon-box-hexagon">
+						<div class="icon-box-icon" >
+							<div class="icon-box-icon-container">
+								<div class="icon-box-inner-icon">
+									<i class="fa fa-code"></i>
+								</div>
+							</div>
+						</div>
+						<div class="icon-box-description">
+							<h5 class="icon-box-title"><?php echo(__('Australian School', 'default')) ?></h5>
+						</div>
+					</div>
+					<div class="icon-box icon-box-center icon-box-hexagon">
+						<div class="icon-box-icon" >
+							<div class="icon-box-icon-container">
+								<div class="icon-box-inner-icon">
+									<i class="fa fa-code"></i>
+								</div>
+							</div>
+						</div>
+						<div class="icon-box-description">
+							<h5 class="icon-box-title"><?php echo(__('Immigration Policy', 'default')) ?></h5>
+						</div>
+					</div>
+				</div>
 			</div> <!-- end container -->
 		</div> <!-- end footer-top -->
 
