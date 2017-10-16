@@ -161,6 +161,7 @@
 /** footer **/
 .site-footer .container {
     padding-top: 85px;
+    padding-bottom: 35px;
     width: 80%!important;
 }
 .useful-tools {
@@ -182,6 +183,89 @@
     text-transform: capitalize;
     color: #f9f9f9;
     opacity: 0.2;
+}
+.fa-tool-icon {
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+    margin-top: 14px;
+    background-image: url('../img/extra/ex_rate.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+.fa-tool-icon.ex-rate {
+    background-image: url('../img/extra/ex_rate.png');
+}
+.fa-tool-icon.stamp-duty {
+    height: 33px;
+    background-image: url('../img/extra/stamp_duty.png');
+}
+.fa-tool-icon.home-loan {
+    background-image: url('../img/extra/home_loan.png');
+}
+.fa-tool-icon.au-school {
+    background-image: url('../img/extra/au_school.png');
+}
+.fa-tool-icon.im-policy {
+    background-image: url('../img/extra/im_policy.png');
+}
+
+.footer-top .contact-us {
+    width: 100%;
+    padding-top: 90px;
+}
+.footer-top .contact-us  .online-contact-btn {
+    width: 240px;
+    height: 60px;
+    background-color: #337D75;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 60px;
+    color: #fff;
+    font-size: 16px;
+    margin-left: 200px;
+    margin-top: 60px;
+    cursor: pointer;
+}
+
+.footer-top .contact-us  .online-contact-btn:hover {
+    opacity: 0.7;
+}
+.footer-top .contact-us h2 {
+    line-height: 0;
+    color: #fff;
+    margin-bottom: 40px;
+}
+.footer-top .contact-us .contact-us-content {
+    color: #999;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.footer-top .contact-us .contact-type {
+    color: #fac014;
+    font-size: 20px;
+    line-height: 10px;
+}
+
+.footer-top .copy-info {
+    padding-top: 60px;
+}
+.footer-top .copy-info .copy-right{
+    color: #f9f9f9;
+    font-size: 16px;
+}
+
+ul.social-list {
+    list-style: none;
+}
+.social-list li {
+    display: inline-block;
+    margin-left: 10px;
+}
+.social-list li a {
+    color: #575C77;
 }
 
 /** footer **/

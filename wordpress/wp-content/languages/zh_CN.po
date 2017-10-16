@@ -11070,3 +11070,28 @@ msgstr "您的帐户现已激活！"
 #: wp-activate.php:123
 msgid "An error occurred during the activation"
 msgstr "激活过程中发生了错误"
+
+#: ascend footer
+msgid "Exchange Rate"
+msgstr "汇率计算"
+
+msgid "Stamp Duty"
+msgstr "印花税计算"
+
+msgid "Home Loan"
+msgstr "贷款计算"
+
+msgid "Australian School"
+msgstr "澳洲学校"
+
+msgid "Immigration Policy"
+msgstr "移民政策"
+
+msgid "Contact Us"
+msgstr "联系我们"
+
+msgid "Online Contact"
+msgstr "在线咨询"
+
+msgid "All Rights Reserved Ascend International Property Group"
+msgstr "本网站版权及内容解释权归澳昇国际地产集团"

@@ -31,7 +31,7 @@
 						<div class="icon-box-icon" >
 							<div class="icon-box-icon-container">
 								<div class="icon-box-inner-icon">
-									<i class="fa fa-code"></i>
+									<div class="fa-tool-icon ex-rate"></div>
 								</div>
 							</div>
 						</div>
@@ -43,7 +43,7 @@
 						<div class="icon-box-icon" >
 							<div class="icon-box-icon-container">
 								<div class="icon-box-inner-icon">
-									<i class="fa fa-code"></i>
+									<div class="fa-tool-icon stamp-duty"></div>
 								</div>
 							</div>
 						</div>
@@ -55,7 +55,7 @@
 						<div class="icon-box-icon" >
 							<div class="icon-box-icon-container">
 								<div class="icon-box-inner-icon">
-									<i class="fa fa-code"></i>
+									<div class="fa-tool-icon home-loan"></div>
 								</div>
 							</div>
 						</div>
@@ -67,7 +67,7 @@
 						<div class="icon-box-icon" >
 							<div class="icon-box-icon-container">
 								<div class="icon-box-inner-icon">
-									<i class="fa fa-code"></i>
+									<div class="fa-tool-icon au-school"></div>
 								</div>
 							</div>
 						</div>
@@ -79,7 +79,7 @@
 						<div class="icon-box-icon" >
 							<div class="icon-box-icon-container">
 								<div class="icon-box-inner-icon">
-									<i class="fa fa-code"></i>
+									<div class="fa-tool-icon im-policy"></div>
 								</div>
 							</div>
 						</div>
@@ -88,20 +88,37 @@
 						</div>
 					</div>
 				</div>
+				<div class="contact-us clearfix">
+					<div class="col-md-6">
+						<h2><?php echo(__('Contact Us', 'default')) ?></h2>
+						<p class="contact-us-content">
+							"Dream in Australia, Australia or edge of the source of" Sheng International real estate group, the group is headquartered in Melbourne City,
+							the famous Camberwell downtown area. Australia International founded by the Chinese elite in the Australian real estate industry, the group...
+						</p>
+						<p class="contact-type">Phone: +03 9882 1699</p>
+						<p class="contact-type">Email: info@ascendinternational.com.au</p>
+					</div>
+					<div class="col-md-6">
+						<div role="button" class="online-contact-btn"><?php echo(__('Online Contact', 'default')) ?></div>
+					</div>
+				</div>
+				<div class="copy-info clearfix">
+					<div class="col-md-8">
+						<p class="copy-right">Copyright &copy; 2013-2017 <?php echo(__('All Rights Reserved Ascend International Property Group', 'default')) ?> ABN:46 169 369 822</p>
+					</div>
+					<div class="col-md-4 text-right">
+						<ul class="social-list clearfix">
+							<li><a target="_blank" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a target="_blank" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a target="_blank" href="#"><i class="fa fa-qq" aria-hidden="true"></i></a></li>
+							<li><a target="_blank" href="#"><i class="fa fa-weixin" aria-hidden="true"></i></a></li>
+							<li><a target="_blank" href="#"><i class="fa fa-weibo" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+				</div>
 			</div> <!-- end container -->
 		</div> <!-- end footer-top -->
 
-		<div class="footer-bottom">
-			<div class="container">
-				<div class="footer-bottom-container">
-					<div class="site-info">
-						<?php do_action( 'suffice_footer_copyright_text' ); ?>
-					</div><!-- .site-info -->
-
-					<?php get_template_part( 'template-parts/footer/bottom', 'right' ); ?>
-				</div> <!-- .footer-bottom-container -->
-			</div> <!-- .container -->
-		</div> <!-- .footer -->
 	</footer><!-- #colophon -->
 
 	<?php
