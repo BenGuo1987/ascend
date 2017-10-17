@@ -83,3 +83,75 @@ function suffice_portfolio_post_type_link( $permalink, $post ) {
 	return $permalink;
 }
 add_filter( 'post_type_link', 'suffice_portfolio_post_type_link', 10, 2 );
+
+/**
+ * add Price for Portfolio
+ */
+add_action( 'add_meta_boxes', 'product_price' );
+function product_price() {
+	$priceText = __('Price', 'default');
+	add_meta_box(
+		'product_price',
+		$priceText,
+		'price_meta_box',
+		'portfolio',
+		'side',
+		'low'
+	);
+}
+function price_meta_box($post) {
+
+	// 创建临时隐藏表单，为了安全
+	wp_nonce_field( 'price_meta_box', 'price_meta_box_nonce' );
+	// 获取之前存储的值
+	$value = get_post_meta( $post->ID, '_product_price', true );
+
+	?>
+
+	<input type="text" id="product_price" name="product_price" value="<?php echo esc_attr( $value ); ?>" placeholder="<?php echo __('Price', 'default'); ?>" >
+
+	<?php
+}
+
+add_action( 'save_post', 'price_save_meta_box' );
+function price_save_meta_box($post_id){
+
+	// 安全检查
+	// 检查是否发送了一次性隐藏表单内容（判断是否为第三者模拟提交）
+	if ( ! isset( $_POST['price_meta_box_nonce'] ) ) {
+		return;
+	}
+	// 判断隐藏表单的值与之前是否相同
+	if ( ! wp_verify_nonce( $_POST['price_meta_box_nonce'], 'price_meta_box' ) ) {
+		return;
+	}
+	// 判断该用户是否有权限
+	if ( ! current_user_can( 'edit_post', $post_id ) ) {
+		return;
+	}
+
+	// 判断 Meta Box 是否为空
+	if ( ! isset( $_POST['product_price'] ) ) {
+		return;
+	}
+
+	$product_price = sanitize_text_field( $_POST['product_price'] );
+	update_post_meta( $post_id, '_product_price', $product_price );
+
+}
+
+add_action("manage_posts_custom_column",  "portfolio_custom_columns");
+add_filter("manage_edit-portfolio_columns", "portfolio_edit_columns");
+function portfolio_custom_columns($column){
+	global $post;
+	switch ($column) {
+		case "product_price":
+			echo get_post_meta( $post->ID, '_product_price', true );
+			break;
+	}
+}
+function portfolio_edit_columns($columns){
+	$priceText = __('Price', 'default');
+	$columns['product_price'] = $priceText;
+	return $columns;
+}

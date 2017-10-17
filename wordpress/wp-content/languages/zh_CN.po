@@ -11095,3 +11095,6 @@ msgstr "在线咨询"
 
 msgid "All Rights Reserved Ascend International Property Group"
 msgstr "本网站版权及内容解释权归澳昇国际地产集团"
+
+msgid "Price"
+msgstr "价格"
