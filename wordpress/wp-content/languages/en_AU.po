@@ -2332,7 +2332,7 @@ msgstr "%1$s could not be created: %2$s"
 
 #: wp-includes/class-wp-customize-nav-menus.php:878
 msgid "Post"
-msgstr "Post"
+msgstr "News"
 
 #. translators: 1: .mp4, 2: .mov
 #: wp-includes/class-wp-customize-manager.php:4379
@@ -5130,7 +5130,7 @@ msgstr "Page"
 #: wp-includes/post.php:23
 msgctxt "add new from admin bar"
 msgid "Post"
-msgstr "Post"
+msgstr "News"
 
 #: wp-includes/class-wp-editor.php:1244
 msgctxt "TinyMCE menu"
@@ -8114,7 +8114,7 @@ msgstr "We send your registration email to this address. (Double-check your emai
 #: wp-includes/post.php:1371
 msgctxt "post type singular name"
 msgid "Post"
-msgstr "Post"
+msgstr "News"
 
 #: wp-includes/post.php:1371
 msgctxt "post type singular name"
@@ -8141,7 +8141,7 @@ msgstr "Edit Page"
 #: wp-includes/post.php:1370
 msgctxt "post type general name"
 msgid "Posts"
-msgstr "Posts"
+msgstr "News"
 
 #: wp-includes/post.php:1381
 msgid "Parent Page:"
