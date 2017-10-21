@@ -68,10 +68,9 @@ if ( 'post-style-grid' === $style && '1' === $column ) {
 
 				<!-- ====== Entry Thumbnail =====  -->
 				<figure class="entry-thumbnail">
-					<?php the_post_thumbnail( $thumbnail_size ); ?>
-					<?php if ( 'post-style-list' === $style ) : ?>
-						<div class="entry-date"><?php echo get_the_date( 'M d' ); ?></div>
-					<?php endif; ?>
+					<!--php the_post_thumbnail( $thumbnail_size ); -->
+					<div class="news-item-img" style="background-image:url('<?php echo get_the_post_thumbnail_url(null, $thumbnail_size ) ?>')"></div>
+					<div class="entry-date">Posted on <?php echo get_the_date( 'M d, Y' ); ?></div>
 				</figure>
 
 				<?php if ( 'post-style-overlay' === $style || 'post-style-carousel' === $style ) : ?>
@@ -79,10 +78,11 @@ if ( 'post-style-grid' === $style && '1' === $column ) {
 				<?php endif ?>
 
 				<!-- ====== Entry Header =====  -->
+				<div class="entry-news-content">
 				<header class="entry-header">
 					<a href="<?php echo esc_url( get_the_permalink() ); ?>"><h1 class="entry-title"><?php echo esc_html( get_the_title() ); ?></h1></a>
 					<?php if ( 'post-style-grid' === $style ) : ?>
-					<div class="entry-meta">
+					<div class="entry-meta hidden">
 						<span class="posted-by">
 						<?php
 						printf( esc_html_x( 'by %s', 'post author', 'suffice-toolkit' ),
@@ -116,10 +116,10 @@ if ( 'post-style-grid' === $style && '1' === $column ) {
 					</p>
 
 					<?php if ( 'post-style-grid' === $style ) :  ?>
-						<a href="<?php echo esc_url( get_permalink() ); ?>" class="read-more"><?php esc_html_e( 'Read More', 'suffice-toolkit' ); ?></a>
+						<a href="<?php echo esc_url( get_permalink() ); ?>" class="read-more"><?php esc_html_e( 'Read More', 'suffice-toolkit' ); ?><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
 					<?php endif ?>
 				</div> <!-- entry-content -->
-
+				</div>
 				<!-- ====== Entry Meta =====  -->
 				<?php if ( 'post-style-list' === $style || 'post-style-overlay' === $style ) : ?>
 					<div class="entry-meta">
