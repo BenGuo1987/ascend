@@ -555,3 +555,53 @@ ul.social-list {
     float: left;
 }
 
+/** Common Section **/
+.common-section .top-section{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: #337D75;
+    color: #fff;
+
+}
+.top-section .top-section-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    font-size: 240px;
+    line-height:180px;
+    opacity: 0.1;
+    letter-spacing: 10px;
+    font-weight: bold;
+}
+/** Services Section **/
+.service-list.list-inline .service-list.list-inline ul {
+    height: 140px;
+}
+.service-list.list-inline li {
+    width: 25%;
+    height: 140px;
+    padding: 30px 30px 30px 70px;
+    cursor: pointer;
+}
+.service-list.list-inline li h5{
+    font-size: 24px;
+}
+
+.service-list.list-inline li .service-intro{
+    display: table;
+    float: right;
+    width: 80%;
+    height: 72px;
+    text-align: left;
+}
+.service-list.list-inline li .service-intro h5{
+    display: table-cell;
+    vertical-align: middle;
+}
+.service-list.list-inline li .service-icon {
+    float: left;
+    width: 72px;
+    height: 72px;
+}
