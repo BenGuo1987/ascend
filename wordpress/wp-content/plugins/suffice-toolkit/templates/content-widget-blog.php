@@ -54,6 +54,7 @@ if ( 'post-style-grid' === $style && '1' === $column ) {
 ?>
 
 <div class="blog-post-container">
+	<div class="news-brand">NEWS</div>
 	<?php if ( 'post-style-carousel' === $style ) : ?>
 		<div class="swiper-container">
 			<div class="swiper-wrapper">
