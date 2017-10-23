@@ -373,7 +373,8 @@ ul.social-list {
 .blog-post-container {
     position: relative;
 }
-.blog-post-container .news-brand{
+
+.blog-post-container .news-brand {
     position: absolute;
     z-index: 2;
     width: 120px;
@@ -383,7 +384,7 @@ ul.social-list {
     margin: 0 auto;
     left: 0;
     right: 0;
-    top: 140px;
+    top: -60px;
     color: #333;
     font-size: 18px;
     font-weight: bold;
@@ -392,6 +393,10 @@ ul.social-list {
     background-position: center;
     background-image: url('../img/extra/news-brand.png');
 }
+.home-news .news-brand{
+    top: 140px;
+}
+
 .blog-post-container .col-md-6 {
     padding-left: 0;
     padding-right: 0;
@@ -411,11 +416,44 @@ ul.social-list {
 .post .article-inner .entry-thumbnail .entry-date {
     position: absolute;
     right: 20px;
+    bottom: 20px;
+    color: #fff;
+    font-size: 12px;
+}
+.blog-post-container .row :nth-child(4n+3).post .article-inner .entry-thumbnail .entry-date,
+.blog-post-container .row :nth-child(4n).post .article-inner .entry-thumbnail .entry-date {
+    left: 20px;
+    right: auto;
+    bottom: 20px;
+}
+.home-news .post .article-inner .entry-thumbnail .entry-date {
+    position: absolute;
+    right: 20px;
     top: 20px;
     color: #fff;
     font-size: 12px;
 }
 .post .article-inner .entry-news-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 400px;
+    background-color: #EEE;
+    padding: 75px 100px 50px;
+}
+.blog-post-container .row :nth-child(4n+3).post .article-inner .entry-news-content,
+.blog-post-container .row :nth-child(4n).post .article-inner .entry-news-content{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: auto;
+    width: 60%;
+    height: 400px;
+    background-color: #EEE;
+    padding: 75px 100px 50px;
+}
+.home-news .post .article-inner .entry-news-content {
     position: absolute;
     top: 0;
     left: 0;
@@ -556,6 +594,9 @@ ul.social-list {
 }
 
 /** Common Section **/
+.panel-layout .panel-no-style {
+    margin-bottom: 0!important;
+}
 .common-section .top-section{
     position: relative;
     width: 100%;
@@ -604,4 +645,22 @@ ul.social-list {
     float: left;
     width: 72px;
     height: 72px;
+}
+/** News Section **/
+.common-section.news-section .top-section{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../img/extra/news-top.jpg");
+}
+/** About US Section **/
+.common-section.about-section {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-image: url('../img/extra/about-us-bg.jpg');
+}
+.common-section.about-section .top-section{
+    background-color: transparent;
 }
