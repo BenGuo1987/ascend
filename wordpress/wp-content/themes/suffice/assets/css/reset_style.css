@@ -707,7 +707,7 @@ ul.social-list {
     display: block;
     width: 393px;
     height: 100px;
-    background-color: #030303;
+    background-color: rgba(3,3,3,0.9);
     text-align: center;
     padding: 20px;
 }
