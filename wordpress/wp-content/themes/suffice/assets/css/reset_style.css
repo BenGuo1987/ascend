@@ -146,7 +146,7 @@
 
 .navigation-default .menu-primary > ul > li.current_page_item > a{
     color: #333;
-    width: 100px;
+    width: 110px;
     height: 40px;
     background: #fff;
     border-radius: 40px;
@@ -453,6 +453,7 @@ ul.social-list {
     background-color: #EEE;
     padding: 75px 100px 50px;
 }
+
 .home-news .post .article-inner .entry-news-content {
     position: absolute;
     top: 0;
@@ -462,6 +463,7 @@ ul.social-list {
     background-color: #EEE;
     padding: 75px 100px 50px;
 }
+
 .post .article-inner:hover .entry-news-content{
     opacity: 0.9;
     transition: all 1s;
@@ -475,7 +477,18 @@ ul.social-list {
     color: #00887e;
     font-size: 14px;
 }
-
+@media(max-width: 1600px) {
+    .home-news .post .article-inner .entry-news-content,
+    .blog-post-container .row :nth-child(4n+3).post .article-inner .entry-news-content,
+    .blog-post-container .row :nth-child(4n).post .article-inner .entry-news-content,
+    .post .article-inner .entry-news-content{
+        padding: 60px;
+    }
+    .post .article-inner .entry-news-content .entry-content .read-more,
+    .post .article-inner .entry-news-content .entry-content .read-more:hover {
+        left: 60px;
+    }
+}
 /** home service **/
 .service-list {
     position: relative;
@@ -840,6 +853,9 @@ ul.social-list {
     text-align: center;
     padding-right: 0;
 }
+.contact-us-wrapper form.wpcf7-form input[type=submit]:hover {
+    opacity: 0.9;
+}
 div.wpcf7-validation-errors {
     margin-top: 40px;
     color: #fff;
@@ -848,4 +864,93 @@ div.wpcf7-validation-errors {
 div.wpcf7-mail-sent-ok {
     margin-top: 40px;
     color: #fff;
+}
+div.wpcf7 .ajax-loader {
+    width: 32px;
+    height: 32px;
+}
+
+/** project section **/
+.common-section.project-section {
+    margin-bottom: -30px;
+}
+.project-list-wrapper .portfolio-items:after {
+
+}
+.project-list-wrapper .portfolio-item.col-md-4 {
+    float: left;
+    width: 50%;
+}
+.project-list-wrapper .portfolio-items .portfolio-item,
+.project-list-wrapper .portfolio-items .portfolio-item .portfolio-item-thumbnail,
+.project-list-wrapper .portfolio-items .portfolio-item .portfolio-item-thumbnail .portfolio-item-img{
+    height: 600px;
+}
+.project-list-wrapper .portfolio-items .portfolio-item .portfolio-item-thumbnail>a {
+    width: 100%;
+    float: none;
+}
+.project-list-wrapper .portfolio-items .portfolio-item .portfolio-item-thumbnail {
+    position: relative;
+}
+.project-list-wrapper .portfolio-items .portfolio-item .portfolio-item-thumbnail .portfolio-item-description {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    padding: 0;
+    float: none;
+    color: #fff;
+    text-align: center;
+}
+
+.project-list-wrapper  .portfolio-items.portfolio-with-text .portfolio-item .portfolio-item-description .portfolio-item-more {
+    width: 100%;
+    height: 120px;
+    left: 0;
+    bottom: 0;
+    background-color: transparent;
+}
+.project-list-wrapper .portfolio-items .portfolio-item:hover .portfolio-item-thumbnail .portfolio-item-description {
+    transition: all 0.8s;
+    background-color: rgba(3,3,3,0.4);
+}
+.project-list-wrapper .portfolio-items .portfolio-item:hover .portfolio-item-description .portfolio-item-more {
+    transition: all 0.8s;
+    background-color: rgba(3,3,3,0.7);
+}
+.project-list-wrapper  .portfolio-items.portfolio-with-text .portfolio-item .portfolio-item-description .portfolio-item-more a {
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+    display: inline-block;
+    height: 120px;
+    line-height: 120px;
+    float: right;
+    color: #999;
+    font-weight: bold;
+}
+.project-list-wrapper .portfolio-items .portfolio-item .portfolio-item-thumbnail .portfolio-item-description .portfolio-item-title a{
+    position: absolute;
+    width: 100%;
+    padding: 50px;
+    top: 150px;
+    left: 0;
+    font-size: 32px;
+    color: #fff;
+    z-index: 3;
+}
+.project-list-wrapper .portfolio-items .portfolio-item .portfolio-item-thumbnail .portfolio-item-description .portfolio-item-price {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    z-index: 3;
+    height: 120px;
+    line-height: 120px;
 }

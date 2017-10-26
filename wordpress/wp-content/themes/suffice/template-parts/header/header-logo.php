@@ -12,7 +12,7 @@
 <div class="site-identity-container">
 	<div class="logo-container">
 		<!--?php the_custom_logo(); ?-->
-		<a class="logo-img"></a>
+		<a href="/" class="logo-img"></a>
 		<div class="lang-container">
 			<p>language</p>
 			<a href="local.ascend.com">English</a>
