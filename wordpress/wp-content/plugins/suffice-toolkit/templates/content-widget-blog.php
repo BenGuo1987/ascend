@@ -25,18 +25,21 @@ $source      = isset( $instance['source'] ) ? $instance['source'] : '';
 $category    = isset( $instance['category'] ) ? $instance['category'] : '';
 $style       = isset( $instance['style'] ) ? $instance['style'] : '';
 $column       = isset( $instance['column'] ) ? $instance['column'] : 3;
+$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
 if ( 'latest' === $source ) {
 	$get_featured_posts = new WP_Query( array(
 		'posts_per_page'        => $number,
 		'post_type'             => 'post',
 		'ignore_sticky_posts'   => true,
+		'paged'=> $paged
 	) );
 } else {
 	$get_featured_posts = new WP_Query( array(
 		'posts_per_page'        => $number,
 		'post_type'             => 'post',
 		'category__in'          => $category,
+		'paged'=> $paged
 	) );
 }
 
@@ -170,5 +173,12 @@ if ( 'post-style-grid' === $style && '1' === $column ) {
 	</div> <!-- .swiper-container -->
 	<?php else : ?>
 		</div> <!-- row -->
+
+	<?php
+		pagination(wp_parse_args (array(
+			'post_type'             => 'post',
+			'category__in'          => $category,
+		)), $number);
+	?>
 	<?php endif ?>
 </div> <!-- blog-post-container -->

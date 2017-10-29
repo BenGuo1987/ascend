@@ -954,3 +954,40 @@ div.wpcf7 .ajax-loader {
     height: 120px;
     line-height: 120px;
 }
+
+/** pagination **/
+.pagination{
+    line-height:23px;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+.pagination span, .pagination a{
+    display: inline-block;
+    font-size:14px;
+    margin: 2px 6px 2px 0;
+    background:#fff;
+    border:1px solid #e5e5e5;
+    color:#787878;
+    text-decoration:none;
+    min-width: 35px;
+    min-height: 35px;
+    line-height: 35px;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.pagination a:hover{
+    background: #14172A;
+    border:1px solid #fff;
+    color:#fff;
+    opacity: 0.8;
+}
+
+.pagination .current{
+    background: #14172A;
+    border:1px solid #14172A;
+    color: #fff;
+    font-size:14px;
+    opacity: 0.8;
+}
