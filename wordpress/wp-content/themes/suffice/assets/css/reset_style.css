@@ -956,6 +956,10 @@ div.wpcf7 .ajax-loader {
 }
 
 /** pagination **/
+.home-news .pagination,
+.home-service-row .pagination {
+    display: none;
+}
 .pagination{
     line-height:23px;
     text-align: center;

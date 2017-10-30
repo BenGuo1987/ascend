@@ -445,11 +445,7 @@ function pagination($query_string, $posts_per_page=6){
 function pagination_portfolio($query_string, $posts_per_page=6){
 	global $paged;
 	// $my_query = new WP_Query($query_string ."&posts_per_page=-1");
-	$my_query = new WP_Query(
-		array(
-			'post_type'      => 'portfolio',
-		)
-	);
+	$my_query = new WP_Query($query_string);
 	$total_posts = $my_query->post_count;
 	if(empty($paged))$paged = 1;
 	$prev = $paged - 1;
@@ -457,8 +453,6 @@ function pagination_portfolio($query_string, $posts_per_page=6){
 	$range = 2; // only edit this if you want to show more page-links
 	$showitems = ($range * 2)+1;
 	$pages = ceil($total_posts/$posts_per_page);
-	echo($total_posts);
-	echo($posts_per_page);
 	if(1 != $pages){
 		echo "<div class='pagination'>";
 		echo ($paged > 2 && $paged+$range+1 > $pages && $showitems < $pages)? "
