@@ -99,7 +99,7 @@
 						<p class="contact-type">Email: info@ascendinternational.com.au</p>
 					</div>
 					<div class="col-md-6">
-						<div role="button" class="online-contact-btn"><?php echo(__('Online Contact', 'default')) ?></div>
+						<div role="button" class="online-contact-btn" onclick="location.href='/contact-us'"><?php echo(__('Online Contact', 'default')) ?></div>
 					</div>
 				</div>
 				<div class="copy-info clearfix">
