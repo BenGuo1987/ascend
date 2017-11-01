@@ -171,6 +171,51 @@
     float: left;
     width: 20%;
 }
+.useful-tools .exchange-rate-box {
+    position: relative;
+}
+.useful-tools .exchange-rate-box:hover .exchange-rate-banks{
+    display: block;
+}
+.useful-tools .exchange-rate-box .exchange-rate-banks {
+    display: none;
+    transition: all 1s;
+    position: absolute;
+    width: 340px;
+    padding: 20px;
+    top: -200px;
+    right: -340px;
+    z-index: 10;
+    background-color: #fff;
+    border: 1px solid #337D75;
+}
+.useful-tools .exchange-rate-box .exchange-rate-banks:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    width: 0;
+    height: 0;
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent #fff transparent transparent;
+}
+.exchange-rate-box .exchange-rate-banks h2 {
+    font-size: 16px;
+    font-weight: bold;
+}
+.exchange-rate-box .exchange-rate-banks h5 {
+    font-size: 14px;
+    margin: 10px 0;
+}
+.exchange-rate-box .exchange-rate-banks ul {
+    list-style: none;
+    padding-left: 0;
+}
+.exchange-rate-banks ul li img {
+    width: 300px;
+    margin: 0 auto;
+}
 .icon-box-hexagon .icon-box-icon {
     background: #030303;
 }
@@ -994,4 +1039,44 @@ div.wpcf7 .ajax-loader {
     color: #fff;
     font-size:14px;
     opacity: 0.8;
+}
+
+/** footer layer box **/
+.layerBox {
+    padding: 45px;
+}
+.layerBox h2 {
+    text-align: center;
+    margin-top: 0;
+}
+.layerBox form .row span {
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+}
+.layerBox form .row input {
+    width: 200px;
+    height: 32px;
+    padding: 5px 10px;
+    margin: 5px 5px;
+}
+.layerBox form .row select {
+    width: 200px;
+    height: 32px;
+    margin: 5px 5px;
+}
+
+.layerBox form .row.btn-row {
+    padding-left: 125px;
+}
+.layerBox form .row.btn-row button {
+    width: 80px;
+    height: 40px;
+    background-color: #337D75;
+    color: #fff;
+    border: none;
+    padding: 0;
+    margin: 10px auto;
+    cursor: pointer;
+    outline: none;
 }

@@ -262,6 +262,11 @@ function suffice_scripts() {
 		wp_enqueue_script( 'headroom', get_template_directory_uri() . '/assets/js/headroom' . $suffix . '.js', array( 'jquery' ), '0.9', true );
 		wp_enqueue_script( 'headroom-jquery', get_template_directory_uri() . '/assets/js/jQuery.headroom' . $suffix . '.js', array( 'jquery' ), '0.9', true );
 	}
+	
+	wp_enqueue_script( 'ascend-layer', get_template_directory_uri() . '/assets/js/extra/layer/layer.min.js', array( 'jquery' ), '1.0', true );
+	wp_enqueue_script( 'ascend-repay', get_template_directory_uri() . '/assets/js/extra/repay.js', array( 'jquery' ), '1.0', true );
+	wp_enqueue_script( 'ascend-stampduty', get_template_directory_uri() . '/assets/js/extra/stampduty.js', array( 'jquery' ), '1.0', true );
+
 	wp_enqueue_script( 'perfect-scrollbar', get_template_directory_uri() . '/assets/js/perfect-scrollbar.jquery' . $suffix . '.js', array( 'jquery' ), '0.6.16', true );
 	wp_enqueue_script( 'isotope', get_template_directory_uri() . '/assets/js/isotope.pkgd' . $suffix . '.js', array( 'jquery' ), '3.0.2', true );
 	wp_enqueue_script( 'countup', get_template_directory_uri() . '/assets/js/countUp' . $suffix . '.js' , array( 'jquery' ), '1.8.3', true );
@@ -282,6 +287,7 @@ function suffice_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
 }
 add_action( 'wp_enqueue_scripts', 'suffice_scripts' );
 
