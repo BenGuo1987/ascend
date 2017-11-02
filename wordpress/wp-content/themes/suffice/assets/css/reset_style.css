@@ -559,7 +559,6 @@ ul.social-list {
 }
 .service-list, .service-list ul {
     width: 100%;
-    height: 400px;
     list-style: none;
     padding-left: 0;
     padding-right: 0;
@@ -1079,4 +1078,82 @@ div.wpcf7 .ajax-loader {
     margin: 10px auto;
     cursor: pointer;
     outline: none;
+}
+/** footer layer box end **/
+
+/** Service part start **/
+.sub-cat-list {
+    list-style: none;
+    margin: 0;
+    text-align: center;
+    padding: 70px 0;
+}
+.sub-cat-list li {
+    display: inline-block;
+}
+.sub-cat-list li a {
+    color: #cccccc;
+    font-size: 16px;
+    margin-right: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.sub-cat-list li a:hover,
+.sub-cat-list li a.active{
+    color: #00887e;
+}
+
+.service-container .service-items {
+    list-style: none;
+    margin: 0;
+    padding: 0 20px;
+}
+.service-container .service-items li {
+    float: left;
+    width: 50%;
+    padding: 0 40px;
+}
+.service-item .service-item-img {
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.service-item .service-item-thumbnail {
+    margin: 0;
+}
+.service-item .service-item-description {
+    padding: 50px 30px 85px;
+}
+.service-item .service-item-intro .service-item-title a {
+    color: #0c5e58;
+    font-size: 24px;
+    font-weight: bold;
+}
+.service-item .service-item-intro .service-item-title {
+    margin-top: 0;
+    margin-bottom: 15px;
+    float: left;
+}
+.service-item .service-item-intro .service-item-price {
+    margin-top: 0;
+    margin-bottom: 15px;
+    float: right;
+    font-size: 32px;
+    font-weight: bold;
+}
+.service-item .service-item-content {
+    font-size: 16px;
+    color: #999;
+}
+.service-item  .service-item-more {
+    text-align: center;
+    padding-top: 45px;
+}
+.service-item  .service-item-more a{
+    color: #0c5e58;
+    font-size: 14px;
+    font-weight: bold;
 }

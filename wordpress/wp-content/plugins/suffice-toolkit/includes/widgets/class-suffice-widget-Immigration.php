@@ -111,7 +111,7 @@ class ST_Widget_Immigration extends ST_Widget {
 
 		$this->widget_start( $args, $instance );
 
-		suffice_get_template( 'content-widget-portfolio.php', array( 'instance' => $instance ) );
+		suffice_get_template( 'content-widget-immigration.php', array( 'instance' => $instance ) );
 
 		$this->widget_end( $args );
 	}

@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * ST_Widget_Portfolio Class
  */
-class ST_Widget_University extends ST_Widget {
+class ST_Widget_Estate_Sale extends ST_Widget {
 
 	/**
 	 * Constructor.
@@ -26,8 +26,8 @@ class ST_Widget_University extends ST_Widget {
 	public function __construct() {
 		$this->widget_cssclass    = 'tg-portfolio-container';
 		$this->widget_description = __( 'Add your portfolio here.', 'suffice-toolkit' );
-		$this->widget_id          = 'ascend_university';
-		$this->widget_name        = __( 'ST: Ascend University', 'suffice-toolkit' );
+		$this->widget_id          = 'themegrill_suffice_estate_sales';
+		$this->widget_name        = __( 'ST: Estate Sale', 'suffice-toolkit' );
 		$this->control_ops        = array(
 			'width'  => 400,
 			'height' => 350,
@@ -111,7 +111,7 @@ class ST_Widget_University extends ST_Widget {
 
 		$this->widget_start( $args, $instance );
 
-		suffice_get_template( 'content-widget-university.php', array( 'instance' => $instance ) );
+		suffice_get_template( 'content-widget-estate-sales.php', array( 'instance' => $instance ) );
 
 		$this->widget_end( $args );
 	}
