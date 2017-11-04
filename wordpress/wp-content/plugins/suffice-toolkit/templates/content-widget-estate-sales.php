@@ -25,21 +25,15 @@ $number        = isset( $instance['number'] ) ? $instance['number'] : '';
 $filter        = empty( $instance['filter'] ) ? 0 : 1;
 $style         = isset( $instance['style'] ) ? $instance['style'] : 'portfolio-with-text';
 $column        = isset( $instance['column'] ) ? $instance['column'] : '4';
-$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+$paged         = (get_query_var('paged')) ? get_query_var('paged') : 1;
+$parent_slug   = ($_GET['slug']) ? $_GET['slug'] : '';
 ?>
 <?php
-
-$terms = get_terms( 'portfolio_cat' );
-if ( $filter && ! $categories ) {
-	$terms = get_terms( 'portfolio_cat' );
-	$count = count( $terms );
-	if ( $count > 0 ) {
-		foreach ( $terms as $term ) {
-			// $output .= "<li><a data-filter='." . $term->slug . "'>" . $term->name . "</a></li>\n";
-		}
-	}
+if(!empty($parent_slug)) {
+	$current_cat = get_category_by_slug_taxonomy($parent_slug, 'portfolio_cat');
+	$categories = $current_cat->term_id;
 }
-
+$terms = get_terms( 'portfolio_cat' );
 if ( '0' === $categories ) {
 	$terms          = get_terms( 'portfolio_cat' );
 	$included_terms = wp_list_pluck( $terms, 'term_id' );
@@ -92,7 +86,7 @@ $sub_cat_list = get_categories(array(
 					'<a href="/services?cat='. $parent_cat->term_id.'">
 						<li class="service-item'.$count.' '.$active.'">
 							<div class="service-intro">
-								<h5>'. $parent_cat->name.'</h5>
+								<h5>'. $parent_cat->name .'</h5>
 							</div>
 							<div class="service-icon icon-'.$count.'"></div>
 						</li>
