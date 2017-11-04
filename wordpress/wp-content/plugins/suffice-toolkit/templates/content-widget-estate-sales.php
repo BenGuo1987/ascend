@@ -58,25 +58,53 @@ $project_query = new WP_Query(
 				'field'    => 'id',
 				'terms'    => $included_terms,
 			),
-	),
+		),
 	)
 );
-
-$cat_list = get_categories(array(
+$cat_slugs = array(
+	"estate-sales","study-abroad-immigrants","lease-of-houses","project-management"
+);
+$current_parent_termId = get_category_root_id($categories);
+$sub_cat_list = get_categories(array(
 	"child_of" => get_category_root_id($categories),
 	'taxonomy' => 'portfolio_cat',
 	"hide_empty"=> 0,
 	"title_li"=>'',
 ));
-
 ?>
 
 
 
+<div class="common-section">
+	<div class="top-section">
+		<div class="top-section-text">SERVICES</div>
+	</div>
+	<div class="service-list list-inline">
+		<ul class="clearfix">
+			<?php foreach($cat_slugs as $key=>$cat_slug) {
+				$count = $key+1;
+				$parent_cat = get_category_by_slug_taxonomy($cat_slug, 'portfolio_cat');
+				$active = '';
+				if($current_parent_termId == $parent_cat->term_id) {
+					$active = 'active';
+				}
+				echo
+					'<a href="/services?cat='. $parent_cat->term_id.'">
+						<li class="service-item'.$count.' '.$active.'">
+							<div class="service-intro">
+								<h5>'. $parent_cat->name.'</h5>
+							</div>
+							<div class="service-icon icon-'.$count.'"></div>
+						</li>
+					</a>';
+			}?>
+		</ul>
+	</div>
+</div>
 <div class="service-container">
 
 	<ul class="sub-cat-list">
-		<?php foreach($cat_list as $key=>$category) {
+		<?php foreach($sub_cat_list as $key=>$category) {
 			$active = '';
 			if($categories == $category->term_id) {
 				$active = 'active';

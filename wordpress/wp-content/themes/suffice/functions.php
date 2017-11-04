@@ -491,3 +491,19 @@ function get_category_root_id($cat)
 	}
 	return $this_category->term_id; // 返回根分类的id号
 }
+
+/**
+ * Retrieve category object by category slug.
+ *
+ * @since 2.3.0
+ *
+ * @param string $slug The category slug.
+ * @return object Category data object
+ */
+function get_category_by_slug_taxonomy( $slug, $taxonomy  ) {
+	$category = get_term_by( 'slug', $slug, $taxonomy);
+	if ( $category )
+		_make_cat_compat( $category );
+
+	return $category;
+}

@@ -573,8 +573,16 @@ ul.social-list {
     color: #fff;
     padding: 55px 150px 55px 100px;
 }
-.service-list li:hover {
-    opacity: 0.8;
+.service-list ul li:hover {
+    opacity: 0.9;
+}
+.service-list.list-inline ul li {
+    opacity: 0.9;
+}
+.service-list.list-inline ul li:hover,
+.service-list.list-inline ul li.active{
+    opacity: 1;
+    box-shadow: 2px 3px 10px rgba(3,3,3,0.8);
 }
 .service-list li a {
     display: block;
