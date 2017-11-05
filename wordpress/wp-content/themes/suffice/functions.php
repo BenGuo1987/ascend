@@ -507,3 +507,159 @@ function get_category_by_slug_taxonomy( $slug, $taxonomy  ) {
 
 	return $category;
 }
+
+/**
+ * Add new Post Type school
+ **/
+function my_custom_post_school() {
+	$labels = array(
+		'name'               => _x( __('School', 'default'), 'post type general name'),
+		'singular_name'      => _x(__('School', 'default'),  'post type singular name'),
+		'add_new'            => _x( 'Add New', 'Customize Changeset' ),
+		'add_new_item'       => __( 'Add New School' ),
+		'edit_item'          => __( 'Edit School' ),
+		'new_item'           => __( 'New School' ),
+		'all_items'          => __( 'All Schools' ),
+		'view_item'          => __( 'View School' ),
+		'search_items'       => __( 'Search School' ),
+		'not_found'          => __( 'No changesets found.' ),
+		'not_found_in_trash' => __( 'No changesets found in Trash' ),
+		'parent_item_colon'  => '',
+		'menu_name'          =>  __('School', 'default')
+	);
+	$args = array(
+		'labels'        => $labels,
+		'description'   => '',
+		'public'        => true,
+		'menu_position' => 5,
+		'supports'      => array( 'title', 'editor', 'thumbnail'),
+		'has_archive'   => true
+	);
+	register_post_type( 'school', $args );
+}
+add_action( 'init', 'my_custom_post_school' );
+function my_taxonomies_school() {
+	$labels = array(
+		'name'              => _x( __( 'Categories' ), 'taxonomy name' ),
+		'singular_name'     => _x( __( 'Categories' ), 'taxonomy singular name' ),
+		'search_items'      => __( 'Search' ),
+		'all_items'         => __( 'All Categories' ),
+		'parent_item'       => __( 'Parent Category' ),
+		'parent_item_colon' => __( 'Parent Category:' ),
+		'edit_item'         => __( 'Edit' ),
+		'update_item'       => __( 'Quick Edit' ),
+		'add_new_item'      => __( 'Add New Category' ),
+		'new_item_name'     => __( 'New Category' ),
+		'menu_name'         => __( 'Categories' ),
+	);
+	$args = array(
+		'labels' => $labels,
+		'hierarchical' => true,
+	);
+	register_taxonomy( 'school_category', 'school', $args );
+}
+add_action( 'init', 'my_taxonomies_school', 0 );
+
+/**
+ * Add new Post Type Immigration Policy
+ **/
+function my_custom_post_immigration() {
+	$labels = array(
+		'name'               => _x( __('Immigration Policy', 'default'), 'post type general name'),
+		'singular_name'      => _x( __('Immigration Policy', 'default'),  'post type singular name'),
+		'add_new'            => _x( 'Add New', 'Customize Changeset' ),
+		'add_new_item'       => __( 'Add New' ),
+		'edit_item'          => __( 'Edit' ),
+		'new_item'           => __( 'New' ),
+		'all_items'          => __( 'Immigration Policy' ),
+		'view_item'          => __( 'View' ),
+		'search_items'       => __( 'Search' ),
+		'not_found'          => __( 'No changesets found.' ),
+		'not_found_in_trash' => __( 'No changesets found in Trash' ),
+		'parent_item_colon'  => '',
+		'menu_name'          =>  __('Immigration Policy', 'default')
+	);
+	$args = array(
+		'labels'        => $labels,
+		'description'   => '',
+		'public'        => true,
+		'menu_position' => 5,
+		'supports'      => array( 'title', 'editor', 'thumbnail'),
+		'has_archive'   => true
+	);
+	register_post_type( 'immigration', $args );
+}
+add_action( 'init', 'my_custom_post_immigration' );
+function my_taxonomies_immigration() {
+	$labels = array(
+		'name'              => _x( __( 'Categories' ), 'taxonomy name' ),
+		'singular_name'     => _x( 'Category', 'taxonomy singular name' ),
+		'search_items'      => __( 'Search' ),
+		'all_items'         => __( 'All Categories' ),
+		'parent_item'       => __( 'Parent Category' ),
+		'parent_item_colon' => __( 'Parent Category:' ),
+		'edit_item'         => __( 'Edit' ),
+		'update_item'       => __( 'Quick Edit' ),
+		'add_new_item'      => __( 'Add New Category' ),
+		'new_item_name'     => __( 'New Category' ),
+		'menu_name'         => __( 'Categories' ),
+	);
+	$args = array(
+		'labels' => $labels,
+		'hierarchical' => true,
+	);
+	register_taxonomy( 'immigration_category', 'immigration', $args );
+}
+add_action( 'init', 'my_taxonomies_immigration', 0 );
+
+/**
+ * Add new Post Type Immigration Policy
+ **/
+function my_custom_post_service() {
+	$labels = array(
+		'name'               => _x( __('Service', 'default'), 'post type general name'),
+		'singular_name'      => _x(  __('Service', 'default'),  'post type singular name'),
+		'add_new'            => _x( 'Add New', 'Customize Changeset' ),
+		'add_new_item'       => __( 'Add New' ),
+		'edit_item'          => __( 'Edit' ),
+		'new_item'           => __( 'New' ),
+		'all_items'          => __( 'All Services' ),
+		'view_item'          => __( 'View' ),
+		'search_items'       => __( 'Search' ),
+		'not_found'          => __( 'No changesets found.' ),
+		'not_found_in_trash' => __( 'No changesets found in Trash' ),
+		'parent_item_colon'  => '',
+		'menu_name'          =>  __('Services', 'default')
+	);
+	$args = array(
+		'labels'        => $labels,
+		'description'   => '',
+		'public'        => true,
+		'menu_position' => 5,
+		'supports'      => array( 'title', 'editor', 'thumbnail'),
+		'has_archive'   => true
+	);
+	register_post_type( 'service', $args );
+}
+add_action( 'init', 'my_custom_post_service' );
+function my_taxonomies_service() {
+	$labels = array(
+		'name'              => _x( __( 'Categories' ), 'taxonomy name' ),
+		'singular_name'     => _x( 'Category', 'taxonomy singular name' ),
+		'search_items'      => __( 'Search' ),
+		'all_items'         => __( 'All Categories' ),
+		'parent_item'       => __( 'Parent Category' ),
+		'parent_item_colon' => __( 'Parent Category:' ),
+		'edit_item'         => __( 'Edit' ),
+		'update_item'       => __( 'Quick Edit' ),
+		'add_new_item'      => __( 'Add New Category' ),
+		'new_item_name'     => __( 'New Category' ),
+		'menu_name'         => __( 'Categories' ),
+	);
+	$args = array(
+		'labels' => $labels,
+		'hierarchical' => true,
+	);
+	register_taxonomy( 'service_category', 'service', $args );
+}
+add_action( 'init', 'my_taxonomies_service', 0 );

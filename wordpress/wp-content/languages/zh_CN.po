@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 4.8.x package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-10-14 21:44+0800\n"
+"PO-Revision-Date: 2017-11-05 11:59+0800\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -503,22 +503,18 @@ msgid "Sorry, this file type is not permitted for security reasons."
 msgstr "抱歉，由于安全原因，这个文件类型不受支持。"
 
 #: wp-includes/media.php:3523 wp-includes/script-loader.php:80
-msgid ""
-"You are about to permanently delete these items from your site.\n"
+msgid "You are about to permanently delete these items from your site.\n"
 "This action cannot be undone.\n"
 " 'Cancel' to stop, 'OK' to delete."
-msgstr ""
-"您即将从您的站点永久删除这些项目。\n"
+msgstr "您即将从您的站点永久删除这些项目。\n"
 "此操作无法撤消。\n"
 "按“取消”可取消，按“确定”可确认删除。"
 
 #: wp-includes/media.php:3522
-msgid ""
-"You are about to permanently delete this item from your site.\n"
+msgid "You are about to permanently delete this item from your site.\n"
 "This action cannot be undone.\n"
 " 'Cancel' to stop, 'OK' to delete."
-msgstr ""
-"您即将从您的站点永久删除这个项目。\n"
+msgstr "您即将从您的站点永久删除这个项目。\n"
 "此操作无法撤消。\n"
 "按“取消”可取消，按“确定”可确认删除。"
 
@@ -2351,12 +2347,10 @@ msgid "Learn more about CSS"
 msgstr "了解关于CSS的更多内容"
 
 #: wp-includes/class-wp-customize-manager.php:4225
-msgid ""
-"You can add your own CSS here.\n"
+msgid "You can add your own CSS here.\n"
 "\n"
 "Click the help icon above to learn more."
-msgstr ""
-"您可以在此处加入您的CSS。\n"
+msgstr "您可以在此处加入您的CSS。\n"
 "\n"
 "点击上方的帮助图标来了解更多。"
 
@@ -2801,11 +2795,9 @@ msgid "Confirm use of weak password"
 msgstr "确认使用弱密码"
 
 #: wp-includes/script-loader.php:528
-msgid ""
-"Are you sure you want to do this?\n"
+msgid "Are you sure you want to do this?\n"
 "The comment changes you made will be lost."
-msgstr ""
-"您确定要继续吗？\n"
+msgstr "您确定要继续吗？\n"
 "您对评论进行的修改将会丢失。"
 
 #. translators: %s: Search string
@@ -4083,8 +4075,7 @@ msgstr "[%s] 电子邮件地址修改通知"
 #. translators: Do not translate USERNAME, ADMIN_EMAIL, EMAIL, SITENAME,
 #. SITEURL: those are placeholders.
 #: wp-includes/user.php:1877
-msgid ""
-"Hi ###USERNAME###,\n"
+msgid "Hi ###USERNAME###,\n"
 "\n"
 "This notice confirms that your email was changed on ###SITENAME###.\n"
 "\n"
@@ -4096,8 +4087,7 @@ msgid ""
 "Regards,\n"
 "All at ###SITENAME###\n"
 "###SITEURL###"
-msgstr ""
-"嗨###USERNAME###：\n"
+msgstr "嗨###USERNAME###：\n"
 "\n"
 "这个通知是为了确认您在###SITENAME###上的电子邮件地址已被修改。\n"
 "\n"
@@ -4113,8 +4103,7 @@ msgstr ""
 #. translators: Do not translate USERNAME, ADMIN_EMAIL, EMAIL, SITENAME,
 #. SITEURL: those are placeholders.
 #: wp-includes/user.php:1821
-msgid ""
-"Hi ###USERNAME###,\n"
+msgid "Hi ###USERNAME###,\n"
 "\n"
 "This notice confirms that your password was changed on ###SITENAME###.\n"
 "\n"
@@ -4126,8 +4115,7 @@ msgid ""
 "Regards,\n"
 "All at ###SITENAME###\n"
 "###SITEURL###"
-msgstr ""
-"嗨###USERNAME###：\n"
+msgstr "嗨###USERNAME###：\n"
 "\n"
 "这个通知是为了确认您在###SITENAME###上的密码已被修改。\n"
 "\n"
@@ -4174,11 +4162,9 @@ msgid "Close code tag"
 msgstr "关闭代码标签"
 
 #: wp-includes/script-loader.php:527
-msgid ""
-"Are you sure you want to edit this comment?\n"
+msgid "Are you sure you want to edit this comment?\n"
 "The changes you made will be lost."
-msgstr ""
-"您确定要编辑这条评论吗？\n"
+msgstr "您确定要编辑这条评论吗？\n"
 "您做出的修改将会丢失。"
 
 #. translators: %s: Error string for a failed update
@@ -4675,8 +4661,7 @@ msgstr "<strong>缺少数据库表。</strong>这意味着MySQL未在运行、Wo
 #. translators: Do not translate USERNAME, PASSWORD, LOGINLINK, SITE_NAME:
 #. those are placeholders.
 #: wp-includes/ms-functions.php:2211
-msgid ""
-"Howdy USERNAME,\n"
+msgid "Howdy USERNAME,\n"
 "\n"
 "Your new account is set up.\n"
 "\n"
@@ -4688,8 +4673,7 @@ msgid ""
 "Thanks!\n"
 "\n"
 "--The Team @ SITE_NAME"
-msgstr ""
-"嘿USERNAME，\n"
+msgstr "嘿USERNAME，\n"
 "\n"
 "您的新账户已被建立。\n"
 "\n"
@@ -4709,8 +4693,7 @@ msgstr "拖放来重新排序媒体文件。"
 #. translators: Do not translate USERNAME, SITE_NAME, BLOG_URL, PASSWORD: those
 #. are placeholders.
 #: wp-includes/ms-functions.php:1520
-msgid ""
-"Howdy USERNAME,\n"
+msgid "Howdy USERNAME,\n"
 "\n"
 "Your new SITE_NAME site has been successfully set up at:\n"
 "BLOG_URL\n"
@@ -4724,8 +4707,7 @@ msgid ""
 "We hope you enjoy your new site. Thanks!\n"
 "\n"
 "--The Team @ SITE_NAME"
-msgstr ""
-"嘿USERNAME，\n"
+msgstr "嘿USERNAME，\n"
 "\n"
 "您的新站点SITE_NAME已经被成功建立：\n"
 "BLOG_URL\n"
@@ -5154,11 +5136,9 @@ msgid "Untrash"
 msgstr "还原"
 
 #: wp-includes/media.php:3524
-msgid ""
-"You are about to trash these items.\n"
+msgid "You are about to trash these items.\n"
 "  'Cancel' to stop, 'OK' to delete."
-msgstr ""
-"您将删除这些项目。\n"
+msgstr "您将删除这些项目。\n"
 "点击“取消”停止，点击“确定”删除。"
 
 #: wp-includes/class-wp-customize-panel.php:357
@@ -6753,14 +6733,12 @@ msgid "Create Gallery"
 msgstr "创建相册"
 
 #: wp-includes/ms-functions.php:965
-msgid ""
-"To activate your user, please click the following link:\n"
+msgid "To activate your user, please click the following link:\n"
 "\n"
 "%s\n"
 "\n"
 "After you activate, you will receive *another email* with your login."
-msgstr ""
-"要激活您的用户账户，请点击下面链接：\n"
+msgstr "要激活您的用户账户，请点击下面链接：\n"
 "\n"
 "%s\n"
 "\n"
@@ -6777,14 +6755,12 @@ msgstr "您的WordPress看起来已经安装妥当。如果想重新安装，请
 #. translators: New site notification email. 1: Site URL, 2: User IP address,
 #. 3: Settings screen URL
 #: wp-includes/ms-functions.php:1249
-msgid ""
-"New Site: %1$s\n"
+msgid "New Site: %1$s\n"
 "URL: %2$s\n"
 "Remote IP: %3$s\n"
 "\n"
 "Disable these notifications: %4$s"
-msgstr ""
-"新站点：%1$s\n"
+msgstr "新站点：%1$s\n"
 "URL：%2$s\n"
 "远端IP：%3$s\n"
 "\n"
@@ -6793,13 +6769,11 @@ msgstr ""
 #. translators: New user notification email. 1: User login, 2: User IP address,
 #. 3: Settings screen URL
 #: wp-includes/ms-functions.php:1292
-msgid ""
-"New User: %1$s\n"
+msgid "New User: %1$s\n"
 "Remote IP: %2$s\n"
 "\n"
 "Disable these notifications: %3$s"
-msgstr ""
-"新用户：%1$s\n"
+msgstr "新用户：%1$s\n"
 "远端IP：%2$s\n"
 "\n"
 "关闭此类通知邮件：%3$s"
@@ -8218,8 +8192,7 @@ msgid "That site is currently reserved but may be available in a couple days."
 msgstr "系统暂时保留该站点，几天后或许开放注册。"
 
 #: wp-includes/ms-functions.php:866
-msgid ""
-"To activate your blog, please click the following link:\n"
+msgid "To activate your blog, please click the following link:\n"
 "\n"
 "%s\n"
 "\n"
@@ -8228,8 +8201,7 @@ msgid ""
 "After you activate, you can visit your site here:\n"
 "\n"
 "%s"
-msgstr ""
-"要激活您的博客，请点击下面链接\n"
+msgstr "要激活您的博客，请点击下面链接\n"
 "\n"
 "%s\n"
 "\n"
@@ -8390,11 +8362,9 @@ msgid "No menus have been created yet. <a href=\"%s\">Create some</a>."
 msgstr "尚无导航菜单。<a href=\"%s\">创建一些</a>。"
 
 #: wp-includes/script-loader.php:762
-msgid ""
-"You are about to permanently delete this menu. \n"
+msgid "You are about to permanently delete this menu. \n"
 " 'Cancel' to stop, 'OK' to delete."
-msgstr ""
-"您将永久删除所选菜单。\n"
+msgstr "您将永久删除所选菜单。\n"
 "点击“取消”停止，点击“确定”删除。"
 
 #: wp-includes/link-template.php:3745
@@ -11113,3 +11083,19 @@ msgstr "澳新银行"
 
 msgid "Please select a banking institution"
 msgstr "请选择银行机构"
+
+msgid "School"
+msgstr "学校"
+
+msgid "All Schools"
+msgstr "所有学校"
+
+msgid "Service"
+msgstr "服务"
+
+msgid "Services"
+msgstr "服务"
+
+msgid "All Services"
+msgstr "所有服务"
+
