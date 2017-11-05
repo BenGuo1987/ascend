@@ -92,7 +92,7 @@
 							<h5 class="icon-box-title"><?php echo(__('Home Loan', 'default')) ?></h5>
 						</div>
 					</div>
-					<div class="icon-box icon-box-center icon-box-hexagon">
+					<div class="icon-box icon-box-center icon-box-hexagon" onclick="location.href='/australian-school'">
 						<div class="icon-box-icon" >
 							<div class="icon-box-icon-container">
 								<div class="icon-box-inner-icon">

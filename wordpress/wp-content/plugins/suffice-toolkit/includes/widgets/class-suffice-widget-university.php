@@ -40,7 +40,7 @@ class ST_Widget_University extends ST_Widget {
 				'label' => __( 'Select Project Category', 'suffice-toolkit' ),
 				'args'  => array(
 					'hide_empty'       => 0,
-					'taxonomy'         => 'portfolio_cat',
+					'taxonomy'         => 'school_category',
 					'show_option_all'  => __( 'All category', 'suffice-toolkit' ),
 					'show_option_none' => '',
 				),

@@ -163,3 +163,26 @@ function openCalc_StampDuty() {
 // Copyright Ben Townsend 2003
 // This calculator is licenced to Independent Mortgage Consulting.
 //-->
+
+jQuery(function() {
+	var $= jQuery;
+	$('.school-nav .cat-list').off('click').on('click', 'li', function() {
+		var $this = $(this);
+		$('.school-nav .cat-list li').removeClass('active');
+		$this.addClass('active');
+		var $slug = $this.data('slug');
+		$('.school-nav .sub-cat-list').addClass('hidden');
+		$('.school-nav .sub-cat-list.' + $slug).removeClass('hidden');
+		$('.school-items li').hide();
+		$('.school-items li.'+ $slug).show();
+	});
+
+	$('.school-nav .sub-cat-list').off('click').on('click', 'li', function() {
+		var $this = $(this);
+		$('.school-nav .sub-cat-list li').removeClass('active');
+		$this.addClass('active');
+		var $slug = $this.data('slug');
+		$('.school-items li').hide();
+		$('.school-items li.'+ $slug).show();
+	});
+});

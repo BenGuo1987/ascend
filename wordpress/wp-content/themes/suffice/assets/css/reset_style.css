@@ -1182,3 +1182,92 @@ div.wpcf7 .ajax-loader {
 .post-content .entry-header {
     margin-top: 90px;
 }
+
+/** Australian school **/
+.school-container {
+    width: 960px;
+    margin: 50px auto;
+    padding: 30px 50px;
+    border: 1px solid #ccc;
+}
+.school-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.school-items li {
+    display: table;
+    width: 100%;
+}
+.school-items li.high-school {
+    display: none;
+}
+.school-items li .school-item-img {
+    width: 150px;
+    height: 110px;
+    display: table-cell;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.school-items li .school-item-description {
+    width: 650px;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 60px;
+}
+.school-items li .school-item-description h5 {
+    margin: 30px 0;
+}
+
+.school-nav .cat-list {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    margin-top: 50px;
+}
+.school-nav .cat-list li {
+    display: inline-block;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.school-nav .cat-list li.active,
+.school-nav .cat-list li:hover {
+    color: #337D75;
+    border-bottom: 2px solid #337D75;
+
+}
+.school-nav .cat-list :last-child {
+    margin-right: 0;
+}
+
+.school-nav .sub-cat-list {
+    padding: 50px 0 0;
+}
+.school-nav .sub-cat-list.hidden {
+    display: none;
+}
+.school-nav .sub-cat-list li {
+    margin-right: 0;
+    border: 1px solid #ccc;
+    border-right: none;
+    min-width: 120px;
+    padding: 0 15px;
+    height: 45px;
+    line-height: 45px;
+    cursor: pointer;
+}
+
+.school-nav .sub-cat-list :last-child {
+    border-right: 1px solid #ccc;
+}
+
+.school-nav .sub-cat-list li:hover,
+.school-nav .sub-cat-list li.active {
+    background-color: #337D75;
+    color: #fff;
+}
