@@ -14,10 +14,15 @@
 
 <?php
 	$sectionClass = '';
+    $nav = '';
 	if ( 'post' === get_post_type() ) {
 		$sectionClass = 'news-section';
+		$nav = 'NEWS';
+	} elseif('service' === get_post_type() ) {
+		$nav = 'SERVICES';
+	}  elseif('portfolio' === get_post_type() ) {
+		$nav = 'PROJECT';
 	}
-	$nav   = ($_GET['nav']) ? $_GET['nav'] : '';
 ?>
 <div class="common-section <?php echo $sectionClass ?>">
 	<div class="top-section">

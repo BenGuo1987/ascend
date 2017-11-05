@@ -30,12 +30,12 @@ $parent_slug   = ($_GET['slug']) ? $_GET['slug'] : '';
 ?>
 <?php
 if(!empty($parent_slug)) {
-	$current_cat = get_category_by_slug_taxonomy($parent_slug, 'portfolio_cat');
+	$current_cat = get_category_by_slug_taxonomy($parent_slug, 'service_category');
 	$categories = $current_cat->term_id;
 }
-$terms = get_terms( 'portfolio_cat' );
+$terms = get_terms( 'service_category' );
 if ( '0' === $categories ) {
-	$terms          = get_terms( 'portfolio_cat' );
+	$terms          = get_terms( 'service_category' );
 	$included_terms = wp_list_pluck( $terms, 'term_id' );
 } else {
 	$included_terms = $categories;
@@ -43,12 +43,12 @@ if ( '0' === $categories ) {
 
 $project_query = new WP_Query(
 	array(
-		'post_type'      => 'portfolio',
+		'post_type'      => 'service',
 		'posts_per_page' => $number,
 		'paged'=> $paged,
 		'tax_query' => array(
 			array(
-				'taxonomy' => 'portfolio_cat',
+				'taxonomy' => 'service_category',
 				'field'    => 'id',
 				'terms'    => $included_terms,
 			),
@@ -61,7 +61,7 @@ $cat_slugs = array(
 $current_parent_termId = get_category_root_id($categories);
 $sub_cat_list = get_categories(array(
 	"child_of" => get_category_root_id($categories),
-	'taxonomy' => 'portfolio_cat',
+	'taxonomy' => 'service_category',
 	"hide_empty"=> 0,
 	"title_li"=>'',
 ));
@@ -77,7 +77,7 @@ $sub_cat_list = get_categories(array(
 		<ul class="clearfix">
 			<?php foreach($cat_slugs as $key=>$cat_slug) {
 				$count = $key+1;
-				$parent_cat = get_category_by_slug_taxonomy($cat_slug, 'portfolio_cat');
+				$parent_cat = get_category_by_slug_taxonomy($cat_slug, 'service_category');
 				$active = '';
 				if($current_parent_termId == $parent_cat->term_id) {
 					$active = 'active';
@@ -112,7 +112,7 @@ $sub_cat_list = get_categories(array(
 				global $post;
 				$id          = $post->ID;
 				$image_per = get_the_post_thumbnail_url(null, $thumbnail_size );
-				$terms_array  = get_the_terms( $id, 'portfolio_cat' );
+				$terms_array  = get_the_terms( $id, 'service_category' );
 				$term_string = '';
 
 				if ( $terms_array ) {
@@ -126,11 +126,11 @@ $sub_cat_list = get_categories(array(
 					<div class="service-item-img" style="background-image:url('<?php echo get_the_post_thumbnail_url($id, $thumbnail_size ) ?>')"></div>
 					<figcaption class="service-item-description">
 						<div class="service-item-intro clearfix">
-							<h5 class="service-item-title"><a href = "<?php echo esc_url( get_the_permalink() )."?nav=services"; ?>"><?php echo esc_html( get_the_title() ); ?></a></h5>
+							<h5 class="service-item-title"><a href = "<?php echo esc_url( get_the_permalink() ); ?>"><?php echo esc_html( get_the_title() ); ?></a></h5>
 							<p class="service-item-price"><?php echo get_post_meta( $id, '_product_price', true )?></p>
 						</div>
 						<p class="service-item-content"><?php echo esc_html( get_the_excerpt() );?></p>
-						<div class="service-item-more"><a href = "<?php echo esc_url( get_the_permalink() )."?nav=services"; ?>">READ MORE<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>
+						<div class="service-item-more"><a href = "<?php echo esc_url( get_the_permalink() ); ?>">READ MORE<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>
 					</figcaption>
 				</figure>
 			</li>
@@ -138,10 +138,10 @@ $sub_cat_list = get_categories(array(
 	</ul>
 <?php
 pagination_portfolio(array(
-	'post_type'             => 'portfolio',
+	'post_type'             => 'service',
 	'tax_query' => array(
 		array(
-			'taxonomy' => 'portfolio_cat',
+			'taxonomy' => 'service_category',
 			'field'    => 'id',
 			'terms'    => $included_terms,
 		),
