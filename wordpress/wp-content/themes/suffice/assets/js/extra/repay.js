@@ -185,4 +185,16 @@ jQuery(function() {
 		$('.school-items li').hide();
 		$('.school-items li.'+ $slug).show();
 	});
+
+	$('.immigration-items .immigration-item').off('click').on('click', '.immigration-item-title', function() {
+		var $this = $(this);
+		var $thisContent = $this.parent().find('.immigration-item-content');
+		if($thisContent.css('display') == 'none') {
+			$('.immigration-items .immigration-item .immigration-item-content').slideUp();
+			$thisContent.slideDown();
+		} else {
+			$thisContent.slideUp();
+		}
+
+	});
 });

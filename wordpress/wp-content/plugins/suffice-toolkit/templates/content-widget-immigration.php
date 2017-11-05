@@ -30,7 +30,7 @@ $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 <?php
 
 if ( $filter && ! $categories ) {
-	$terms = get_terms( 'portfolio_cat' );
+	$terms = get_terms( 'immigration_category' );
 	$count = count( $terms );
 	if ( $count > 0 ) {
 		foreach ( $terms as $term ) {
@@ -40,7 +40,7 @@ if ( $filter && ! $categories ) {
 }
 
 if ( '0' === $categories ) {
-	$terms          = get_terms( 'portfolio_cat' );
+	$terms          = get_terms( 'immigration_category' );
 	$included_terms = wp_list_pluck( $terms, 'term_id' );
 } else {
 	$included_terms = $categories;
@@ -48,12 +48,11 @@ if ( '0' === $categories ) {
 
 $project_query = new WP_Query(
 	array(
-		'post_type'      => 'portfolio',
-		'posts_per_page' => $number,
-		'paged'=> $paged,
+		'post_type'      => 'immigration',
+		'posts_per_page' => -1,
 		'tax_query' => array(
 			array(
-				'taxonomy' => 'portfolio_cat',
+				'taxonomy' => 'immigration_category',
 				'field'    => 'id',
 				'terms'    => $included_terms,
 			),
@@ -61,45 +60,23 @@ $project_query = new WP_Query(
 	)
 );?>
 
-
-<div class="portfolio-container">
-	<ul class="portfolio-items row  <?php echo $style ?> ">
+<div class="common-section">
+	<div class="top-section">
+		<div class="top-section-text">Policy</div>
+	</div>
+</div>
+<div class="immigration-container">
+	<div class="immigration-header"><span><?php echo __('Immigration Policy', 'default')?></span></div>
+	<ul class="immigration-items row  <?php echo $style ?> ">
 		<?php while ( $project_query->have_posts() ) : $project_query->the_post(); ?>
-			<?php
-			global $post;
-			$id          = $post->ID;
-			$image_per = get_the_post_thumbnail_url(null, $thumbnail_size );
-			$terms_array  = get_the_terms( $id, 'portfolio_cat' );
-			$term_string = '';
-
-			if ( $terms_array ) {
-				foreach ( $terms_array as $term ) {
-					$term_string .= $term->slug . ' ';
-				}
-			}
-			?>
-			<li class="portfolio-item <?php echo suffice_get_column_class( $column )?> <?php echo $term_string?>" data-category="<?php echo $term_string?>">
-				<figure class="portfolio-item-thumbnail">
-					<a href="#" ><div class="portfolio-item-img" style="background-image:url('<?php echo get_the_post_thumbnail_url($id, $thumbnail_size ) ?>')"></div></a>
-					<figcaption class="portfolio-item-description">
-						<p class="portfolio-item-price"><?php echo get_post_meta( $id, '_product_price', true )?></p>
-						<h5 class="portfolio-item-title"><a href = "<?php echo esc_url( get_the_permalink() ); ?>"><?php echo esc_html( get_the_title() ); ?></a></h5>
-						<div class="portfolio-item-more"><a href = "<?php echo esc_url( get_the_permalink() ); ?>">READ MORE<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>
+			<li class="immigration-item <?php echo suffice_get_column_class( $column )?>">
+				<figure class="immigration-item-thumbnail">
+					<figcaption class="immigration-item-description">
+						<div class="immigration-item-title"><h5><?php echo esc_html( get_the_title() ); ?></h5></div>
+						<div class="immigration-item-content"><?php echo get_the_content();?></div>
 					</figcaption>
 				</figure>
 			</li>
 		<?php endwhile; wp_reset_postdata();?>
 	</ul>
-	<?php
-	pagination_portfolio(array(
-		'post_type'             => 'portfolio',
-		'tax_query' => array(
-			array(
-				'taxonomy' => 'portfolio_cat',
-				'field'    => 'id',
-				'terms'    => $included_terms,
-			),
-		),
-	), $number);
-	?>
 </div>
