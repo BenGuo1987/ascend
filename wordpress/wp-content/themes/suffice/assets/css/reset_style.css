@@ -680,6 +680,7 @@ ul.social-list {
     opacity: 0.1;
     letter-spacing: 10px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 /** Services Section **/
 .service-list.list-inline .service-list.list-inline ul {
@@ -1164,4 +1165,17 @@ div.wpcf7 .ajax-loader {
     color: #0c5e58;
     font-size: 14px;
     font-weight: bold;
+}
+/** reset content page **/
+#primary.post-content {
+    width: 100%;
+    margin-top: 0;
+}
+.post-content .entry-header,
+.post-content .entry-content,
+.post-content .comments-area {
+    padding: 0 80px;
+}
+.post-content .entry-header {
+    margin-top: 90px;
 }

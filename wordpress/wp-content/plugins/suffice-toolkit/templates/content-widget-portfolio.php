@@ -83,8 +83,8 @@ $project_query = new WP_Query(
 					<a href="#" ><div class="portfolio-item-img" style="background-image:url('<?php echo get_the_post_thumbnail_url($id, $thumbnail_size ) ?>')"></div></a>
 					<figcaption class="portfolio-item-description">
 						<p class="portfolio-item-price"><?php echo get_post_meta( $id, '_product_price', true )?></p>
-						<h5 class="portfolio-item-title"><a href = "<?php echo esc_url( get_the_permalink() ); ?>"><?php echo esc_html( get_the_title() ); ?></a></h5>
-						<div class="portfolio-item-more"><a href = "<?php echo esc_url( get_the_permalink() ); ?>">READ MORE<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>
+						<h5 class="portfolio-item-title"><a href = "<?php echo esc_url( get_the_permalink() )."?nav=project"; ?>"><?php echo esc_html( get_the_title() ); ?></a></h5>
+						<div class="portfolio-item-more"><a href = "<?php echo esc_url( get_the_permalink() )."?nav=project"; ?>">READ MORE<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>
 					</figcaption>
 				</figure>
 			</li>

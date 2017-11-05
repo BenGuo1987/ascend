@@ -120,7 +120,7 @@ if ( 'post-style-grid' === $style && '1' === $column ) {
 					</p>
 
 					<?php if ( 'post-style-grid' === $style ) :  ?>
-						<a href="<?php echo esc_url( get_permalink() ); ?>" class="read-more"><?php esc_html_e( 'Read More', 'suffice-toolkit' ); ?><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+						<a href="<?php echo esc_url( get_permalink() )."?nav=news"; ?>" class="read-more"><?php esc_html_e( 'Read More', 'suffice-toolkit' ); ?><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
 					<?php endif ?>
 				</div> <!-- entry-content -->
 				</div>
@@ -143,7 +143,7 @@ if ( 'post-style-grid' === $style && '1' === $column ) {
 						}
 						?>
 						<span class="read-more-meta">
-							<a href="<?php echo esc_url( get_permalink() ); ?>" class="more-link"><?php esc_html_e( 'Read More', 'suffice-toolkit' ); ?></a>
+							<a href="<?php echo esc_url( get_permalink() )."?nav=news"; ?>" class="more-link"><?php esc_html_e( 'Read More', 'suffice-toolkit' ); ?></a>
 						</span>
 					</div>
 				<?php endif; ?>

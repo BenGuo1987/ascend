@@ -11,6 +11,20 @@
 
 ?>
 
+
+<?php
+	$sectionClass = '';
+	if ( 'post' === get_post_type() ) {
+		$sectionClass = 'news-section';
+	}
+	$nav   = ($_GET['nav']) ? $_GET['nav'] : '';
+?>
+<div class="common-section <?php echo $sectionClass ?>">
+	<div class="top-section">
+		<div class="top-section-text"><?php echo $nav ?></div>
+	</div>
+</div>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<?php

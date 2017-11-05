@@ -17,7 +17,7 @@ get_header(); ?>
  */
 do_action( 'suffice_before_body_content' ); ?>
 
-<div id="primary" class="content-area">
+<div id="primary" class="content-area post-content">
 	<main id="main" class="site-main" role="main">
 
 		<?php
@@ -25,12 +25,12 @@ do_action( 'suffice_before_body_content' ); ?>
 
 			get_template_part( 'template-parts/content', get_post_format() );
 
-			the_post_navigation();
+			// the_post_navigation();
 
 			// If related post is active, then show related posts.
-			if ( true == suffice_get_option( 'suffice_blog_single_show_related', true ) ) {
+			/*if ( true == suffice_get_option( 'suffice_blog_single_show_related', true ) ) {
 				get_template_part( 'template-parts/related/related', 'post' );
-			}
+			}*/
 
 			/**
 			 * suffice_before_comments_template hook
@@ -59,5 +59,5 @@ do_action( 'suffice_before_body_content' ); ?>
  */
 do_action( 'suffice_after_body_content' ); ?>
 
-<?php get_sidebar(); ?>
+<?php /*get_sidebar(); */?>
 <?php get_footer(); ?>
