@@ -1107,6 +1107,9 @@ div.wpcf7 .ajax-loader {
     font-weight: bold;
     cursor: pointer;
 }
+.sub-cat-list :last-child a {
+    margin-right: 0;
+}
 .sub-cat-list li a:hover,
 .sub-cat-list li a.active{
     color: #00887e;
