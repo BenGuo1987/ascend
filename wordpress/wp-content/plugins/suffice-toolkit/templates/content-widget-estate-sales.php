@@ -126,8 +126,8 @@ $sub_cat_list = get_categories(array(
 					<div class="service-item-img" style="background-image:url('<?php echo get_the_post_thumbnail_url($id, $thumbnail_size ) ?>')"></div>
 					<figcaption class="service-item-description">
 						<div class="service-item-intro clearfix">
-							<h5 class="service-item-title"><a href = "<?php echo esc_url( get_the_permalink() ); ?>"><?php echo esc_html( get_the_title() ); ?></a></h5>
-							<p class="service-item-price"><?php echo get_post_meta( $id, '_product_price', true )?></p>
+							<h5 class="service-item-title"><a href = "<?php echo esc_url( get_the_permalink($id) ); ?>"><?php echo esc_html( get_the_title() ); ?></a></h5>
+							<p class="service-item-price"><?php echo get_post_meta( $id, '_service_price', true )?></p>
 						</div>
 						<p class="service-item-content"><?php echo esc_html( get_the_excerpt() );?></p>
 						<div class="service-item-more"><a href = "<?php echo esc_url( get_the_permalink() ); ?>">READ MORE<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>
