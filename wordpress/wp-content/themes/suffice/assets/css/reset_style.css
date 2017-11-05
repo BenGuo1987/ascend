@@ -1178,9 +1178,29 @@ div.wpcf7 .ajax-loader {
 .post-content .entry-content,
 .post-content .comments-area {
     padding: 0 80px;
+    width: 960px;
+    margin: 0 auto;
 }
 .post-content .entry-header {
     margin-top: 90px;
+}
+.post-content .comments-area {
+    width: 960px;
+    margin: 0 auto;
+}
+#comments .comment-form .form-submit {
+    text-align: right;
+}
+#comments .comment-form input:focus,
+#comments .comment-form textarea:focus,
+#comments .comment-form input:hover,
+#comments .comment-form textarea:hover{
+    border-color: #0c5e58;
+}
+
+#comments .comment-form .form-submit .submit:hover,
+#comments .comment-form .form-submit .submit {
+    background: #0c5e58;
 }
 
 /** Australian school **/

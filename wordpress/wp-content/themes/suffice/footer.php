@@ -141,7 +141,7 @@
 							<li><a target="_blank" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 							<li><a target="_blank" href="#"><i class="fa fa-qq" aria-hidden="true"></i></a></li>
 							<li><a target="_blank" href="#"><i class="fa fa-weixin" aria-hidden="true"></i></a></li>
-							<li><a target="_blank" href="#"><i class="fa fa-weibo" aria-hidden="true"></i></a></li>
+							<li><a target="_blank" href="http://www.weibo.com/5236746389/profile?rightmod=1&wvr=5&mod=personinfo"><i class="fa fa-weibo" aria-hidden="true"></i></a></li>
 						</ul>
 					</div>
 				</div>

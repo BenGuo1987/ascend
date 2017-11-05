@@ -41,33 +41,19 @@
 	<header class="entry-header">
 		<?php
 		// if is single content page.
-		if ( is_single() ) {
-			// Show title upwards if selected above.
-			if ( ( 'above' === suffice_get_option( 'suffice_blog_single_post_title_pos', 'below' ) ) && ( true !== suffice_get_option( 'suffice_show_pagetitle_bar', true ) ) ) :
-				get_template_part( 'template-parts/content-parts/entry', 'title' );
-			endif;
+		// Show title downwards if selected below.
+		get_template_part( 'template-parts/content-parts/entry', 'title' );
+		?>
 
-			// If featured is enabled, show featured image.
-			get_template_part( 'template-parts/content-parts/entry', 'thumbnail' );
+		<div class="entry-meta">
+			<?php suffice_posted_on();?>
+		</div><!-- .entry-meta -->
 
-			// Show title downwards if selected below.
-			if ( ( 'below' === suffice_get_option( 'suffice_blog_single_post_title_pos', 'below' ) ) && ( true !== suffice_get_option( 'suffice_show_pagetitle_bar', true ) ) ) :
-				get_template_part( 'template-parts/content-parts/entry', 'title' );
-			endif;
-		} else {
-			// If featured is enabled, show featured image.
-			get_template_part( 'template-parts/content-parts/entry', 'thumbnail' );
+		<?php
+		// If featured is enabled, show featured image.
+		get_template_part( 'template-parts/content-parts/entry', 'thumbnail' );
+		?>
 
-			// get entry title.
-			get_template_part( 'template-parts/content-parts/entry', 'title' );
-		}
-
-		// post meta.
-		if ( 'post' === get_post_type() ) : ?>
-			<div class="entry-meta">
-				<?php suffice_posted_on(); ?>
-			</div><!-- .entry-meta -->
-		<?php endif; ?>
 
 	</header><!-- .entry-header -->
 

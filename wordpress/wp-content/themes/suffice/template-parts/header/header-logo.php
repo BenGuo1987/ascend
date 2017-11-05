@@ -15,8 +15,8 @@
 		<a href="/" class="logo-img"></a>
 		<div class="lang-container">
 			<p>language</p>
-			<a href="local.ascend.com">English</a>
-			<a href="ch.local.ascend.com">Chinese</a>
+			<a href="http://local.ascend.com/home">English</a>
+			<a href="http://ch.local.ascend.com/home">Chinese</a>
 		</div>
 	</div> <!-- .logo-container -->
 </div> <!-- .logo -->

@@ -636,7 +636,7 @@ function my_custom_post_service() {
 		'description'   => '',
 		'public'        => true,
 		'menu_position' => 5,
-		'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt'),
+		'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments'),
 		'has_archive'   => true
 	);
 	register_post_type( 'service', $args );
