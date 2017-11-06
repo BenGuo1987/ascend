@@ -128,7 +128,7 @@ function wp_admin_bar_wp_menu( $wp_admin_bar ) {
 		);
 	}
 
-	$wp_admin_bar->add_menu( $wp_logo_menu_args );
+	// $wp_admin_bar->add_menu( $wp_logo_menu_args );
 
 	if ( $about_url ) {
 		// Add "About WordPress" link
