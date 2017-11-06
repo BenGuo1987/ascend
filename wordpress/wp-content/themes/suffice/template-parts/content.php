@@ -29,7 +29,7 @@
 		<div class="top-section-text"><?php echo $nav ?></div>
 	</div>
 </div>
-
+<div class="ascend-content-wrapper">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<?php
@@ -87,3 +87,4 @@
 	do_action( 'suffice_after_post_content' ); ?>
 
 </article><!-- #post-## -->
+</div>

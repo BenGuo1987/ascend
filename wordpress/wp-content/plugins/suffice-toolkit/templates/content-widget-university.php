@@ -83,53 +83,57 @@ $sub_high_school_list = get_categories(array(
 		<div class="top-section-text">School</div>
 	</div>
 </div>
-<div class="school-nav">
-	<ul class="cat-list">
-		<?php foreach($cat_slugs as $key=>$cat_slug) {
-			$active = '';
-			if($key == 0) {
-				$active = 'active';
-			}
-			$parent_cat = get_category_by_slug_taxonomy($cat_slug, 'school_category');
-			echo '<li class="'.$active.'" data-slug="'.$cat_slug.'">' . $parent_cat->name.'</li>';
-		}?>
-	</ul>
-	<ul class="sub-cat-list university">
-		<?php foreach($sub_university_list as $key=>$category) {
-			echo '<li data-slug="'.$category->slug.'">' . $category->name.'</li>';
-		}?>
-	</ul>
-	<ul class="sub-cat-list high-school hidden">
-		<?php foreach($sub_high_school_list as $key=>$category) {
-			echo '<li data-slug="'.$category->slug.'">' . $category->name.'</li>';
-		}?>
-	</ul>
-</div>
-<div class="school-container">
-	<ul class="school-items row  <?php echo $style ?> ">
-		<?php while ( $project_query->have_posts() ) : $project_query->the_post(); ?>
-			<?php
-			global $post;
-			$id          = $post->ID;
-			$image_per = get_the_post_thumbnail_url(null, $thumbnail_size );
-			$terms_array  = get_the_terms( $id, 'school_category' );
-			$term_string = '';
+<div class="ascend-content-wrapper">
+	<div class="ascend-content">
+		<div class="school-nav">
+			<ul class="cat-list">
+				<?php foreach($cat_slugs as $key=>$cat_slug) {
+					$active = '';
+					if($key == 0) {
+						$active = 'active';
+					}
+					$parent_cat = get_category_by_slug_taxonomy($cat_slug, 'school_category');
+					echo '<li class="'.$active.'" data-slug="'.$cat_slug.'">' . $parent_cat->name.'</li>';
+				}?>
+			</ul>
+			<ul class="sub-cat-list university">
+				<?php foreach($sub_university_list as $key=>$category) {
+					echo '<li data-slug="'.$category->slug.'">' . $category->name.'</li>';
+				}?>
+			</ul>
+			<ul class="sub-cat-list high-school hidden">
+				<?php foreach($sub_high_school_list as $key=>$category) {
+					echo '<li data-slug="'.$category->slug.'">' . $category->name.'</li>';
+				}?>
+			</ul>
+		</div>
+		<div class="school-container">
+			<ul class="school-items row  <?php echo $style ?> ">
+				<?php while ( $project_query->have_posts() ) : $project_query->the_post(); ?>
+					<?php
+					global $post;
+					$id          = $post->ID;
+					$image_per = get_the_post_thumbnail_url(null, $thumbnail_size );
+					$terms_array  = get_the_terms( $id, 'school_category' );
+					$term_string = '';
 
-			if ( $terms_array ) {
-				foreach ( $terms_array as $term ) {
-					$term_string .= $term->slug . ' ';
-				}
-			}
-			?>
-			<li class="school-item <?php echo suffice_get_column_class( $column )?> <?php echo $term_string?>" data-category="<?php echo $term_string?>">
-				<figure class="school-item-thumbnail">
-					<div class="school-item-img" style="background-image:url('<?php echo get_the_post_thumbnail_url($id, $thumbnail_size ) ?>')"></div>
-					<figcaption class="school-item-description">
-						<h5 class="school-item-title"><?php echo esc_html( get_the_title() ); ?></h5>
-						<p class="service-item-content"><?php echo esc_html( get_the_content() );?></p>
-					</figcaption>
-				</figure>
-			</li>
-		<?php endwhile; wp_reset_postdata();?>
-	</ul>
+					if ( $terms_array ) {
+						foreach ( $terms_array as $term ) {
+							$term_string .= $term->slug . ' ';
+						}
+					}
+					?>
+					<li class="school-item <?php echo suffice_get_column_class( $column )?> <?php echo $term_string?>" data-category="<?php echo $term_string?>">
+						<figure class="school-item-thumbnail">
+							<div class="school-item-img" style="background-image:url('<?php echo get_the_post_thumbnail_url($id, $thumbnail_size ) ?>')"></div>
+							<figcaption class="school-item-description">
+								<h5 class="school-item-title"><?php echo esc_html( get_the_title() ); ?></h5>
+								<p class="service-item-content"><?php echo esc_html( get_the_content() );?></p>
+							</figcaption>
+						</figure>
+					</li>
+				<?php endwhile; wp_reset_postdata();?>
+			</ul>
+		</div>
+	</div>
 </div>

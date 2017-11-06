@@ -65,18 +65,22 @@ $project_query = new WP_Query(
 		<div class="top-section-text">Policy</div>
 	</div>
 </div>
-<div class="immigration-container">
-	<div class="immigration-header"><span><?php echo __('Immigration Policy', 'default')?></span></div>
-	<ul class="immigration-items row  <?php echo $style ?> ">
-		<?php while ( $project_query->have_posts() ) : $project_query->the_post(); ?>
-			<li class="immigration-item <?php echo suffice_get_column_class( $column )?>">
-				<figure class="immigration-item-thumbnail">
-					<figcaption class="immigration-item-description">
-						<div class="immigration-item-title"><h5><?php echo esc_html( get_the_title() ); ?></h5></div>
-						<div class="immigration-item-content"><?php echo get_the_content();?></div>
-					</figcaption>
-				</figure>
-			</li>
-		<?php endwhile; wp_reset_postdata();?>
-	</ul>
+<div class="ascend-content-wrapper">
+	<div class="ascend-content">
+		<div class="immigration-container">
+			<div class="immigration-header"><span><?php echo __('Immigration Policy', 'default')?></span></div>
+			<ul class="immigration-items row  <?php echo $style ?> ">
+				<?php while ( $project_query->have_posts() ) : $project_query->the_post(); ?>
+					<li class="immigration-item <?php echo suffice_get_column_class( $column )?>">
+						<figure class="immigration-item-thumbnail">
+							<figcaption class="immigration-item-description">
+								<div class="immigration-item-title"><h5><?php echo esc_html( get_the_title() ); ?></h5></div>
+								<div class="immigration-item-content"><?php echo get_the_content();?></div>
+							</figcaption>
+						</figure>
+					</li>
+				<?php endwhile; wp_reset_postdata();?>
+			</ul>
+		</div>
+	</div>
 </div>
