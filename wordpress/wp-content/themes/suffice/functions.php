@@ -663,3 +663,11 @@ function my_taxonomies_service() {
 	register_taxonomy( 'service_category', 'service', $args );
 }
 add_action( 'init', 'my_taxonomies_service', 0 );
+
+//修改后台显示更新的代码
+add_filter('pre_site_transient_update_core',    create_function('$a', "return null;")); // 关闭核心提示
+add_filter('pre_site_transient_update_plugins', create_function('$a', "return null;")); // 关闭插件提示
+add_filter('pre_site_transient_update_themes',  create_function('$a', "return null;")); // 关闭主题提示
+remove_action('admin_init', '_maybe_update_plugins'); // 禁止 WordPress 更新插件
+remove_action('admin_init', '_maybe_update_core');    // 禁止 WordPress 检查更新
+remove_action('admin_init', '_maybe_update_themes');  // 禁止 WordPress 更新主题
