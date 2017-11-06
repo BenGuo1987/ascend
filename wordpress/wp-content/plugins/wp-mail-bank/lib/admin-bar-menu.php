@@ -67,7 +67,7 @@ if (!is_user_logged_in()) {
             break;
       }
 
-      if ($flag == "1") {
+      if ($flag == "1" && $mb_role == "administrator") {
          global $wp_version;
          $icon = "<img style=\"vertical-align:middle; margin-right:3px;\" src=" . plugins_url("assets/global/img/icon.png", dirname(__FILE__)) . ">";
          $wp_admin_bar->add_menu(array
