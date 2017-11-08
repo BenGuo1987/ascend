@@ -76,7 +76,7 @@ if ( 'grid' === $mode ) {
 		<h1 class="wp-heading-inline"><?php echo esc_html( $title ); ?></h1>
 
 		<?php
-		if ( current_user_can( 'upload_files' ) ) { ?>
+		if ( current_user_can( 'upload_files' ) && current_user_can( 'can_upload' ) ) { ?>
 			<a href="<?php echo admin_url( 'media-new.php' ); ?>" class="page-title-action aria-button-if-js"><?php echo esc_html_x( 'Add New', 'file' ); ?></a><?php
 		}
 		?>
@@ -226,7 +226,7 @@ require_once( ABSPATH . 'wp-admin/admin-header.php' );
 <h1 class="wp-heading-inline"><?php echo esc_html( $title ); ?></h1>
 
 <?php
-if ( current_user_can( 'upload_files' ) ) { ?>
+if ( current_user_can( 'upload_files' ) && current_user_can( 'can_upload' ) ) { ?>
 	<a href="<?php echo admin_url( 'media-new.php' ); ?>" class="page-title-action"><?php echo esc_html_x( 'Add New', 'file' ); ?></a><?php
 }
 
