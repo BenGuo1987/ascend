@@ -157,3 +157,16 @@ about-us-desc
 
 project-list-wrapper
 <!-- Project navigation top -->
+
+UPDATE wp_options SET option_value = replace(option_value, 'http://local.ascend.com', 'http://www.ascend.com') WHERE option_name = 'home' OR option_name = 'siteurl';
+/*修改站点url和主页地址*/
+UPDATE wp_posts SET post_content = replace(post_content, 'http://local.ascend.com', 'http://www.ascend.com');
+/*修改文章中内部链接及附件的地址*/
+UPDATE wp_posts SET guid = replace(guid, 'http://local.ascend.com', 'http://www.ascend.com');
+/*修改wordpress文章默认的永久链接*/
+UPDATE wp_comments SET comment_author_url = replace( comment_author_url, 'http://local.ascend.com', 'http://www.ascend.com' ) ;
+/*修改作者的评论链接*/
+UPDATE wp_comments SET comment_content = replace( comment_content, 'http://local.ascend.com', 'http://www.ascend.com' ) ;
+/*修改评论内的评论链接*/
+UPDATE wp_posts SET pinged = replace( pinged, 'http://local.ascend.com', 'http://www.ascend.com' ) ;
+/*修改TrackBack里的链接*/

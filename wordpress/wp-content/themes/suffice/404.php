@@ -1,53 +1,80 @@
 <?php
 /**
- * The template for displaying 404 pages (not found)
+ * Contains the post embed content template part
  *
- * @link https://codex.wordpress.org/Creating_an_Error_404_Page
+ * When a post is embedded in an iframe, this file is used to create the content template part
+ * output if the active theme does not include an embed-404.php template.
  *
- * @package ThemeGrill
- * @subpackage Suffice
- * @since Suffice 1.0.0
+ * @package WordPress
+ * @subpackage Theme_Compat
+ * @since 4.5.0
  */
+?>
 
-get_header(); ?>
+<div class="wrapper no-navigation preload">
+	<div class="error-wrapper">
+		<div class="error-inner">
+			<div class="error-type animated">404</div>
+			<h1>Page Not Found</h1>
+			<p>Look like the page you're looking for isn't here anymore.
+				Try typing the address again or start over from the home page.</p>
+			<div class="back-info">
+				<a href="/home" class="btn btn-default btn-lg text-upper">Back to Home</a>
+			</div>
+		</div><!-- ./error-inner -->
+	</div><!-- ./error-wrapper -->
+</div><!-- /wrapper -->
+<style>
+	html {
+		background-color: #f5f5f5;
+	}
+	.wrapper {
 
-	<?php 
-	/**
-	 * suffice_before_body_content hook
-	 */
-	do_action( 'suffice_before_body_content' ); ?>
+		color: #666;
+	}
+	.error-wrapper .error-inner .error-type.animated {
+		visibility: visible;
+		animation: fadeInDown 1s ease;
+		-webkit-animation: fadeInDown 1s ease;
+	}
+	.error-wrapper .error-inner .error-type {
+		position: relative;
+		font-size: 15em;
+	}
+	h1 {
+		font-size: 36px;
+	}
+	p {
+		font-size: 13px;
+		margin: 0 0 10px;
+	}
+	.error-wrapper .error-inner {
+		width: 420px;
+		margin: 50px auto;
+		text-align: center;
+	}
+	.back-info .btn-lg {
+		display: inline-block;
+		padding: 10px 16px;
+		font-size: 18px;
+		line-height: 1.3333333;
+		border-radius: 6px;
+		color: #333;
+		background-color: #fff;
+		border: 1px solid #ccc;
+		text-align: center;
+		white-space: nowrap;
+		vertical-align: middle;
+		user-select: none;
+		font-weight: 400;
+		cursor: pointer;
+		margin-top: 20px;
+	}
+	.back-info .btn-lg:hover {
+		color: #333;
+		background-color: #e6e6e6;
+		border-color: #adadad;
+		transition: background-color .3s ease;
+	}
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
-			<section class="error-404 not-found">
-			<?php if ( true !== suffice_get_option( 'suffice_show_pagetitle_bar', true ) ) : ?>
-				<header class="page-header">
-					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'suffice' ); ?></h1>
-				</header><!-- .page-header -->
-			<?php endif; ?>
-
-
-			<div class="page-content">
-				<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'suffice' ); ?></p>
-
-				<?php
-				get_search_form();
-
-				the_widget( 'WP_Widget_Recent_Posts' );
-				?>
-
-			</div><!-- .page-content -->
-			</section><!-- .error-404 -->
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-	<?php 
-	/**
-	 * suffice_after_body_content hook
-	 */
-	do_action( 'suffice_after_body_content' ); ?>
-
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+</style>

@@ -140,7 +140,10 @@
 							<li><a target="_blank" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 							<li><a target="_blank" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 							<li><a target="_blank" href="#"><i class="fa fa-qq" aria-hidden="true"></i></a></li>
-							<li><a target="_blank" href="#"><i class="fa fa-weixin" aria-hidden="true"></i></a></li>
+							<li class="social-wchat">
+								<i class="fa fa-weixin" aria-hidden="true"></i>
+								<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/extra/ascend_wchat.jpg' ); ?>" alt="" class="wchat-qbar">
+							</li>
 							<li><a target="_blank" href="http://www.weibo.com/5236746389/profile?rightmod=1&wvr=5&mod=personinfo"><i class="fa fa-weibo" aria-hidden="true"></i></a></li>
 						</ul>
 					</div>

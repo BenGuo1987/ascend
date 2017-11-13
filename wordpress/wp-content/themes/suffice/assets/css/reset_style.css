@@ -308,9 +308,27 @@ ul.social-list {
 .social-list li {
     display: inline-block;
     margin-left: 10px;
+    color: #575C77;
+    cursor: pointer;
 }
 .social-list li a {
     color: #575C77;
+}
+.social-list .social-wchat {
+    position: relative;
+}
+.social-list .social-wchat .wchat-qbar {
+    display: none;
+    position: absolute;
+    width: 120px;
+    max-width: 120px;
+    height: 120px;
+    bottom: 30px;
+    left: -50px;
+    transition: all 1s;
+}
+.social-list .social-wchat:hover .wchat-qbar{
+    display: block;
 }
 
 /** footer **/
