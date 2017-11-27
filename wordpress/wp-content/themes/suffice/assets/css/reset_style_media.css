@@ -1,0 +1,547 @@
+@media (max-width: 1400px) {
+    .service-list.list-inline li {
+        padding: 30px;
+    }
+    .blog-post-container .row :nth-child(4n+3).post .article-inner .entry-news-content,
+    .blog-post-container .row :nth-child(4n).post .article-inner .entry-news-content,
+    .post .article-inner .entry-news-content {
+        padding: 35px;
+    }
+    .post .article-inner .entry-news-content .entry-content .read-more,
+    .post .article-inner .entry-news-content .entry-content .read-more:hover {
+        left: 35px;
+    }
+    /** about us **/
+    .about-us-desc,
+    .about-us-content {
+        height: auto;
+    }
+}
+@media (max-width: 1200px) {
+    .service-list li {
+        padding: 45px;
+    }
+    .service-list li h5 {
+        font-size: 22px;
+    }
+    .home-news .blog-post-container .col-md-6 {
+        width: 100%;
+    }
+    .home-news .blog-post-container .news-brand {
+        width: 100%;
+        left: 10%;
+        top: 340px;
+    }
+    /** common top section **/
+    .top-section .top-section-text {
+        bottom: -20px;
+        font-size: 180px;
+    }
+    /** services **/
+    .service-list.list-inline {
+        padding-top: 0;
+    }
+    .service-list.list-inline li {
+        width: 50%;
+    }
+
+    .service-container .service-items li {
+        padding: 0 10px;
+    }
+    /** news **/
+    .blog-post-container .col-md-6 {
+        width: 100%;
+    }
+}
+@media (max-width: 1040px) {
+    /** university **/
+    .ascend-content-wrapper .ascend-content {
+        width: 100%;
+    }
+    .school-nav .sub-cat-list li {
+        border-right: 1px solid #ccc;
+        margin-right: 5px;
+    }
+    /** detail page **/
+    #comments,
+    .ascend-content-wrapper .hentry {
+        width: 100%;
+    }
+}
+@media (max-width: 992px) {
+    .site-identity-container {
+        padding-left: 20px;
+    }
+
+    .site-identity-container .lang-container p {
+        margin-top: 20px;
+    }
+    .menu-primary {
+        margin-top: 37px;
+    }
+    .slider .slider-content .slider-title {
+        font-size: 48px;
+    }
+    .slider.slider-height--full .swiper-container {
+        height: auto!important;
+    }
+
+    /** common top section **/
+    .top-section .top-section-text {
+        bottom: -30px;
+        font-size: 150px;
+    }
+
+    /** content css **/
+    .portfolio-items.portfolio-with-text .portfolio-item .portfolio-item-description {
+        padding: 30px;
+        text-align: center;
+    }
+    .portfolio-items.portfolio-with-text .portfolio-item .portfolio-item-description .portfolio-item-more {
+        left: 0;
+        right: 0;
+    }
+    /** footer css **/
+    .site-footer .container {
+        width: 100% !important;
+        padding: 0 15px;
+        padding-top: 65px;
+    }
+    .useful-tools {
+        margin: 0;
+    }
+    .footer-top .contact-us  .online-contact-btn {
+        margin-left: 0;
+    }
+    .copy-info .text-right {
+        text-align: center;
+    }
+    ul.social-list {
+        padding: 0;
+    }
+    .social-list .social-wchat,
+    .social-list li a {
+        font-size: 22px;
+    }
+    /** services **/
+    .service-container .service-items li {
+        width: 100%;
+    }
+    .service-container .service-items {
+        padding: 0 5px;
+    }
+    .service-item .service-item-description {
+        padding: 30px 15px;
+    }
+
+    .contact-us-wrapper {
+        display: block!important;
+    }
+    .contact-us-wrapper .panel-grid-cell {
+        width: 100%!important;
+        height: auto;
+    }
+}
+@media (max-width: 960px) {
+    .ascend-content-wrapper .ascend-content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .school-container {
+        width: 100%;
+
+    }
+    .school-items li .school-item-img {
+        width: 25%;
+        min-width: 150px;
+    }
+    .school-items li .school-item-description {
+        width: 70%;
+    }
+
+    .immigration-container {
+        width: 100%;
+    }
+
+    /** detail page **/
+    .post-content .entry-header, .post-content .entry-content {
+        width: 100%;
+    }
+}
+@media (max-width: 890px) {
+    .lang-container {
+        display: none;
+    }
+    .lang-container.mobile {
+        display: block;
+        padding-top: 8px;
+    }
+    .site-identity-container .logo-container {
+        width: 100px;
+        height: 50px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .logo-container .logo-img {
+        width: 50px;
+        height: 50px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .site-identity-container .lang-container {
+        width: 50px;
+        height: 50px;
+        padding-right:8px;
+    }
+    .header-action-container {
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+        padding-top: 10px;
+    }
+    .header-action-container.show-close {
+        background-color: rgba(0,0,0,0.9);
+    }
+    .main-navigation {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 210px;
+    }
+    .menu-primary {
+        margin-top: 0;
+        background: rgba(0,0,0,0.9);
+        padding: 30px 40px;
+    }
+    .menu-primary li {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .navigation-default .menu-primary > ul > li > a:hover,
+    .navigation-default .menu-primary > ul > li > a {
+        display: block;
+        width: 100%;
+        background: transparent;
+        color: #fff;
+        text-align: left;
+    }
+    .navigation-default .menu-primary > ul > li.current_page_item > a {
+        display: block;
+        width: 100%;
+        background: transparent;
+        color: #fff;
+        border-radius: 0;
+        border-bottom: 2px solid #fff;
+    }
+    .header-action-container .navigation-togglers-wrapper .menu-toggle-mobile {
+        display: inline-block;
+        font-size: 40px;
+        color: #fff;
+    }
+    .header-action-container .navigation-togglers-wrapper {
+        padding: 0;
+        display: block;
+        text-align: center;
+    }
+    .portfolio-items .portfolio-item {
+        height: 600px;
+    }
+    .portfolio-items .portfolio-item .portfolio-item-thumbnail >a {
+        width: 100%;
+        height: 300px;
+    }
+    .portfolio-items .portfolio-item .portfolio-item-thumbnail >a .portfolio-item-img {
+        height: 300px;
+    }
+    .portfolio-items.portfolio-with-text .portfolio-item .portfolio-item-description {
+        width: 100%;
+        padding: 70px 30px;
+        height: 300px;
+    }
+    .portfolio-items.portfolio-with-text .portfolio-item .portfolio-item-description .portfolio-item-more {
+        bottom: 70px;
+    }
+
+    .service-list {
+        background-color: #fff;
+        padding-top: 60px;
+    }
+    .service-list li {
+        width: 100%;
+        padding-right: 100px;
+    }
+    .service-list .service-brand {
+        top: 0;
+    }
+
+    .sub-cat-list li {
+        margin-bottom: 15px;
+    }
+
+    /** project **/
+    .project-list-wrapper .portfolio-item.col-md-4 {
+        width: 100%;
+    }
+    /** about us **/
+    .about-us-content {
+        display: block!important;
+    }
+    .about-us-content .panel-grid-cell {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 850px) {
+    .useful-tools .icon-box {
+        width: 30%;
+    }
+    /** common top section **/
+    .top-section .top-section-text {
+        bottom: -45px;
+        font-size: 120px;
+    }
+    /** contact us **/
+    .contact-us-wrapper .panel-grid-cell {
+        padding: 80px 50px 50px!important;
+    }
+    /** university **/
+    .school-container {
+        padding: 30px;
+    }
+    .school-items li .school-item-description {
+        padding-left: 30px;
+    }
+    .xubox_border {
+        width: 100%!important;
+        left: 0!important;
+        right: 0!important;
+        margin: 0 auto!important;
+    }
+    .xubox_layer {
+        width: 98%!important;
+        left: 0!important;
+        right: 0!important;
+        margin: 0 auto!important;
+    }
+    .xubox_main {
+        width: 98%!important;
+        margin: 0 auto;
+        min-height: 738px;
+    }
+}
+
+@media (max-width: 786px) {
+    .useful-tools .exchange-rate-box .exchange-rate-banks {
+        width: 240px;
+        top: -480px;
+        left: 0;
+    }
+    .useful-tools .exchange-rate-box .exchange-rate-banks:after {
+        border-width: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .home-news .blog-post-container .news-brand {
+        display: none;
+    }
+    .post .article-inner {
+        height: auto;
+    }
+    .hentry .entry-thumbnail {
+        margin: 0;
+    }
+    .post .article-inner .entry-thumbnail .news-item-img,
+    .home-news .post .article-inner .entry-thumbnail .news-item-img {
+        height: 300px;
+    }
+    .blog-post-container .row :nth-child(4n+3).post .article-inner .entry-news-content,
+    .blog-post-container .row :nth-child(4n).post .article-inner .entry-news-content,
+    .post .article-inner .entry-news-content,
+    .home-news .post .article-inner .entry-news-content {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 30px;
+    }
+    .post .article-inner .entry-news-content .entry-content .read-more,
+    .post .article-inner .entry-news-content .entry-content .read-more:hover,
+    .home-news .post .article-inner .entry-news-content .entry-content .read-more,
+    .home-news .post .article-inner .entry-news-content .entry-content .read-more:hover{
+        position: relative;
+        left: 0;
+        bottom: 0;
+    }
+    /** common top section **/
+    .top-section .top-section-text {
+        bottom: -60px;
+        font-size: 80px;
+    }
+
+    .service-list.list-inline li {
+        width: 100%;
+    }
+
+    .service-item .service-item-img {
+        height: 300px;
+    }
+
+    /** news **/
+
+    /** university **/
+    .school-items li .school-item-img {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .school-items li .school-item-description {
+        display: block;
+        width: 100%;
+        padding-left: 0;
+    }
+    .school-items li .school-item-description h5 {
+        text-align: center;
+    }
+
+    .layerBox {
+        padding: 45px 20px;
+    }
+}
+@media (max-width: 460px) {
+    .top-for-mobile {
+        height: 80px;
+        background-color: rgba(0,0,0,0.9);
+    }
+    .common-section .top-section {
+        height: 220px;
+    }
+    .common-section .contact-brand {
+        top: 160px;
+    }
+    .useful-tools .icon-box {
+        width: 50%;
+    }
+    .footer-top .contact-us .contact-type {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .service-list li {
+        padding: 45px;
+    }
+    /** common top section **/
+    .top-section .top-section-text {
+        bottom: -70px;
+        font-size: 50px;
+    }
+    .project-list-wrapper .portfolio-items .portfolio-item .portfolio-item-thumbnail .portfolio-item-description .portfolio-item-title a {
+        top: 25px;
+        font-size: 28px;
+    }
+    .project-list-wrapper .portfolio-items .portfolio-item .portfolio-item-thumbnail .portfolio-item-description .portfolio-item-price {
+        text-align: left;
+        padding-left: 40px;
+        font-size: 28px;
+    }
+    .project-list-wrapper .portfolio-items .portfolio-item,
+    .project-list-wrapper .portfolio-items .portfolio-item .portfolio-item-thumbnail,
+    .project-list-wrapper .portfolio-items .portfolio-item .portfolio-item-thumbnail .portfolio-item-img{
+        height: 450px;
+    }
+    .project-list-wrapper  .portfolio-items.portfolio-with-text .portfolio-item .portfolio-item-description .portfolio-item-more {
+        height: 80px;
+    }
+    .project-list-wrapper .portfolio-items .portfolio-item .portfolio-item-thumbnail .portfolio-item-description .portfolio-item-price,
+    .project-list-wrapper  .portfolio-items.portfolio-with-text .portfolio-item .portfolio-item-description .portfolio-item-more a {
+        height: 80px;
+        line-height: 80px;
+    }
+    /** contact us **/
+    .contact-us-wrapper .panel-grid-cell {
+        padding: 80px 20px 30px!important;
+    }
+    .contact-content .contact-type p {
+        font-size: 18px;
+    }
+
+    .layerBox form .row span {
+        text-align: left;
+        padding-left: 5px;
+    }
+    .layerBox form .row.btn-row {
+        padding-left: 5px;
+    }
+    .xubox_setwin .xubox_close {
+        top: -10px!important;
+        right: -10px!important;
+    }
+
+    /** detail page **/
+    .post-content .entry-header, .post-content .entry-content {
+        padding: 30px;
+        padding-top: 50px;
+    }
+    #comments {
+        padding: 30px;
+    }
+
+}
+@media (max-width: 400px) {
+    .service-list.list-inline li,
+    .service-list li {
+        height: auto;
+    }
+    .service-list.list-inline li .service-intro,
+    .service-list li .service-intro {
+        float: none;
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+    }
+    .service-list.list-inline li .service-icon,
+    .service-list li .service-icon {
+        float: none;
+        margin: 0 auto;
+    }
+    /** about us **/
+    .about-us-content .swiper-wrapper .slider-content-inner {
+        width: 100%;
+    }
+    .about-us-desc {
+        padding: 20px;
+    }
+    .contact-content p {
+        font-size: 16px;
+    }
+
+    /** university **/
+    .school-container {
+        padding: 20px 15px;
+        margin-top: 30px;
+    }
+    .school-items li {
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 15px;
+    }
+    .immigration-items .immigration-item .immigration-item-thumbnail .immigration-item-content {
+        padding: 20px 15px;
+    }
+    .immigration-container .immigration-header {
+        font-size: 18px;
+    }
+
+    #comments .comment-list .comment-content {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+}
+@media (max-width: 320px) {
+    .useful-tools .icon-box {
+        width: 100%;
+    }
+    .layerBox {
+        padding: 25px 10px;
+    }
+}

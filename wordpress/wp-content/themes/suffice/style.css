@@ -7069,7 +7069,7 @@ object {
 	}
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
 	/* Only make slider full viewport height on larger devices */
 	.slider.slider-height--full .swiper-container {
 		height: 100vh;

@@ -18,5 +18,9 @@
 			<a href="http://local.ascend.com/home">English</a>
 			<a href="http://ch.local.ascend.com/home">Chinese</a>
 		</div>
+		<div class="lang-container mobile">
+			<a href="http://local.ascend.com/home">EN</a>
+			<a href="http://ch.local.ascend.com/home">CH</a>
+		</div>
 	</div> <!-- .logo-container -->
 </div> <!-- .logo -->

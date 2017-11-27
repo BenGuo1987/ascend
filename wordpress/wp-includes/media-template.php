@@ -441,6 +441,7 @@ function wp_print_media_templates() {
 						<button type="button" class="button-link delete-attachment"><?php _e( 'Delete Permanently' ); ?></button>
 					<?php endif; ?>
 				<# } #>
+				| <a target="_blank" class="button-link download-attachment" href="{{ data.url }}"><?php _e( 'Download' ); ?></a>
 			</div>
 
 		</div>

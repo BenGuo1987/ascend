@@ -371,8 +371,8 @@ class WP_Media_List_Table extends WP_List_Table {
 
 		if ( current_user_can( 'edit_post', $post->ID ) && ! $this->is_trash ) {
 			$link_start = sprintf(
-				'<a href="%s" aria-label="%s">',
-				get_edit_post_link( $post->ID ),
+				'<a href="%s" target="_blank" aria-label="%s">',
+				wp_get_attachment_url( $post->ID ),
 				/* translators: %s: attachment title */
 				esc_attr( sprintf( __( '&#8220;%s&#8221; (Edit)' ), $title ) )
 			);

@@ -197,4 +197,19 @@ jQuery(function() {
 		}
 
 	});
+
+	// mobile header toggle close
+	$('.header-action-container').off('click').on('click', function() {
+		var $this = $(this);
+		console.log('dddd');
+		$this.find('.fa').toggleClass('fa-bars fa-times');
+		if($this.hasClass('show-close')) {
+			$this.removeClass('show-close');
+			$('#site-navigation').slideUp();
+		} else {
+			$this.addClass('show-close');
+			$('#site-navigation').slideDown();
+		}
+
+	});
 });
