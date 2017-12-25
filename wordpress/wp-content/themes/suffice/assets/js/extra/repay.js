@@ -212,4 +212,69 @@ jQuery(function() {
 		}
 
 	});
+
+	$('.online-contact .aside-contact-btn').off('click').on('click', function(e) {
+		e.stopPropagation();
+		var $this = $(this);
+		$this.toggleClass('active');
+		var $content = $('.online-contact .online-contact-content');
+		$content.toggleClass('show-content');
+		var winH = $(window).height();
+		if($content.height() > winH) {
+			$content.css({
+				'height': winH + 'px',
+				'overflow-y': 'scroll'
+			});
+		}
+	});
+
+	// $('body').not($('.online-contact .online-contact-content')).off('click').on('click', function(e) {
+	// 	e.stopPropagation();
+	// 	var $this = $(this);
+	//
+	// 	if($this.parents('.online-contact').length == 0) {
+	// 		var $onlineBtn = $('.online-contact .aside-contact-btn');
+	// 		$onlineBtn.removeClass('active');
+	// 		$('.online-contact .online-contact-content').removeClass('show-content');
+	// 	}
+	// });
+
+	var $body = $('.intro-video').parents('body');
+	if($body.length == 0) {
+		$('.online-contact').show();
+	} else {
+		$body.find('.site-header').hide();
+		$body.find('.site-footer').hide();
+	}
+
+	$('.feature-search-city').off('click').on('click', function() {
+		if($('.search-city-list').css('display') == 'none') {
+			$('.search-city-list').slideDown();
+		} else {
+			$('.search-city-list').slideUp();
+		}
+	});
+
+	$('.search-city-list').on('click', 'li', function(e) {
+		e.stopPropagation();
+		var $this = $(this);
+		var $searchValue = $('.feature-search-city .search-value');
+		$searchValue.attr('data-city', $this.data('city')).text($this.text());
+		$('.search-city-list').slideUp();
+		var $keywords = $('.feature-search-text');
+		if($keywords.val() != '') {
+			var href = location.href.split('?')[0];
+			window.location = href + '?keywords='+$keywords.val() + '&city='+$searchValue.data('city');
+		}
+	});
+
+	$('.feature-search-text').on('keypress', function(e) {
+		if(event.keyCode == "13") {
+			$this = $(this);
+			var $searchValue = $('.feature-search-city .search-value');
+			var href = location.href.split('?')[0];
+			window.location = href + '?keywords='+$this.val() + '&city='+$searchValue.data('city');
+		}
+	});
+
 });

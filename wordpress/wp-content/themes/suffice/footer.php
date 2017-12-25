@@ -15,7 +15,14 @@
 
 		</div><!-- #content -->
 	</div> <!-- .container -->
-
+	<div class="online-contact clearfix">
+		<div class="aside-contact-btn">
+			<?php echo(__('Online <br/> Contact', 'default')) ?>
+		</div>
+		<div class="online-contact-content">
+			<?php echo do_shortcode( '[contact-form-7 id="onlineContactForm" title="Online Contact"]' ); ?>
+		</div>
+	</div>
 	<?php
 	/**
 	 * suffice_before_footer hook
@@ -127,8 +134,9 @@
 						<p class="contact-type">Phone: +03 9882 1699</p>
 						<p class="contact-type">Email: info@ascendinternational.com.au</p>
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-6 footer-right-info">
 						<div role="button" class="online-contact-btn" onclick="location.href='/contact-us'"><?php echo(__('Online Contact', 'default')) ?></div>
+						<div class="footer-text-img"></div>
 					</div>
 				</div>
 				<div class="copy-info clearfix">

@@ -15,12 +15,12 @@
 		<a href="/" class="logo-img"></a>
 		<div class="lang-container">
 			<p>language</p>
-			<a href="http://local.ascend.com/home">English</a>
-			<a href="http://ch.local.ascend.com/home">Chinese</a>
+			<a href="http://ascendinternational.com.au:8080/home">English</a>
+			<a href="http://ascendinternational.com.au:8080/ch/home">Chinese</a>
 		</div>
 		<div class="lang-container mobile">
-			<a href="http://local.ascend.com/home">EN</a>
-			<a href="http://ch.local.ascend.com/home">CH</a>
+			<a href="http://ascendinternational.com.au:8080/home">EN</a>
+			<a href="http://ascendinternational.com.au:8080/ch/home">CH</a>
 		</div>
 	</div> <!-- .logo-container -->
 </div> <!-- .logo -->

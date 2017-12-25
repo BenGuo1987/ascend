@@ -614,7 +614,7 @@ function my_taxonomies_immigration() {
 add_action( 'init', 'my_taxonomies_immigration', 0 );
 
 /**
- * Add new Post Type Immigration Policy
+ * Add new Post Type Service
  **/
 function my_custom_post_service() {
 	$labels = array(
@@ -664,6 +664,58 @@ function my_taxonomies_service() {
 	register_taxonomy( 'service_category', 'service', $args );
 }
 add_action( 'init', 'my_taxonomies_service', 0 );
+
+/**
+ * Add new Post Type Service
+ **/
+function my_custom_post_feature() {
+	$labels = array(
+		'name'               => _x( __('Feature', 'default'), 'post type general name'),
+		'singular_name'      => _x(  __('Feature', 'default'),  'post type singular name'),
+		'add_new'            => _x( 'Add New', 'Customize Changeset' ),
+		'add_new_item'       => __( 'Add New' ),
+		'edit_item'          => __( 'Edit' ),
+		'new_item'           => __( 'New' ),
+		'all_items'          => __( 'All Features' ),
+		'view_item'          => __( 'View' ),
+		'search_items'       => __( 'Search' ),
+		'not_found'          => __( 'No changesets found.' ),
+		'not_found_in_trash' => __( 'No changesets found in Trash' ),
+		'parent_item_colon'  => '',
+		'menu_name'          =>  __('Feature', 'default')
+	);
+	$args = array(
+		'labels'        => $labels,
+		'description'   => '',
+		'public'        => true,
+		'menu_position' => 4,
+		'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments'),
+		'has_archive'   => true
+	);
+	register_post_type( 'feature', $args );
+}
+add_action( 'init', 'my_custom_post_feature' );
+function my_taxonomies_feature() {
+	$labels = array(
+		'name'              => _x( __( 'Categories' ), 'taxonomy name' ),
+		'singular_name'     => _x( 'Category', 'taxonomy singular name' ),
+		'search_items'      => __( 'Search' ),
+		'all_items'         => __( 'All Categories' ),
+		'parent_item'       => __( 'Parent Category' ),
+		'parent_item_colon' => __( 'Parent Category:' ),
+		'edit_item'         => __( 'Edit' ),
+		'update_item'       => __( 'Quick Edit' ),
+		'add_new_item'      => __( 'Add New Category' ),
+		'new_item_name'     => __( 'New Category' ),
+		'menu_name'         => __( 'Categories' ),
+	);
+	$args = array(
+		'labels' => $labels,
+		'hierarchical' => true,
+	);
+	register_taxonomy( 'feature_category', 'feature', $args );
+}
+add_action( 'init', 'my_taxonomies_feature', 0 );
 
 //修改后台显示更新的代码
 add_filter('pre_site_transient_update_core',    create_function('$a', "return null;")); // 关闭核心提示

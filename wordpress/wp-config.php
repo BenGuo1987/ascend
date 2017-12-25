@@ -81,13 +81,14 @@ define('WP_DEBUG', false);
 /* Multisite */
 define( 'WP_ALLOW_MULTISITE', true );
 define('MULTISITE', true);
-define('SUBDOMAIN_INSTALL', true);
-define('DOMAIN_CURRENT_SITE', 'www.ascend.com');
+define('SUBDOMAIN_INSTALL', false);
+define('DOMAIN_CURRENT_SITE', 'ascendinternational.com.au');
 define('PATH_CURRENT_SITE', '/');
 define('SITE_ID_CURRENT_SITE', 1);
 define('BLOG_ID_CURRENT_SITE', 1);
 /* That's all, stop editing! Happy blogging. */
-define('COOKIE_DOMAIN', $_SERVER['HTTP_HOST'] );
+define('COOKIE_DOMAIN', 'ascendinternational.com.au' );
+#define('COOKIE_DOMAIN', '.ascend.com');
 
 /** Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )

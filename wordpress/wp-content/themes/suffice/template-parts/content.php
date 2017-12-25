@@ -22,6 +22,8 @@
 		$nav = 'SERVICES';
 	}  elseif('portfolio' === get_post_type() ) {
 		$nav = 'PROJECT';
+	} elseif('feature' === get_post_type() ) {
+		$nav = 'FEATURE';
 	}
 ?>
 <div class="common-section <?php echo $sectionClass ?>">
@@ -56,7 +58,59 @@
 
 
 	</header><!-- .entry-header -->
-
+	<?php if ( 'feature' === get_post_type() ) {?>
+		<div class="feature-basic-info">
+			<div class="basic-info-panel">
+				<div class="basic-info-panel-header"><?php echo __('Basic Info', 'default');?></div>
+				<div class="basic-info-panel-body">
+					<table>
+						<?php if (get_post_meta( $post->ID, '_feature_address', true )) {?>
+							<tr>
+								<td><?php echo __('Address', 'default');?></td>
+								<td><?php echo get_post_meta( $post->ID, '_feature_address', true );?></td>
+							</tr>
+						<?php }?>
+						<?php if (get_post_meta( $post->ID, '_feature_dev', true )) {?>
+							<tr>
+								<td><?php echo __('Developer', 'default'); ?></td>
+								<td><?php echo get_post_meta( $post->ID, '_feature_dev', true );?></td>
+							</tr>
+						<?php }?>
+						<?php if (get_post_meta( $post->ID, '_feature_designer', true )) {?>
+							<tr>
+								<td><?php echo __('Designer', 'default'); ?></td>
+								<td><?php echo get_post_meta( $post->ID, '_feature_designer', true );?></td>
+							</tr>
+						<?php }?>
+						<?php if (get_post_meta( $post->ID, '_feature_roomType', true )) {?>
+							<tr>
+								<td><?php echo __('Room Type', 'default'); ?></td>
+								<td><?php echo get_post_meta( $post->ID, '_feature_roomType', true );?></td>
+							</tr>
+						<?php }?>
+						<?php if (get_post_meta( $post->ID, '_feature_floor', true )) {?>
+							<tr>
+								<td><?php echo __('Floor', 'default'); ?></td>
+								<td><?php echo get_post_meta( $post->ID, '_feature_floor', true );?></td>
+							</tr>
+						<?php }?>
+						<?php if (get_post_meta( $post->ID, '_feature_dwellings', true )) {?>
+							<tr>
+								<td><?php echo __('Number of dwellings', 'default'); ?></td>
+								<td><?php echo get_post_meta( $post->ID, '_feature_dwellings', true );?></td>
+							</tr>
+						<?php }?>
+						<?php if (get_post_meta( $post->ID, '_feature_huxing', true )) {?>
+							<tr>
+								<td><?php echo __('Huxing', 'default'); ?></td>
+								<td><?php echo get_post_meta( $post->ID, '_feature_huxing', true );?></td>
+							</tr>
+						<?php }?>
+					</table>
+				</div>
+			</div>
+		</div>
+	<?php }?>
 	<div class="entry-content">
 		<?php
 		if ( ! is_single() && 'post-style-grid' === suffice_get_option( 'suffice_blog_post_style', 'post-style-classic' ) ) {
@@ -75,6 +129,46 @@
 		) );
 		?>
 	</div><!-- .entry-content -->
+
+	<?php if ( 'feature' === get_post_type() ) {?>
+	<div class="map-box-wrapper clearfix">
+		<div id="map_box" class="map-box"></div>
+		<div class="feature-contact">
+			<?php echo  do_shortcode( '[contact-form-7 id="featureContactForm" title="contact-for-feature"]' ); ?>
+		</div>
+	</div>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzE9xAESye6Kde-3hT-6B90nfwUkcS8Yw&sensor=false"></script>
+	<script type="text/javascript">
+		var myOptions = {
+			zoom : 17,
+			center : new google.maps.LatLng(-37.81195385919268, 144.96185302734375),
+			mapTypeId : google.maps.MapTypeId.ROADMAP
+		};
+
+		var markerLocation = null;
+		//生成地图
+
+		var map = new google.maps.Map(document.getElementById('map_box'), myOptions);
+
+		var geocoder = new google.maps.Geocoder();
+		var address = '<?php echo get_post_meta( $post->ID, '_feature_address', true );?>';
+		geocoder.geocode( { 'address': address}, function(results, status) {
+			if (status == google.maps.GeocoderStatus.OK) {
+				console.log(results[0].geometry);
+				markerLocation = results[0].geometry.location;
+				var marker = null;
+				marker = new google.maps.Marker({
+					position: markerLocation,
+					map: map
+				});
+				map.setCenter(markerLocation);
+			} else {
+				console.log("Geocode was not successful for the following reason: " + status);
+			}
+		});
+
+	</script>
+	<?php }?>
 
 	<footer class="entry-footer">
 		<?php suffice_entry_footer(); ?>
