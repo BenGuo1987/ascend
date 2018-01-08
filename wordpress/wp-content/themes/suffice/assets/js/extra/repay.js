@@ -217,6 +217,8 @@ jQuery(function() {
 		e.stopPropagation();
 		var $this = $(this);
 		$this.toggleClass('active');
+		var $contentWrapper = $this.parent();
+		$contentWrapper.toggleClass('show');
 		var $content = $('.online-contact .online-contact-content');
 		$content.toggleClass('show-content');
 		var winH = $(window).height();

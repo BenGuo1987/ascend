@@ -131,6 +131,31 @@
     .blog-post-container .col-md-6 {
         width: 100%;
     }
+    /** Feature project **/
+    .feature-row {
+        width: 100%;
+        display: block!important;
+    }
+    .feature-row .panel-grid-cell {
+        float: right;
+        width: 100%!important;
+        margin-right: 0;
+        padding: 0 15px!important;
+    }
+    .feature-row .panel-grid-cell:last-child {
+        float: left;
+        width: 100% !important;
+    }
+    .feature-item-thumbnail .feature-item-img-warpper {
+        float: none;
+    }
+    .feature-item-thumbnail .feature-item-description,
+    .feature-items .feature-item .feature-item-img {
+        width: 100%;
+    }
+    .feature-container {
+        margin-bottom: 50px;
+    }
 }
 @media (max-width: 1040px) {
     /** university **/
@@ -145,6 +170,17 @@
     #comments,
     .ascend-content-wrapper .hentry {
         width: 100%;
+    }
+    .map-box-wrapper,
+    .feature-basic-info {
+        width: 100%;
+    }
+    .map-box-wrapper .map-box,
+    .map-box-wrapper .feature-contact {
+        width: 100%;
+    }
+    .map-box-wrapper .map-box {
+        margin-bottom: 15px;
     }
 }
 @media (max-width: 992px) {
@@ -423,6 +459,33 @@
     .layerBox {
         padding: 45px 20px;
     }
+    /** feature project **/
+    .feature-container .feature-title {
+        position: relative;
+    }
+    .feature-container .feature-title .feature-search-city {
+        float: none;
+        position: absolute;
+        top: 60px;
+        width: 40%;
+        right: 0;
+    }
+    .feature-container .feature-title .feature-search-text {
+        float: none;
+        position: absolute;
+        top: 60px;
+        width: 60%;
+        right: 40%;
+    }
+    .feature-container .feature-title .search-city-list {
+        width: 100%;
+    }
+    .feature-container .feature-items {
+        margin-top: 50px;
+    }
+    .feature-container .feature-title .search-city-list li {
+        width: 100%;
+    }
 }
 @media (max-width: 460px) {
     .top-for-mobile {
@@ -493,9 +556,11 @@
     }
 
     /** detail page **/
-    .post-content .entry-header, .post-content .entry-content {
-        padding: 30px;
-        padding-top: 50px;
+    .map-box-wrapper,
+    .feature-basic-info,
+    .post-content .entry-header,
+    .post-content .entry-content {
+        padding: 10px 30px;
     }
     #comments {
         padding: 30px;
