@@ -11180,4 +11180,10 @@ msgstr "新西兰"
 msgid "Basic Info"
 msgstr "基本信息"
 
+msgid "Phone"
+msgstr "电话"
+
+msgid "Fax"
+msgstr "传真"
+
 

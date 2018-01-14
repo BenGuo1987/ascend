@@ -126,13 +126,13 @@
 				</div>
 				<div class="contact-us clearfix">
 					<div class="col-md-6">
-						<h2><?php echo(__('Contact Us', 'default')) ?></h2>
+						<h2><?php echo(__('Address', 'default')) ?></h2>
 						<p class="contact-us-content">
-							"Dream in Australia, Australia or edge of the source of" Sheng International real estate group, the group is headquartered in Melbourne City,
-							the famous Camberwell downtown area. Australia International founded by the Chinese elite in the Australian real estate industry, the group...
+							Suite 1, Ground Floor, 363 Camberwell Road, Camberwell, Vic 3124
 						</p>
-						<p class="contact-type">Phone: +03 9882 1699</p>
-						<p class="contact-type">Email: info@ascendinternational.com.au</p>
+						<p class="contact-type"><?php echo(__('Phone', 'default')) ?>: +61 (3) 9882 1699 </p>
+						<p class="contact-type"><?php echo(__('Fax', 'default')) ?>: +61 (3) 9882 1099</p>
+						<p class="contact-type"><?php echo(__('Email', 'default')) ?>: info@ascendinternational.com.au</p>
 					</div>
 					<div class="col-md-6 footer-right-info">
 						<div role="button" class="online-contact-btn" onclick="location.href='/contact-us'"><?php echo(__('Online Contact', 'default')) ?></div>
