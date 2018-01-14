@@ -733,3 +733,113 @@ function huxing_save_meta_box_feature($post_id){
 	update_post_meta( $post_id, '_feature_huxing', $product_price );
 
 }
+
+/** position for staff **/
+add_action( 'add_meta_boxes', 'staff_position' );
+function staff_position() {
+	$priceText = __('Position', 'default');
+	add_meta_box(
+		'staff_position',
+		$priceText,
+		'staff_position_meta_box',
+		'staff',
+		'side',
+		'low'
+	);
+}
+
+function staff_position_meta_box($post) {
+
+	// 创建临时隐藏表单，为了安全
+	wp_nonce_field( 'staff_position_meta_box', 'staff_position_meta_box_nonce' );
+	// 获取之前存储的值
+	$value = get_post_meta( $post->ID, '_staff_position', true );
+
+	?>
+
+	<input type="text" style="width: 100%;" id="staff_position" name="staff_position" value="<?php echo esc_attr( $value ); ?>" placeholder="<?php echo __('Position', 'default'); ?>" >
+
+	<?php
+}
+
+add_action( 'save_post', 'position_save_meta_box_feature' );
+function position_save_meta_box_feature($post_id){
+
+	// 安全检查
+	// 检查是否发送了一次性隐藏表单内容（判断是否为第三者模拟提交）
+	if ( ! isset( $_POST['staff_position_meta_box_nonce'] ) ) {
+		return;
+	}
+	// 判断隐藏表单的值与之前是否相同
+	if ( ! wp_verify_nonce( $_POST['staff_position_meta_box_nonce'], 'staff_position_meta_box' ) ) {
+		return;
+	}
+	// 判断该用户是否有权限
+	if ( ! current_user_can( 'edit_post', $post_id ) ) {
+		return;
+	}
+
+	// 判断 Meta Box 是否为空
+	if ( ! isset( $_POST['staff_position'] ) ) {
+		return;
+	}
+
+	$product_price = sanitize_text_field( $_POST['staff_position'] );
+	update_post_meta( $post_id, '_staff_position', $product_price );
+
+}
+
+/** email for staff **/
+add_action( 'add_meta_boxes', 'staff_email' );
+function staff_email() {
+	$priceText = __('Email', 'default');
+	add_meta_box(
+		'staff_email',
+		$priceText,
+		'staff_email_meta_box',
+		'staff',
+		'side',
+		'low'
+	);
+}
+
+function staff_email_meta_box($post) {
+
+	// 创建临时隐藏表单，为了安全
+	wp_nonce_field( 'staff_email_meta_box', 'staff_email_meta_box_nonce' );
+	// 获取之前存储的值
+	$value = get_post_meta( $post->ID, '_staff_email', true );
+
+	?>
+
+	<input type="text" style="width: 100%;" id="staff_email" name="staff_email" value="<?php echo esc_attr( $value ); ?>" placeholder="<?php echo __('Email', 'default'); ?>" >
+
+	<?php
+}
+
+add_action( 'save_post', 'email_save_meta_box_feature' );
+function email_save_meta_box_feature($post_id){
+
+	// 安全检查
+	// 检查是否发送了一次性隐藏表单内容（判断是否为第三者模拟提交）
+	if ( ! isset( $_POST['staff_email_meta_box_nonce'] ) ) {
+		return;
+	}
+	// 判断隐藏表单的值与之前是否相同
+	if ( ! wp_verify_nonce( $_POST['staff_email_meta_box_nonce'], 'staff_email_meta_box' ) ) {
+		return;
+	}
+	// 判断该用户是否有权限
+	if ( ! current_user_can( 'edit_post', $post_id ) ) {
+		return;
+	}
+
+	// 判断 Meta Box 是否为空
+	if ( ! isset( $_POST['staff_position'] ) ) {
+		return;
+	}
+
+	$product_price = sanitize_text_field( $_POST['staff_email'] );
+	update_post_meta( $post_id, '_staff_email', $product_price );
+
+}

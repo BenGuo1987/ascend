@@ -724,3 +724,56 @@ add_filter('pre_site_transient_update_themes',  create_function('$a', "return nu
 remove_action('admin_init', '_maybe_update_plugins'); // 禁止 WordPress 更新插件
 remove_action('admin_init', '_maybe_update_core');    // 禁止 WordPress 检查更新
 remove_action('admin_init', '_maybe_update_themes');  // 禁止 WordPress 更新主题
+
+
+/**
+ * Add new Post Type school
+ **/
+function my_custom_post_staff() {
+	$labels = array(
+		'name'               => _x( __('Staff', 'default'), 'post type general name'),
+		'singular_name'      => _x(__('Staff', 'default'),  'post type singular name'),
+		'add_new'            => _x( 'Add New', 'Customize Changeset' ),
+		'add_new_item'       => __( 'Add New' ),
+		'edit_item'          => __( 'Edit' ),
+		'new_item'           => __( 'New' ),
+		'all_items'          => __( 'All Staffs' ),
+		'view_item'          => __( 'View' ),
+		'search_items'       => __( 'Search' ),
+		'not_found'          => __( 'No changesets found.' ),
+		'not_found_in_trash' => __( 'No changesets found in Trash' ),
+		'parent_item_colon'  => '',
+		'menu_name'          =>  __('Staff', 'default')
+	);
+	$args = array(
+		'labels'        => $labels,
+		'description'   => '',
+		'public'        => true,
+		'menu_position' => 5,
+		'supports'      => array( 'title', 'editor', 'thumbnail'),
+		'has_archive'   => true
+	);
+	register_post_type( 'staff', $args );
+}
+add_action( 'init', 'my_custom_post_staff' );
+function my_taxonomies_staff() {
+	$labels = array(
+		'name'              => _x( __( 'Categories' ), 'taxonomy name' ),
+		'singular_name'     => _x( __( 'Categories' ), 'taxonomy singular name' ),
+		'search_items'      => __( 'Search' ),
+		'all_items'         => __( 'All Categories' ),
+		'parent_item'       => __( 'Parent Category' ),
+		'parent_item_colon' => __( 'Parent Category:' ),
+		'edit_item'         => __( 'Edit' ),
+		'update_item'       => __( 'Quick Edit' ),
+		'add_new_item'      => __( 'Add New Category' ),
+		'new_item_name'     => __( 'New Category' ),
+		'menu_name'         => __( 'Categories' ),
+	);
+	$args = array(
+		'labels' => $labels,
+		'hierarchical' => true,
+	);
+	register_taxonomy( 'staff_category', 'staff', $args );
+}
+add_action( 'init', 'my_taxonomies_staff', 0 );

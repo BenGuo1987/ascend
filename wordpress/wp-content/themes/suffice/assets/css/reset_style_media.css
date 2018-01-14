@@ -182,6 +182,21 @@
     .map-box-wrapper .map-box {
         margin-bottom: 15px;
     }
+    .about-us-content,
+    .staff-wrapper{
+        width: 100%;
+    }
+    .staff-item .staff-item-img {
+        float: none;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    .staff-item .staff-item-description {
+        float: none;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
 }
 @media (max-width: 992px) {
     .site-identity-container {
@@ -392,6 +407,10 @@
     .useful-tools .exchange-rate-box .exchange-rate-banks:after {
         border-width: 0;
     }
+    .staff-items .staff-item {
+        float: none;
+        width: 100%;
+    }
 }
 
 @media (max-width: 640px) {
@@ -600,7 +619,9 @@
     .contact-content p {
         font-size: 16px;
     }
-
+    .staff-wrapper {
+        padding: 30px 20px;
+    }
     /** university **/
     .school-container {
         padding: 20px 15px;

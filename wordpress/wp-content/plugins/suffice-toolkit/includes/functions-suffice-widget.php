@@ -25,6 +25,7 @@ include_once( dirname( __FILE__ ) . '/widgets/class-suffice-widget-portfolio.php
 include_once( dirname( __FILE__ ) . '/widgets/class-suffice-widget-feature.php' );
 include_once( dirname( __FILE__ ) . '/widgets/class-suffice-widget-feature-hot.php' );
 include_once(dirname(__FILE__) . '/widgets/class-suffice-widget-university.php');
+include_once(dirname(__FILE__) . '/widgets/class-suffice-widget-staff.php');
 include_once(dirname(__FILE__) . '/widgets/class-suffice-widget-Immigration.php');
 include_once( dirname( __FILE__ ) . '/widgets/class-suffice-widget-estate-sales.php' );
 include_once( dirname( __FILE__ ) . '/widgets/class-suffice-widget-estate-sales-home.php' );
@@ -50,6 +51,7 @@ function suffice_register_widgets() {
 	register_widget('ST_Widget_Feature');
 	register_widget('ST_Widget_Feature_Hot');
 	register_widget( 'ST_Widget_University' );
+	register_widget( 'ST_Widget_Staff' );
 	register_widget( 'ST_Widget_Immigration' );
 	register_widget( 'ST_Widget_Estate_Sale' );
 	register_widget( 'ST_Widget_Estate_Sale_Home' );
@@ -78,6 +80,7 @@ function suffice_toolkit_widgets($widgets) {
 		'ST_Widget_Feature',
 		'ST_Widget_Feature_Hot',
 		'ST_Widget_University',
+		'ST_Widget_Staff',
 		'ST_Widget_Immigration',
 		'ST_Widget_Estate_Sale',
 		'ST_Widget_Estate_Sale_Home',

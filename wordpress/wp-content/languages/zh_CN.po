@@ -11186,4 +11186,11 @@ msgstr "电话"
 msgid "Fax"
 msgstr "传真"
 
+msgid "Staff"
+msgstr "职工"
+
+msgid "All Staffs"
+msgstr "所有职工"
+
+
 
