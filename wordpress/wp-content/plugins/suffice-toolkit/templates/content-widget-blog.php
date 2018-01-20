@@ -73,7 +73,7 @@ if ( 'post-style-grid' === $style && '1' === $column ) {
 				<!-- ====== Entry Thumbnail =====  -->
 				<figure class="entry-thumbnail">
 					<!--php the_post_thumbnail( $thumbnail_size ); -->
-					<div class="news-item-img" style="background-image:url('<?php echo get_the_post_thumbnail_url(null, $thumbnail_size ) ?>')"></div>
+					<div class="news-item-img" style="background-image:url('<?php echo get_the_post_thumbnail_url(null, $thumbnail_size ) ?>'); background-color: rgba(3,3,3,0.2)"></div>
 					<div class="entry-date">Posted on <?php echo get_the_date( 'M d, Y' ); ?></div>
 				</figure>
 

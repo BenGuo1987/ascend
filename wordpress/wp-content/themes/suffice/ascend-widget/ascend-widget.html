@@ -178,18 +178,19 @@ project-list-wrapper
 feature-row
 <!--Feature Project-->
 
-UPDATE wp_options SET option_value = replace(option_value, 'http://www.ascend.com', 'http://ascendinternational.com.au:8080') WHERE option_name = 'home' OR option_name = 'siteurl';
+UPDATE wp_options SET option_value = replace(option_value, 'http://ascendinternational.com.au:8080', 'http://ascendinternational.com.au') WHERE option_name = 'home' OR option_name = 'siteurl';
 /*修改站点url和主页地址*/
-UPDATE wp_posts SET post_content = replace(post_content, 'http://www.ascend.com', 'http://ascendinternational.com.au:8080');
+UPDATE wp_posts SET post_content = replace(post_content, 'http://ascendinternational.com.au:8080', 'http://ascendinternational.com.au');
 /*修改文章中内部链接及附件的地址*/
-UPDATE wp_posts SET guid = replace(guid, 'http://www.ascend.com', 'http://ascendinternational.com.au:8080');
+UPDATE wp_posts SET guid = replace(guid, 'http://ascendinternational.com.au:8080', 'http://ascendinternational.com.au');
 /*修改wordpress文章默认的永久链接*/
-UPDATE wp_comments SET comment_author_url = replace( comment_author_url, 'http://www.ascend.com', 'http://ascendinternational.com.au:8080' ) ;
+UPDATE wp_comments SET comment_author_url = replace( comment_author_url, 'http://ascendinternational.com.au:8080', 'http://ascendinternational.com.au' ) ;
 /*修改作者的评论链接*/
-UPDATE wp_comments SET comment_content = replace( comment_content, 'http://www.ascend.com', 'http://ascendinternational.com.au:8080' ) ;
+UPDATE wp_comments SET comment_content = replace( comment_content, 'http://ascendinternational.com.au:8080', 'http://ascendinternational.com.au' ) ;
 /*修改评论内的评论链接*/
-UPDATE wp_posts SET pinged = replace( pinged, 'http://www.ascend.com', 'http://ascendinternational.com.au:8080' ) ;
+UPDATE wp_posts SET pinged = replace( pinged, 'http://ascendinternational.com.au:8080', 'http://ascendinternational.com.au' ) ;
 /*修改TrackBack里的链接*/
 
 /*中文站点*/
-UPDATE wp_3_posts SET guid = replace(guid, 'http://ch.ascend.com', 'http://ascendinternational.com.au:8080/ch');
+UPDATE wp_3_options SET option_value = replace(option_value, 'http://ascendinternational.com.au:8080/ch', 'http://ascendinternational.com.au') WHERE option_name = 'home' OR option_name = 'siteurl';
+UPDATE wp_3_posts SET guid = replace(guid, 'http://ascendinternational.com.au:8080/ch', 'http://ascendinternational.com.au/ch');
