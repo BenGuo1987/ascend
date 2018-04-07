@@ -304,6 +304,7 @@
     line-height: 0;
     color: #fff;
     margin-bottom: 40px;
+    font-size: 24px;
 }
 .footer-top .contact-us .contact-us-content {
     color: #999;
@@ -618,6 +619,7 @@ ul.social-list {
     background-color: #EEE;
     padding: 75px 100px 50px;
 }
+
 .blog-post-container .row :nth-child(4n+3).post .article-inner .entry-news-content,
 .blog-post-container .row :nth-child(4n).post .article-inner .entry-news-content{
     position: absolute;
@@ -638,6 +640,21 @@ ul.social-list {
     height: 400px;
     background-color: #EEE;
     padding: 75px 100px 50px;
+}
+.post .article-inner .entry-news-content .entry-header,
+.home-news .post .article-inner .entry-news-content .entry-header{
+    height: 58px;
+    word-wrap: break-word;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.post .article-inner .entry-news-content .entry-content .content-text,
+.home-news .post .article-inner .entry-news-content .entry-content .content-text{
+    font-size: 14px;
+    line-height: 24px;
+    height: 168px;
+    word-wrap: break-word;
+    overflow: hidden;
 }
 
 .post .article-inner:hover .entry-news-content{
@@ -1720,6 +1737,10 @@ div.wpcf7 .ajax-loader {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+}
+.feature-items .feature-item .feature-item-desc {
+    font-size: 14px;
+    line-height: 24px;
 }
 .feature-item-thumbnail .feature-item-img-warpper {
     float: left;

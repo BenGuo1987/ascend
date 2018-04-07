@@ -436,6 +436,10 @@
         height: auto;
         padding: 30px;
     }
+    .post .article-inner .entry-news-content .entry-header,
+    .home-news .post .article-inner .entry-news-content .entry-header{
+        height: auto;
+    }
     .post .article-inner .entry-news-content .entry-content .read-more,
     .post .article-inner .entry-news-content .entry-content .read-more:hover,
     .home-news .post .article-inner .entry-news-content .entry-content .read-more,

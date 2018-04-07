@@ -110,7 +110,7 @@ $project_query = new WP_Query(array_merge($queryArray,$queryCityArray));?>
 							echo "<p class=\"feature-hot-item-price\">". __('Address', 'default')."：" .get_post_meta( $id, '_feature_address', true ). "</p>";
 						}?>
 						<?php if(get_the_excerpt()!==''){
-							echo "<p>".esc_html( get_the_excerpt() )."</p>";
+							echo "<p class='feature-item-desc'>".esc_html( get_the_excerpt() )."</p>";	
 						}?>
 
 						<div class="feature-item-more"><a href = "<?php echo esc_url( get_the_permalink() ); ?>">READ MORE</a></div>

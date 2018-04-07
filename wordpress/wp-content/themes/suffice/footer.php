@@ -126,7 +126,7 @@
 				</div>
 				<div class="contact-us clearfix">
 					<div class="col-md-6">
-						<h2><?php echo(__('Address', 'default')) ?></h2>
+						<h2><?php echo(__('Contact Us', 'default')) ?></h2>
 						<p class="contact-us-content">
 							Suite 1, Ground Floor, 363 Camberwell Road, Camberwell, Vic 3124
 						</p>

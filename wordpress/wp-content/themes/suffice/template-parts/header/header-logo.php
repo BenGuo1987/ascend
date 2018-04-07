@@ -14,13 +14,12 @@
 		<!--?php the_custom_logo(); ?-->
 		<a href="<?php echo home_url() ?>/" class="logo-img"></a>
 		<div class="lang-container">
-			<p>language</p>
-			<a href="http://ascendinternational.com.au/home">English</a>
-			<a href="http://ascendinternational.com.au/ch/home">Chinese</a>
+			<a href="<?php echo home_url() ?>/home">ENGLISH</a>
+			<a href="<?php echo home_url() ?>/ch/home">CHINESE</a>
 		</div>
 		<div class="lang-container mobile">
-			<a href="http://ascendinternational.com.au/home">EN</a>
-			<a href="http://ascendinternational.com.au/ch/home">CH</a>
+			<a href="<?php echo home_url() ?>/home">EN</a>
+			<a href="<?php echo home_url() ?>/ch/home">CH</a>
 		</div>
 	</div> <!-- .logo-container -->
 </div> <!-- .logo -->

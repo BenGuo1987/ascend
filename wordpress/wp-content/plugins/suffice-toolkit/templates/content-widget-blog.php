@@ -108,16 +108,16 @@ if ( 'post-style-grid' === $style && '1' === $column ) {
 
 				<!-- ====== Entry Content =====  -->
 				<div class="entry-content">
-					<p>
+					<div class="content-text">
 						<?php
 						// If post style is list, trim excerpt.
 						if ( 'post-style-list' === $style || 'post-style-carousel' === $style ) {
-							echo esc_html( wp_trim_words( get_the_excerpt(), 20 ) );
+							echo esc_html( get_the_excerpt());
 						} else {
-							echo esc_html( get_the_excerpt() );
+							echo esc_html( get_the_excerpt());
 						}
 						?>
-					</p>
+					</div>
 
 					<?php if ( 'post-style-grid' === $style ) :  ?>
 						<a href="<?php echo esc_url( get_permalink() )."?nav=news"; ?>" class="read-more"><?php esc_html_e( 'Read More', 'suffice-toolkit' ); ?><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>

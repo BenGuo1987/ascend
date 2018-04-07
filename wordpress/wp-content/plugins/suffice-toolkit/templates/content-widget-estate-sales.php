@@ -83,7 +83,7 @@ $sub_cat_list = get_categories(array(
 					$active = 'active';
 				}
 				echo
-					'<a href="/services?cat='. $parent_cat->term_id.'">
+					'<a href="'.home_url().'/services?cat='. $parent_cat->term_id.'">
 						<li class="service-item'.$count.' '.$active.'">
 							<div class="service-intro">
 								<h5>'. $parent_cat->name .'</h5>
@@ -103,7 +103,7 @@ $sub_cat_list = get_categories(array(
 			if($categories == $category->term_id) {
 				$active = 'active';
 			}
-			echo '<li><a href="/services?cat='. $category->term_id.'" class="nav-link '.$active .'">' . $category->name.'</a></li>';
+			echo '<li><a href="'.home_url().'/services?cat='. $category->term_id.'" class="nav-link '.$active .'">' . $category->name.'</a></li>';
 		}?>
 	</ul>
 	<ul class="service-items row clearfix">
