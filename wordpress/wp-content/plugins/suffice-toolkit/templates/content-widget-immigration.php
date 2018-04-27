@@ -75,7 +75,7 @@ $project_query = new WP_Query(
 						<figure class="immigration-item-thumbnail">
 							<figcaption class="immigration-item-description">
 								<div class="immigration-item-title"><h5><?php echo esc_html( get_the_title() ); ?></h5></div>
-								<div class="immigration-item-content"><?php echo get_the_content();?></div>
+								<div class="immigration-item-content"><?php echo the_content();?></div>
 							</figcaption>
 						</figure>
 					</li>

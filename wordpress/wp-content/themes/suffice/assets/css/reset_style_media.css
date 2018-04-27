@@ -308,6 +308,32 @@
     .post-content .entry-header, .post-content .entry-content {
         width: 100%;
     }
+
+    .lSSlideOuter {
+        width: 100%;
+        padding: 0 30px;
+    }
+    .lightSlider {
+        overflow: visible!important;
+    }
+    .lSSlideOuter .lSPager.lSGallery {
+        display: none!important;
+    }
+    .lSAction {
+        display: none!important;
+    }
+    .lightSlider li,
+    .lightSlider li img,
+    .lSSlideOuter .lightSlider {
+        width: 100% !important;
+        transform: none!important;
+    }
+    .lightSlider li img {
+        height: auto!important;
+    }
+    .lSSlideOuter .lSPager.lSpg {
+        display: none;
+    }
 }
 @media (max-width: 890px) {
 

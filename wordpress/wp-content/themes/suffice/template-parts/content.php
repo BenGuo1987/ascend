@@ -26,6 +26,7 @@
 		$nav = 'FEATURE';
 	}
 ?>
+<link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/assets/plugins/lightslider/css/lightslider.min.css'?>" />
 <div class="common-section <?php echo $sectionClass ?>">
 	<div class="top-section">
 		<div class="top-section-text"><?php echo $nav ?></div>
@@ -52,13 +53,16 @@
 		</div><!-- .entry-meta -->
 
 		<?php
-		// If featured is enabled, show featured image.
-		get_template_part( 'template-parts/content-parts/entry', 'thumbnail' );
+			get_template_part( 'template-parts/content-parts/entry', 'thumbnail' );
+
 		?>
+		<!-- attached images -->
 
 
 	</header><!-- .entry-header -->
+
 	<?php if ( 'feature' === get_post_type() ) {?>
+
 		<div class="feature-basic-info">
 			<div class="basic-info-panel">
 				<div class="basic-info-panel-header"><?php echo __('Basic Info', 'default');?></div>
@@ -102,7 +106,7 @@
 						<?php }?>
 						<?php if (get_post_meta( $post->ID, '_feature_huxing', true )) {?>
 							<tr>
-								<td><?php echo __('Huxing', 'default'); ?></td>
+								<td><?php echo __('Floorplan', 'default'); ?></td>
 								<td><?php echo get_post_meta( $post->ID, '_feature_huxing', true );?></td>
 							</tr>
 						<?php }?>
@@ -110,33 +114,70 @@
 				</div>
 			</div>
 		</div>
+		<style>
+			.feature-content img {
+				display: none;
+			}
+		</style>
 	<?php }?>
-	<div class="entry-content">
-		<?php
-		if ( ! is_single() && 'post-style-grid' === suffice_get_option( 'suffice_blog_post_style', 'post-style-classic' ) ) {
-			the_excerpt();
-		} else {
-			the_content( sprintf(
-				/* translators: %s: Name of current post. */
-				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'suffice' ), array( 'span' => array( 'class' => array() ) ) ),
-				the_title( '<span class="screen-reader-text">"', '"</span>', false )
-			) );
-		}
+	<div class="entry-content feature-content">
+<!--		--><?php
+//		if ( ! is_single() && 'post-style-grid' === suffice_get_option( 'suffice_blog_post_style', 'post-style-classic' ) ) {
+//			the_excerpt();
+//		} else {
+//			the_content( sprintf(
+//				/* translators: %s: Name of current post. */
+//				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'suffice' ), array( 'span' => array( 'class' => array() ) ) ),
+//				the_title( '<span class="screen-reader-text">"', '"</span>', false )
+//			) );
+//		}
+//
+//		wp_link_pages( array(
+//			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'suffice' ),
+//			'after'  => '</div>',
+//		) );
+//		?>
 
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'suffice' ),
-			'after'  => '</div>',
-		) );
-		?>
+		<?php echo the_content();?>
 	</div><!-- .entry-content -->
 
 	<?php if ( 'feature' === get_post_type() ) {?>
+	<ul id="lightSlider">
+		<?php echo get_content_thumbnail($post);?>
+	</ul>
 	<div class="map-box-wrapper clearfix">
 		<div id="map_box" class="map-box"></div>
 		<div class="feature-contact">
 			<?php echo  do_shortcode( '[contact-form-7 id="featureContactForm" title="contact-for-feature"]' ); ?>
 		</div>
 	</div>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri() . '/assets/plugins/lightslider/js/lightslider.min.js'?>"></script>
+	<script type="text/javascript">
+		jQuery(function($) {
+			$("#lightSlider").lightSlider({
+				item: 1,
+				gallery:true,
+				auto: true,
+				loop: true,
+				minSlide:1,
+				maxSlide:1,
+				thumbWidth: 80,
+				//缩略图宽
+				thumbMargin: 5,
+				//缩略图间距
+				controls: true,
+				//动画时间
+				pause: 2000,
+				currentPagerPosition:'left',
+				onSliderLoad : function() {
+					$('#teacherSlider').parents('.teacher-slider-wapper').append($('.lSAction'));
+					$('#teacherSlider').next().remove();
+					$('.lSAction>a.lSPrev').html('<i class="fa fa-angle-left"></i>');
+					$('.lSAction>a.lSNext').html('<i class="fa fa-angle-right"></i>');
+				}
+			});
+		})
+	</script>
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzE9xAESye6Kde-3hT-6B90nfwUkcS8Yw&sensor=false"></script>
 	<script type="text/javascript">
 		var myOptions = {
@@ -182,3 +223,4 @@
 
 </article><!-- #post-## -->
 </div>
+

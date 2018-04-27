@@ -55,25 +55,26 @@ $project_query = new WP_Query(
 );
 
 ?>
-
-<div class="staff-wrapper">
-	<h3>Our Team (我们的团队)</h3>
-	<ul class="staff-items row clearfix">
-		<?php while ( $project_query->have_posts() ) : $project_query->the_post(); ?>
-			<?php
-				global $post;
-				$id = $post->ID;
-			?>
-			<li class="staff-item">
-				<figure class="staff-item-thumbnail clearfix">
-					<div class="staff-item-img" style="background-image:url('<?php echo get_the_post_thumbnail_url($id, $thumbnail_size ) ?>')"></div>
-					<figcaption class="staff-item-description">
-						<h5 class="staff-title"><?php echo esc_html( get_the_title() ); ?></h5>
-						<p class="staff-position"><?php echo get_post_meta( $id, '_staff_position', true ); ?></p>
-						<p class="staff-email"><a href="mailto:<?php echo get_post_meta( $id, '_staff_email', true ); ?>"><?php echo get_post_meta( $id, '_staff_email', true ); ?></a></p>
-					</figcaption>
-				</figure>
-			</li>
-		<?php endwhile; wp_reset_postdata();?>
-	</ul>
+<div class="<?php echo __('staff-wrapper-out', 'default') ?>">
+	<div class="staff-wrapper">
+		<h3><?php echo __('Our Team', 'default') ?></h3>
+		<ul class="staff-items row clearfix">
+			<?php while ( $project_query->have_posts() ) : $project_query->the_post(); ?>
+				<?php
+					global $post;
+					$id = $post->ID;
+				?>
+				<li class="staff-item">
+					<figure class="staff-item-thumbnail clearfix">
+						<div class="staff-item-img" style="background-image:url('<?php echo get_the_post_thumbnail_url($id, $thumbnail_size ) ?>')"></div>
+						<figcaption class="staff-item-description">
+							<h5 class="staff-title"><?php echo esc_html( get_the_title() ); ?></h5>
+							<p class="staff-position"><?php echo get_post_meta( $id, '_staff_position', true ); ?></p>
+							<p class="staff-email"><a href="mailto:<?php echo get_post_meta( $id, '_staff_email', true ); ?>"><?php echo get_post_meta( $id, '_staff_email', true ); ?></a></p>
+						</figcaption>
+					</figure>
+				</li>
+			<?php endwhile; wp_reset_postdata();?>
+		</ul>
+	</div>
 </div>

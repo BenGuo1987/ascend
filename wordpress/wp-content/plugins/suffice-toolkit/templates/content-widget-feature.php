@@ -79,7 +79,7 @@ $project_query = new WP_Query(array_merge($queryArray,$queryCityArray));?>
 					<li data-city="New Zealand"><?php echo __('New Zealand', 'default') ?></li>
 				</ul>
 			</div>
-			<input type="text"  class="feature-search-text" placeholder="Input key words" value="<?php echo $keywords ?>"/>
+			<input type="text"  class="feature-search-text" placeholder="<?php echo __('Input key words', 'default') ?>" value="<?php echo $keywords ?>"/>
 		</div>
 		<div class="feature-title-line"></div>
 	</div>
@@ -113,7 +113,7 @@ $project_query = new WP_Query(array_merge($queryArray,$queryCityArray));?>
 							echo "<p class='feature-item-desc'>".esc_html( get_the_excerpt() )."</p>";	
 						}?>
 
-						<div class="feature-item-more"><a href = "<?php echo esc_url( get_the_permalink() ); ?>">READ MORE</a></div>
+						<div class="feature-item-more"><a href = "<?php echo esc_url( get_the_permalink() ); ?>"><?php echo __('READ MORE', 'default') ?></a></div>
 					</figcaption>
 				</figure>
 			</li>

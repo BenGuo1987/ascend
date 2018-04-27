@@ -128,7 +128,7 @@ $sub_high_school_list = get_categories(array(
 							<div class="school-item-img" style="background-image:url('<?php echo get_the_post_thumbnail_url($id, $thumbnail_size ) ?>')"></div>
 							<figcaption class="school-item-description">
 								<h5 class="school-item-title"><?php echo esc_html( get_the_title() ); ?></h5>
-								<p class="service-item-content"><?php echo esc_html( get_the_content() );?></p>
+								<p class="service-item-content"><?php echo esc_html( the_content() );?></p>
 							</figcaption>
 						</figure>
 					</li>

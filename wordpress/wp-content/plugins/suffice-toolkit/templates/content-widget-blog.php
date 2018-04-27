@@ -57,7 +57,9 @@ if ( 'post-style-grid' === $style && '1' === $column ) {
 ?>
 
 <div class="blog-post-container">
-	<div class="news-brand">NEWS</div>
+	<?php if ( $get_featured_posts->have_posts() ) : ?>
+		<div class="news-brand"><?php echo( __( 'NEWS' )) ?></div>
+	<?php endif ?>
 	<?php if ( 'post-style-carousel' === $style ) : ?>
 		<div class="swiper-container">
 			<div class="swiper-wrapper">
@@ -74,7 +76,7 @@ if ( 'post-style-grid' === $style && '1' === $column ) {
 				<figure class="entry-thumbnail">
 					<!--php the_post_thumbnail( $thumbnail_size ); -->
 					<div class="news-item-img" style="background-image:url('<?php echo get_the_post_thumbnail_url(null, $thumbnail_size ) ?>'); background-color: rgba(3,3,3,0.2)"></div>
-					<div class="entry-date">Posted on <?php echo get_the_date( 'M d, Y' ); ?></div>
+					<div class="entry-date"><?php echo __('Posted on', 'default') ?> <?php echo get_the_date( 'Y-m-d' ); ?></div>
 				</figure>
 
 				<?php if ( 'post-style-overlay' === $style || 'post-style-carousel' === $style ) : ?>
@@ -120,7 +122,7 @@ if ( 'post-style-grid' === $style && '1' === $column ) {
 					</div>
 
 					<?php if ( 'post-style-grid' === $style ) :  ?>
-						<a href="<?php echo esc_url( get_permalink() )."?nav=news"; ?>" class="read-more"><?php esc_html_e( 'Read More', 'suffice-toolkit' ); ?><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+						<a href="<?php echo esc_url( get_permalink() )."?nav=news"; ?>" class="read-more"><?php echo __('READ MORE', 'default') ?><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
 					<?php endif ?>
 				</div> <!-- entry-content -->
 				</div>
@@ -143,7 +145,7 @@ if ( 'post-style-grid' === $style && '1' === $column ) {
 						}
 						?>
 						<span class="read-more-meta">
-							<a href="<?php echo esc_url( get_permalink() )."?nav=news"; ?>" class="more-link"><?php esc_html_e( 'Read More', 'suffice-toolkit' ); ?></a>
+							<a href="<?php echo esc_url( get_permalink() )."?nav=news"; ?>" class="more-link"><?php echo __('READ MORE', 'default') ?></a>
 						</span>
 					</div>
 				<?php endif; ?>

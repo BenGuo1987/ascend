@@ -682,7 +682,7 @@ function city_save_meta_box_feature($post_id){
 /** price for Huxing **/
 add_action( 'add_meta_boxes', 'feature_huxing' );
 function feature_huxing() {
-	$priceText = __('Huxing', 'default');
+	$priceText = __('Floorplan', 'default');
 	add_meta_box(
 		'feature_huxing',
 		$priceText,
@@ -702,7 +702,7 @@ function feature_huxing_meta_box($post) {
 
 	?>
 
-	<input type="text" style="width: 100%;" id="feature_huxing" name="feature_huxing" value="<?php echo esc_attr( $value ); ?>" placeholder="<?php echo __('Huxing', 'default'); ?>" >
+	<input type="text" style="width: 100%;" id="feature_huxing" name="feature_huxing" value="<?php echo esc_attr( $value ); ?>" placeholder="<?php echo __('Floorplan', 'default'); ?>" >
 
 	<?php
 }

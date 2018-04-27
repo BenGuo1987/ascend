@@ -251,8 +251,9 @@ function suffice_scripts() {
 	wp_enqueue_style( 'swiper', get_template_directory_uri() . '/assets/css/swiper' . $suffix . '.css', array(), '3.4.0' );
 	wp_enqueue_style( 'perfect-scrollbar', get_template_directory_uri() . '/assets/css/perfect-scrollbar' . $suffix . '.css', array(), '0.6.16' );
 	wp_enqueue_style( 'suffice-style', get_stylesheet_uri() );
-	wp_enqueue_style( 'suffice-reset-style', get_template_directory_uri() . '/assets/css/reset_style'  . '.css', array(), '0.0.1' );
-	wp_enqueue_style( 'suffice-reset-style-media', get_template_directory_uri() . '/assets/css/reset_style_media'  . '.css', array(), '0.0.1' );
+	// wp_enqueue_style( 'lightslider-style', get_template_directory_uri() . '/assets/plugins/lightslider/css/lightslider.min'  . '.css', array(), '' );
+	wp_enqueue_style( 'suffice-reset-style', get_template_directory_uri() . '/assets/css/reset_style'  . '.css', array(), '0.0.2' );
+	wp_enqueue_style( 'suffice-reset-style-media', get_template_directory_uri() . '/assets/css/reset_style_media'  . '.css', array(), '0.0.2' );
 
 	/* Scripts */
 	wp_enqueue_script( 'suffice-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20151215', true );
@@ -263,7 +264,8 @@ function suffice_scripts() {
 		wp_enqueue_script( 'headroom', get_template_directory_uri() . '/assets/js/headroom' . $suffix . '.js', array( 'jquery' ), '0.9', true );
 		wp_enqueue_script( 'headroom-jquery', get_template_directory_uri() . '/assets/js/jQuery.headroom' . $suffix . '.js', array( 'jquery' ), '0.9', true );
 	}
-	
+
+	// wp_enqueue_script( 'lightslider-script', get_template_directory_uri() . '/assets/plugins/lightslider/js/lightslider.min.js', array( 'jquery' ), '', true );
 	wp_enqueue_script( 'ascend-layer', get_template_directory_uri() . '/assets/js/extra/layer/layer.min.js', array( 'jquery' ), '1.0', true );
 	wp_enqueue_script( 'ascend-repay', get_template_directory_uri() . '/assets/js/extra/repay.js', array( 'jquery' ), '1.0', true );
 	wp_enqueue_script( 'ascend-stampduty', get_template_directory_uri() . '/assets/js/extra/stampduty.js', array( 'jquery' ), '1.0', true );
@@ -777,3 +779,29 @@ function my_taxonomies_staff() {
 	register_taxonomy( 'staff_category', 'staff', $args );
 }
 add_action( 'init', 'my_taxonomies_staff', 0 );
+
+function get_content_thumbnail($post) {
+	$html = '';
+	$content = $post->post_content;
+	preg_match_all('/<img.*?(?: |\\t|\\r|\\n)?src=[\'"]?(.+?)[\'"]?(?:(?: |\\t|\\r|\\n)+.*?)?>/sim', $content, $strResult, PREG_PATTERN_ORDER);
+	$images = $strResult[1];
+	$counter = count($strResult[1]);
+	$i = 0;
+	foreach($images as $src){
+		$item = '<li data-thumb="'.$src.'" style="background-image:'.$src.'"><div class="feature-slider-img"><img src="'.$src.'" /></div></li>';
+		//<img src="'.$src.'" />
+		$html .= $item;
+	}
+	return $html;
+}
+function hui_get_attachment_id_from_src ($link) {
+	global $wpdb;
+	$link = preg_replace('/-\d+x\d+(?=\.(jpg|jpeg|png|gif)$)/i', '', $link);
+	return $wpdb->get_var("SELECT ID FROM {$wpdb->posts} WHERE guid='$link'");
+}
+function get_content_without_thumbnail() {
+	global $post;
+	$content = the_content();
+	$html = preg_replace('(<img (.*)?>)', '', $content);
+	return $html;
+}
